@@ -31,266 +31,105 @@ body {
 	color: #fff;
 }
 
-hr {
-	width: 100%;
-	height: 1px;
-	margin-top: 10px; 
-	border: none;
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-}
-
 header {
-	width: 100%;
-	padding: 10px;
-	background-color: red;
-	background: url(../img/logo.png) no-repeat;
-	background-position: 95% 50%;
-	background-size: 50px;
-}
-
-header h2 {
-	font-size: 13pt;
-	font-family: InterstateLight;
-	text-transform: uppercase;
-	font-weight: 100;
-}
-
-header h1 {
-	font-size: 18pt;
-	font-family: InterstateBold;
-}
-
-.title {
+	height: 20%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 8.5%;
-	background: #2b0607;
+	justify-content: flex-end;
+	padding-right: 20px;
 }
 
-.title h2 {
-	color: #fff;
-	font-size: 14.3pt;
-	font-family: HandelLight;
-	text-transform: uppercase;
-	font-weight: 100;
+header img {
+	width: 95px;
 }
 
 section {
+	height: 70%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	width: 70%;
-	margin: 0 auto;
-	padding: 20px;
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	justify-content: flex-end;
+	padding-right: 20px;
 }
 
-section h3 {
-	margin: 10px 0;
-	font-size: 11pt;
+section .title {
+	text-align: center;
+}
+
+section .title h2 {
+	font-size: 15.3pt;
 	font-family: InterstateLight;
 	font-weight: 100;
 	text-transform: uppercase;
 }
 
-section input {
-	width: 100%;
-	height: 20px;
-	margin-bottom: 5px;
-	text-align: center;
-	font-size: 10pt;
+section .title h1 {
+	font-size: 35pt;
 	font-family: InterstateBold;
-	color: #fff;
-	background: transparent;
-	border: none;
 }
 
-section button {
-	width: 50%;
-	margin-top: 30px;
-	color: #fff;
-	font-family: InterstateBold;
-	font-size: 10pt;
-	text-transform: uppercase;
-	background: url(../img/right-arrow.png) no-repeat center right;
-	background-size: 7px;
-	border: none;
+section .title p {
+	font-size: 8pt;
+	font-family: InterstateLight;
+	font-weight: 100;
+	color: #2995cc;
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 20%;
-}
-
-footer h3 {
-	margin: 20px 0; 
-	font-size: 11pt;
-	font-family: InterstateLight;
-	font-weight: 100;
-	text-transform: uppercase;
-}
-
-footer .social img {
-	width: 30px;
-}
-
-footer .social img:first-child {
-	margin: 0 30px 0 0;
-}
-
-.terms {
+	height: 10%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+	justify-content: flex-end;
+	padding-right: 35px;
 }
 
-.terms input {
+footer a {
 	position: relative;
-	width: 18px;
-	height: 12px;
-	margin: 0 10px;
-	background: transparent;
 	color: #fff;
-	border: 1px solid rgba(255,255,255,.4);
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.terms input:checked:after {
-	content: '\2713';
-	position: absolute;
-	left: 0;
-	width: 9px;
-	height: 10px;
-  font-size: 12px;
-  line-height: 1;
-  text-align: center;
-}
-
-.terms p {
-	padding: 12px 0;
-	font-size: 7pt;
+	text-transform: uppercase;
+	text-decoration: none;
 	font-family: InterstateLight;
 	font-weight: 100;
+	font-size: 16pt;
+}
+
+footer a:after {
+	content: '';
+	position: absolute;
+	right: -18px;
+	height: 23px;
+	width: 18px;
+	background: url(../img/right-arrow.png) no-repeat center right;
+	background-size: 10px;
 }
 
 @media only screen and (min-width : 375px) {
-	header h2 {
-		font-size: 14pt;
-	}
-	header h1 {
-		font-size: 22pt;
-	}
-	section h3 {
-		font-size: 13pt;
-	}
-	section input {
-		font-size: 11.3pt;
-	}
-	section button {
-		font-size: 10.3pt;
-	}
-	footer h3 {
-		font-size: 13pt;
-	}
-	footer .social img {
-		width: 43px;
-	}
-	.terms p {
-		font-size: 8pt;
-	}   
+  
 }
 
 @media only screen and (min-width : 414px) {
-  header h2 {
-		font-size: 16pt;
-	}
-	header h1 {
-		font-size: 24pt;
-	}
-	section h3 {
-		font-size: 15pt;
-	}
-	section input {
-		font-size: 13.3pt;
-	}
-	section button {
-		font-size: 12.3pt;
-	}
-	footer h3 {
-		font-size: 15pt;
-	}
-	footer .social img {
-		width: 43px;
-	}
-	.terms p {
-		font-size: 10pt;
-	}
-	.terms input {
-		width: 20px;
-		height: 14px;
-	}
-	.terms input:checked:after {
-		width: 11px;
-		height: 12px;
-	}
+
 }
 
 @media only screen and (min-width : 768px) {
-	header{
-		padding: 20px;
+	body {
+		background-position: center bottom;
 	}
-	.terms input {
-		width: 14px;
+	header,section {
+		padding-right: 40px;
 	}
-	section button {
-    width: 25%;
-  }
+	footer {
+		padding-right: 55px;
+	}
 }
 
 @media only screen and (min-width : 1024px) {
-	body {
+	body{
 		background: url(../img/bg-desktop.png) no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 	}
-	section {
-		width: 40%;
-	}
-	section button {
-	  width: 35%;
-	}
-	footer {
-		width: 45%;
-		margin: 0 auto
-	}
 }
 
 @media only screen and (min-width : 1400px) {
-	section input {
-		height: 35px;
-	}
-	section button {
-	  width: 25%;
-	}
-	hr {
-		margin-top: 20px;
-		margin-bottom: 20px; 
-	}
+
 }
