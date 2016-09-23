@@ -3,10 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="../css/fonts.css">
-<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<meta name="google-signin-client_id" content="82592990920-e1ana6tp6aaikrl7j8koh9jgp1hcuia5.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>MAZDA | Salón Del Automóvil 2016</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="js/login.js"></script>
+<title>MAZDA</title>
 </head>
 
 <body>
@@ -19,13 +24,16 @@
 </div>
 <section>
 	<h3>Nombre Completo</h3>
-	<input type="text" name="nombre" autocorrect="off" value="Andres Perez">
+	<input type="text" name="nombre" autocorrect="off" value="">
 	<hr>
 	<h3>Email</h3>
-	<input type="email" name="email" autocorrect="off" autocapitalize="none" value="andres@mazda.com">
+	<input type="email" name="email" autocorrect="off" autocapitalize="none" value="">
 	<hr>
 	<h3>Contraseña</h3>
-	<input type="password" name="password" autocorrect="off" autocapitalize="none" value="password">
+	<input type="password" name="password" autocorrect="off" autocapitalize="none" value="">
+	<hr>
+	<h3>Confirmar Contraseña</h3>
+	<input type="password" name="password" autocorrect="off" autocapitalize="none" value="">
 	<hr>
 	<button>Ingresar</button>
 </section>
@@ -33,14 +41,20 @@
 	<hr>
 	<h3>Registro Con</h3>
 	<div class="social">
-		<img src="img/fb.png">
-		<img src="img/google.png">
+		<img src="img/fb.png" onclick="checkLoginState();">
+		  <div id="gSignInWrapper">
+		    <div id="customBtn" class="customGPlusSignIn">
+		      <img src="img/google.png">
+		    </div>
+		  </div>
+		  <div id="name"></div>
 	</div>
+	<div id="status"></div>
+	 <script>startApp();</script>
 </footer>
 <div class="terms">
 	<input type="checkbox" name="terms">
 	<p>Conozco y acepto el manual de políticas y procedimientos de datos personales y autorizo el manejo de estos.</p>
 </div>
 </body>
-
 </html>
