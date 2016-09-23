@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/accordion.js"></script>
+<title>MAZDA</title>
+</head>
+
+<body>
+<header>
+	<div class="title">
+		<h1>M&#123;zd&#123; <span>CX-5</span></h1>
+		<h3>Caracteristicas Generales</h3>
+	</div>
+	<div class="container">
+		<div class="vehicle">
+			<div class="dropdown">
+				<h2>M&#123;zd&#123; <span>CX-5</span></h2>
+			</div>
+			<img src="img/car1.png">
+		</div>
+		<hr>
+		<div class="vehicle">
+			<div class="dropdown">
+				<select id="veh2" onchange="change_vehicle();">
+	        <option selected="selected" value="Mazda6GTLX">M&#123;zd&#123;6 2,5L Grand Touring LX</option>
+	        <option value="Mazda6B">M&#123;zd&#123;6B</option>
+	        <option value="Mazda6C">M&#123;zd&#123;6C</option>
+	      </select>
+			</div>
+			<img src="img/car2.png">
+		</div>
+		<hr>
+		<div class="vehicle">
+			<div class="dropdown">
+		    <select id="veh3" onchange="change_vehicle();">
+	        <option value="Mazda6GTLX">M&#123;zd&#123;6 2,5L Grand Touring LX</option>
+	        <option value="Mazda6B">M&#123;zd&#123;6B</option>
+	        <option value="Mazda6C">M&#123;zd&#123;6C</option>
+	      </select>
+			</div>
+			<img src="img/car3.png">
+		</div>
+	</div>
+</header>
+<section>
+	<div id="accordion" class="accordion">
+		<h3 class="title">Skyactive - G Motor</h3>	
+		<div class="content">
+			<div class="wrap">
+				<img src="img/motor.png">
+				<h4>Tipo de Motor</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>Skyactiv-G 2,0L / 16 Válvulas / S-VT / Inyección directa</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<img src="img/cilindraje.png">
+				<h4>Cilindraje (c.c)</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>1.998</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3 class="title">Relaciones De Caja</h3>
+		<div class="content">
+			<div class="wrap">
+				<img src="img/motor.png">
+				<h4>Tipo de Motor</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>Skyactiv-G 2,0L / 16 Válvulas / S-VT / Inyección directa</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<img src="img/cilindraje.png">
+				<h4>Cilindraje (c.c)</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>1.998</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3 class="title">Skyactiv - Chasis: suspensión, dirección y frenos</h3>
+		<div class="content">
+			<div class="wrap">
+				<img src="img/motor.png">
+				<h4>Tipo de Motor</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>Skyactiv-G 2,0L / 16 Válvulas / S-VT / Inyección directa</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>Skyactiv-G 1,5L / 16 Válvulas / S-VT / Inyección directa</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<img src="img/cilindraje.png">
+				<h4>Cilindraje (c.c)</h4>
+				<div class="details">
+					<div class="vehicle">
+						<h3>1.998</h3>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+					<hr>
+					<div class="vehicle">
+						<p>1.496</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3 class="title">Skyactiv - Body: Diseño Cabina</h3>
+		<div class="content"></div>
+		<h3 class="title">Mazda Connect</h3>
+		<div class="content"></div>
+		<h3 class="title">Otros</h3>
+		<div class="content"></div>
+		<h3 class="title">Seguridad Antirrobo</h3>
+		<div class="content"></div>
+	</div> <!-- #accordian -->
+</section>
+
+<script src="js/dropdown.js"></script>
+</body>
+
+</html>
