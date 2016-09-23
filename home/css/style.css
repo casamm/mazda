@@ -142,12 +142,6 @@ footer h3 {
 	text-transform: uppercase;
 }
 
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 footer .social img {
 	width: 30px;
 }
@@ -160,9 +154,8 @@ footer .social img:first-child {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/*	position: absolute;
-	bottom: 0;*/
-	margin-top: 10px;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 }
 
@@ -269,10 +262,6 @@ footer .social img:first-child {
 	section button {
     width: 25%;
   }
-  .terms {
-		position: absolute;
-		bottom: 0;
-	}
 }
 
 @media only screen and (min-width : 1024px) {
