@@ -43,6 +43,7 @@ hr {
 }
 
 header {
+	height: 10%;
 	width: 100%;
 	padding: 10px;
 	background-color: red;
@@ -195,6 +196,11 @@ footer .social img:first-child {
 	font-size: 7pt;
 	font-family: InterstateLight;
 	font-weight: 100;
+}
+
+.customGPlusSignIn {
+	display: flex;
+	align-items: center;
 }
 
 @media only screen and (min-width : 375px) {

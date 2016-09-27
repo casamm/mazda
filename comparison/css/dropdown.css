@@ -1,0 +1,56 @@
+.content .vehicle .dropdown {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+}
+
+.content .vehicle .dropdown .ui-selectmenu-text,
+.content .vehicle .dropdown h2 {
+	font-size: 6pt;
+	font-family: MazdaRegular;
+}
+
+.content .vehicle .dropdown .ui-selectmenu-text:after {
+	content: '';
+	display: block;
+	float: right;
+	height: 14px;
+	width: 30px;
+	background: url(../img/down-arrow.png) no-repeat center bottom;
+	background-size: 10px;
+}
+
+.ui-selectmenu-menu {
+	position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ui-selectmenu-open {
+  display: block;
+}
+
+.ui-front {
+  z-index: 100;
+}
+
+ul.ui-menu {
+	padding: 5px;
+	text-align: center;
+	list-style: none;
+	background: rgba(0,0,0,.8);
+	border: 1px solid rgba(255,255,255,.6);
+	max-width: 150px;
+}
+
+ul.ui-menu li {
+	padding: 6px 0;
+	font-size: 6pt;
+	font-family: MazdaRegular;
+}
