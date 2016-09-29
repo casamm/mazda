@@ -1,49 +1,6 @@
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: none;
-	font-smoothing: antialiased;
-	outline: none;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
+.phone {
 	height: 100%;
-}
-
-.hidden {
-	display: none;
-}
-
-body {
-	background: #000;
-	color: #fff;
-}
-
-hr {
-	width: 1px;
-	height: 115px;
-	border: none;
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
-}
-
-.accordion hr {
-	height: 80px;
-}
-
-.accordion hr:first-of-type {
-	display: none;
+	width: 100%;
 }
 
 .phone header {
@@ -156,6 +113,7 @@ hr {
 	width: 65%;
 	height: 1px;
 	margin: 20px 0;
+	border: none;
 	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,.8) 35%, rgba(255,255,255,.8) 65%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
@@ -164,6 +122,9 @@ hr {
 
 .phone section.content {
 	height: 100%;
+	background: url(../img/bg-phone.png) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed; 
 }
 
 .phone section.content header {
@@ -185,149 +146,117 @@ hr {
 	color: #fff;
 }
 
-.phone .container {
-  position: absolute;
-  top: 22%;
+.phone section.content .top-arrow {
+	position: absolute;
+	top: 22%;
 	width: 100%;
-	display: flex;
-	flex-direction: row;
+	height: 7%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=0 );
+	z-index: 800;
 }
 
-.phone section.content section {
-  position: absolute;
-  top: 42%;
-  height: 50%;
-  width: 100%;
-  overflow: scroll;
-}
-
-.phone .container .vehicle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	padding: 10px;
-}
-
-.phone .container .vehicle .dropdown {
-	display: flex;
+.phone section.content .top-arrow span {
+	display: block;
 	width: 100%;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+	height: 100%;
+	background: url(../img/up-arrow.png) no-repeat center center;
+	background-size: 25px;
 }
 
-.phone .container .vehicle .dropdown .ui-selectmenu-text,
-.phone .container .vehicle .dropdown h2 {
-	font-size: 8pt;
+.phone section.content .bottom-arrow {
+	position: absolute;
+	bottom: 8%;
+	width: 100%;
+	height: 7%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+	z-index: 800;
+}
+
+.phone section.content .bottom-arrow span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/down-arrow.png) no-repeat center center;
+	background-size: 25px;
+}
+
+.phone section.content ul {
+	position: absolute;
+	top: 22%;
+	width: 100%;
+	height: 70%;
+	padding: 0;
+	overflow-y: scroll;
+	text-align: center;
+	z-index: 700;
+}
+
+.phone section.content ul li:first-child {
+	margin-top: 13%;
+}
+
+.phone section.content ul li:last-child {
+	margin-bottom: 13%;
+}
+
+.phone section.content ul li h1 {
+	margin: 5px 0;
+	font-size: 14pt;
+	font-family: InterstateLight;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.phone section.content ul li h1 span {
 	font-family: MazdaRegular;
 }
 
-.phone .container .vehicle .dropdown .ui-selectmenu-text:after {
-	content: '';
-	display: block;
-	float: right;
-	height: 14px;
-	width: 30px;
-	background: url(../img/down-arrow.png) no-repeat center bottom;
-	background-size: 10px;
+.phone section.content ul li p.time {
+	font-size: 13pt;
+	font-family: InterstateLight;
 }
 
-.phone .container .vehicle img {
-	max-width: 50%;
-}
-
-.phone section .accordion {
-	width: 100%;
-	padding: 20px;
-}
-
-.phone section .accordion h3.title {
-	padding: 26px 0;
+.phone section.content ul li p.status {
+	margin: 10px 0;
 	font-size: 11pt;
-	text-transform: uppercase;
-	color: #fff;
-	font-family: InterstateLight;
-	font-weight: 100;
-	text-align: center;
-	border-bottom: 1px solid rgba(255,255,255,.6);
-	background: url(../img/down-arrow.png) no-repeat;
-	background-position: 98% 50%;
-	background-size: 12px;
-}
-
-.phone section .accordion h3.title.ui-accordion-header-active {
-	border-bottom: 1px solid #ff0000;
-	background: url(../img/up-arrow-red.png) no-repeat;
-	background-position: 98% 50%;
-	background-size: 12px;
-	color: #ff0000;
-}
-
-.phone section .accordion .content {
-	border-bottom: 1px solid #ff0000;
-}
-
-.phone section .accordion .content .wrap {
-	position: relative;
-	margin: 40px 0;
-	padding: 20px;
-	border: 1px solid rgba(255,255,255,.4);
-	z-index: -10;
-}
-
-.phone section .accordion .content .wrap img {
-	position: absolute;
-	top: -15px;
-	left: 0;
-	right: 0;
-	width: 33px;
-	margin: 0 auto;
-	outline: 20px solid #000;
-	z-index: -10;
-}
-
-.phone section .accordion .content .wrap h4 {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: 10pt;
-	font-family: InterstateLight;
-	font-weight: 100;
-	z-index: 10;
-}
-
-.phone section .accordion .content .wrap .details {
-	display: flex;
-	flex-direction: row;
-}
-
-.phone section .accordion .content .wrap .details .vehicle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 33.3333333333%;
-	padding: 10px 60px;
-	text-align: center;
-}
-
-.phone section .accordion .content .wrap .details .vehicle:first-child {
-	display: none;
-}
-
-.phone section .accordion .content .wrap .details .vehicle h3 {
-	font-size: 12.5pt;
 	font-family: InterstateBold;
-	color: #2995cc;
+	color: #2996cd;
+	text-transform: uppercase;
 }
 
-.phone section .accordion .content .wrap .details .vehicle p {
-	font-size: 12.5pt;
-	font-family: InterstateLight;
-	font-weight: 100;
-	color: #fff;
+.phone section.content ul li p.status.live {
+	color: #d81c24;
+}
+
+.phone section.content ul hr {
+	height: 1px;
+	width: 70%;
+	margin: 20px auto;
+	border: none;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,.8) 35%, rgba(255,255,255,.8) 65%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.phone > hr {
+	position: absolute;
+	bottom: 8%;
+	width: 100%;
+	height: 1px;
+	margin-top: 10px; 
+	border: none;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,.8) 35%, rgba(255,255,255,.8) 65%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
 }
 
 .phone footer {
@@ -346,6 +275,7 @@ hr {
 	height: 80%;
 	width: 1px;
 	margin: 0;
+	border: none;
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,.5) 35%, rgba(255,255,255,.5) 65%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,.5) 35%,rgba(255,255,255,.5) 65%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,.5) 35%,rgba(255,255,255,.5) 65%,rgba(255,255,255,0) 100%);
@@ -394,4 +324,16 @@ hr {
 	width: 20px;
 	background: url(../img/red-arrow.png) no-repeat center center;
 	background-size: 8px; 
+}
+
+@media only screen and (min-width : 375px) {
+
+}
+
+@media only screen and (min-width : 414px) {
+
+}
+
+@media only screen and (min-width : 1024px) {
+
 }

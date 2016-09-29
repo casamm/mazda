@@ -143,7 +143,7 @@
 
       }); 
       //# 1
-     $("#accordion").append(html); 
-
+     $("#accordion_phone").append(html); 
+     $("#accordion_desktop").append(html); 
 
    }

@@ -111,6 +111,7 @@
 .phone .menu-overlay hr {
 	position: initial;
 	width: 65%;
+	height: 1px;
 	margin: 20px 0;
 }
 
