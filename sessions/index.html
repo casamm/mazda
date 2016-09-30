@@ -6,7 +6,8 @@
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/alert.css">
 <link rel="stylesheet" type="text/css" href="css/phone.css">
 <link rel="stylesheet" type="text/css" href="css/desktop.css">
 <script src="js/jquery-1.12.4.js"></script>
@@ -171,15 +172,23 @@
 	</footer>
 </div>
 
-<script type="text/javascript">
-	$(".menu").click(function() {
-	  $(".bar").toggleClass("animation");
-	  $(".menu-overlay").toggleClass("show");
-	  $(".desktop .title").toggleClass("invisible");
-	  $("header").toggleClass("background");
-	});
-</script>
-<script src="js/dropdown.js"></script>
+<div class="alert">
+	<header></header>
+	<div class="content">
+		<h1>Sesión <span>M&#123;zd&#123; 3</span> Hatchback</h1>
+		<p class="time">09:15am - 09:30am</p>
+		<p class="status">Próximamente</p>
+		<hr>
+		<p class="save">¿Desea agregar esta sesión<br>a su calendario?</p>
+		<div class="buttons">
+			<div class="no"></div>
+			<div class="yes"></div>
+		</div>
+	</div>
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/alert.js"></script>
 <script src="js/detect.js"></script>
 </body>
 </html>

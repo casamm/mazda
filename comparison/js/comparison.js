@@ -41,7 +41,7 @@
  //Write_Acordeon("SKYACTIV-BODY : Diseño cabina","Cabina|Seguridad pasiva|Seguridad proactiva i-ACTIVSENSE|Seguridad activa|Equipamiento exterior|Equipamiento interior|MAZDA CONNECT|Otros|Seguridad antirrobo");
   		
 
-  	$( "#accordion" ).accordion({
+  	$( ".accordion" ).accordion({
 		    collapsible: true,
 		    active: false,
 		    heightStyle: "content"
@@ -143,7 +143,6 @@
 
       }); 
       //# 1
-     $("#accordion_phone").append(html); 
-     $("#accordion_desktop").append(html); 
+     $(".accordion").append(html); 
 
    }

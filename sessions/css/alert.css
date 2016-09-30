@@ -1,0 +1,124 @@
+.alert {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.9);
+	z-index: 900;
+	opacity: 0;
+	visibility: hidden;
+  -moz-transition: opacity .6s, visibility .6s;
+  -webkit-transition: opacity .6s, visibility .6s;
+  -o-transition: opacity .6s, visibility .6s;
+  transition: opacity .6s, visibility .6s;
+}
+
+.alert.show {
+	visibility: visible;
+	opacity: 1;
+  -moz-transition: opacity .6s, visibility .6s;
+  -webkit-transition: opacity .6s, visibility .6s;
+  -o-transition: opacity .6s, visibility .6s;
+  transition: opacity .6s, visibility .6s;
+}
+
+.alert header {
+	width: 100%;
+	height: 12%;
+	background: url(../img/back-arrow.png) no-repeat 3% 50%;
+	background-size: 15px;
+}
+
+.alert .content {
+	height: 88%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.alert .content h1 {
+	padding: 10px 0;
+	font-size: 15pt;
+	font-family: InterstateLight;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.alert .content h1 span {
+	font-family: MazdaRegular;
+}
+
+.alert .content p.time {
+	padding: 10px 0;
+	font-family: InterstateLight;
+	font-size: 13pt;
+}
+
+.alert .content p.status {
+	padding: 10px 0;
+	font-family: InterstateBold;
+	font-size: 11pt;
+	color: #2996cd;
+	text-transform: uppercase;
+}
+
+.alert .content hr {
+	height: 1px;
+	width: 100%;
+	margin: 50px auto;
+	border: none;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.8) 35%, rgba(255,255,255,.8) 65%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.alert .content p.save {
+	margin-bottom: 30px;
+	font-size: 16pt;
+	font-family: InterstateLight;
+	text-align: center;
+}
+
+.alert .content .buttons {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 15%;
+}
+
+.alert .content .buttons .no {
+	width: 50%;
+	height: 100%;
+	background: url(../img/ex.png) no-repeat 85% 50%;
+	background-size: 50px;
+}
+
+.alert .content .buttons .yes {
+	width: 50%;
+	height: 100%;
+	background: url(../img/check.png) no-repeat 15% 50%;
+	background-size: 50px;
+}
+
+@media only screen and (min-width : 768px) {
+	.alert .content .buttons .no {
+    background: url(../img/ex.png) no-repeat 90% 50%;
+    background-size: 50px; 
+	}
+	.alert .content .buttons .yes {
+    background: url(../img/check.png) no-repeat 10% 50%;
+    background-size: 50px; 
+	}
+}
+
+@media only screen and (min-width : 1024px) {
+	.alert .content hr {
+		width: 60%;
+	}
+}

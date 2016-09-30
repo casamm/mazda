@@ -1,0 +1,42 @@
+section.phone {
+	height: 75.5%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+section.phone .step {
+	text-align: center;
+}
+
+section.phone .step h1 {
+	margin: 20px 0;
+	color: #fff;
+	font-size: 20pt;
+	font-family: HandelLight;
+	font-weight: 100;
+}
+
+section.phone .step img {
+	width: 46px;
+}
+
+section.phone .step p {
+	padding: 20px;
+	color: #fff;
+	font-size: 11pt;
+	font-family: InterstateLight;
+	font-weight: 100;
+}
+
+@media only screen and (min-width : 768px) {
+	section.phone {
+		height: 81.5%;
+		width: 60%;
+		margin: 0 auto;
+	} 
+}
+@media only screen and (min-width : 1024px) {
+	section.phone {
+		height: 79.5%;
+	}
+}

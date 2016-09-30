@@ -6,12 +6,11 @@
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" type="text/css" href="css/compare_phone.css">
 <link rel="stylesheet" type="text/css" href="css/compare_desktop.css">
-<script src="js/jquery-1.12.4.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/vehicles.js" type="text/javascript"></script>
-<script src="js/comparison.js" type="text/javascript"></script>
+
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
@@ -78,13 +77,11 @@
 		</div>
 
 		<section id="sect">
-			<div id="accordion_phone" class="accordion">
+			<div class="accordion">
 			</div> <!-- #accordian -->
 		</section>
 
 	</section>
-
-	
 
 	<hr>
 
@@ -162,7 +159,7 @@
 		</div>
 
 		<section id="sect">
-			<div id="accordion_desktop" class="accordion">
+			<div class="accordion">
 			</div> <!-- #accordian -->
 		</section>
 	</section>
@@ -187,14 +184,11 @@
 	</footer>
 </div>
 
-<script type="text/javascript">
-	$(".menu").click(function() {
-	  $(".bar").toggleClass("animation");
-	  $(".menu-overlay").toggleClass("show");
-	  $(".desktop .title").toggleClass("invisible");
-	  $("header").toggleClass("background");
-	});
-</script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/vehicles.js" type="text/javascript"></script>
+<script src="js/comparison.js" type="text/javascript"></script>
+<script src="js/menu.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/detect.js"></script>

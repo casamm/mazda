@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" type="text/css" href="css/chat_phone.css">
 <link rel="stylesheet" type="text/css" href="css/chat_desktop.css">
 <script src="js/jquery-1.12.4.js"></script>
@@ -125,36 +125,67 @@
 	</div>
 
 	<section class="content">
-		<div class="top-arrow">
-			<span></span>
-		</div>
-		<ul>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 2</span></h1>
-				<p class="time">09:00am - 09:15am</p>
-				<p class="status live">En Vivo Ahora</p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 3</span> Hatchback</h1>
-				<p class="time">09:15am - 09:30am</p>
-				<p class="status">Proximamente</p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 3</span> Sedán</h1>
-				<p class="time">09:30am - 09:45am</p>
-				<p class="status">Proximamente</p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 6</span></h1>
-				<p class="time">10:00am - 10:15am</p>
-				<p class="status">Próximamente</p>
-			</li>
-		</ul>
-		<div class="bottom-arrow">
-			<span></span>
+		<div class="container">
+			<ul class="chat">
+				<li>
+					<p class="username">Usuario 12</p>
+					<p class="text">¿Qué más opciones existen para el motor?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 12</p>
+					<p class="text">¿Qué más opciones existen para el motor?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 12</p>
+					<p class="text">¿Qué más opciones existen para el motor?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 12</p>
+					<p class="text">¿Qué más opciones existen para el motor?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+				<li>
+					<p class="username">Usuario 20</p>
+					<p class="text">¿Cuántas puertas tiene el mazda 2?</p>
+				</li>
+			</ul>
+			<div class="wrap">
+				<div class="vid">
+					<img src="img/vid-placeholder-desktop.png">
+				</div>
+				<div class="write">
+					<p class="username">Mi Usuario</p>
+					<textarea>Me gustaría saber más acerca del interior del Mazda 2</textarea>
+					<button>Enviar</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -178,15 +209,7 @@
 	</footer>
 </div>
 
-<script type="text/javascript">
-	$(".menu").click(function() {
-	  $(".bar").toggleClass("animation");
-	  $(".menu-overlay").toggleClass("show");
-	  $(".desktop .title").toggleClass("invisible");
-	  $("header").toggleClass("background");
-	});
-</script>
-<script src="js/dropdown.js"></script>
+<script src="js/menu.js"></script>
 <script src="js/detect.js"></script>
 </body>
 </html>
