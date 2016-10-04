@@ -118,6 +118,14 @@
 	text-transform: uppercase;
 }
 
+.iframe-chat
+{
+	width:100%;
+	width:100vw;
+	height: 42%;
+	height: 42vh;
+}
+
 @media only screen and (min-width : 1024px) {
 	.phone section.content .container {
 		padding: 0 70px;
