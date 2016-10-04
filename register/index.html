@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="google-signin-client_id" content="82592990920-e1ana6tp6aaikrl7j8koh9jgp1hcuia5.apps.googleusercontent.com">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<link rel="stylesheet" type="text/css" href="css/fonts.css">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 <script src="https://apis.google.com/js/api:client.js"></script>
@@ -23,19 +23,21 @@
 	<h2>Registro</h2>
 </div>
 <section>
-	<h3>Nombre Completo</h3>
-	<input type="text" name="nombre" autocorrect="off" value="">
-	<hr>
-	<h3>Email</h3>
-	<input type="email" name="email" autocorrect="off" autocapitalize="none" value="">
-	<hr>
-	<h3>Contraseña</h3>
-	<input type="password" name="password" autocorrect="off" autocapitalize="none" value="">
-	<hr>
-	<h3>Confirmar Contraseña</h3>
-	<input type="password" name="password" autocorrect="off" autocapitalize="none" value="">
-	<hr>
-	<button>Ingresar</button>
+	<form action="../Chat/register.php" method="post" onsubmit="return form_submit()"> 
+		<h3>Nombre Completo</h3>
+		<input type="text" name="uname" autocorrect="off" value="">
+		<hr>
+		<h3>Email</h3>
+		<input type="email" name="email" autocorrect="off" autocapitalize="none" value="">
+		<hr>
+		<h3>Contraseña</h3>
+		<input type="password" name="upass" autocorrect="off" autocapitalize="none" value="">
+		<hr>
+		<h3>Confirmar Contraseña</h3>
+		<input type="password" name="rpass" autocorrect="off" autocapitalize="none" value="">
+		<hr>
+		<input type="submit" value="Ingresar" >
+	</form>
 </section>
 <footer>
 	<hr>
