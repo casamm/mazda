@@ -1,0 +1,160 @@
+body {
+	position: relative;
+}
+.phone {
+	height: 100%;
+	width: 100%;
+}
+
+.phone section.content {
+	height: 100%;
+	background: url(../img/bg-phone.png) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed; 
+}
+
+.phone section.content header {
+	position: absolute;
+	top: 12%;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(73,6,25,.8);
+  z-index: 10;
+}
+
+.phone section.content header h1 {
+	text-transform: uppercase;
+	font-size: 18.3pt;
+	font-family: HandelLight;
+	font-weight: 100;
+	color: #fff;
+}
+
+.phone section.content .car-select {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 88%;
+}
+
+.phone section.content .car-select a {
+  position: absolute;
+  right: 30px;
+  top: 15%;
+  font-family: InterstateLight;
+  font-size: 13pt;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.phone section.content .car-select a:after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background: url(../img/right-arrow.png) no-repeat center center;
+  background-size: 8px;
+}
+
+.phone section.content .car-select .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.phone section.content .car-select .gallery-top {
+  height: 100%;
+  width: 100%;
+}
+
+.phone section.content .car-select .gallery-thumbs {
+  bottom: 21%;
+  height: 12%;
+  background: url(../img/tile.png) repeat;
+}
+
+.phone section.content .car-select .gallery-thumbs .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.phone section.content .car-select .swiper-slide p {
+  font-size: 8pt;
+  font-family: MazdaRegular;
+  color: #fff;
+}
+
+.phone section.content .car-select .gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+  border-left: 1px solid #86092c;
+  border-right: 1px solid #86092c;
+  border-top: 5px solid #86092c;
+}
+
+.phone section.content .car-select .gallery-thumbs .swiper-slide-active p {
+  color: #86092c;
+}
+
+.phone section.content .car-select .right-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 9.2%;
+  height: 12%;
+  width: 25%;
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+  z-index: 90;
+}
+
+.phone section.content .car-select .right-arrow span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(../img/right-arrow.png) no-repeat 85% 50%;
+  background-size: 12px;
+}
+
+.phone section.content .car-select .left-arrow {
+  position: absolute;
+  left: 0;
+  bottom: 9%;
+  height: 12%;
+  width: 25%;
+  background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+  z-index: 90;
+}
+
+.phone section.content .car-select .left-arrow span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(../img/left-arrow.png) no-repeat 15% 50%;
+  background-size: 12px;
+}
+
+.phone section.content .car-select .swiper-button-disabled span {
+  opacity: .5;
+}
+
+.phone > hr,
+.phone footer {
+  z-index: 10;
+}
