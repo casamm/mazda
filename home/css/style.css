@@ -56,19 +56,19 @@ section .title {
 }
 
 section .title h2 {
-	font-size: 15.3pt;
+	font-size: 15.5pt;
 	font-family: InterstateLight;
 	font-weight: 100;
 	text-transform: uppercase;
 }
 
 section .title h1 {
-	font-size: 35pt;
+	font-size: 36pt;
 	font-family: InterstateBold;
 }
 
 section .title p {
-	font-size: 8pt;
+	font-size: 9pt;
 	font-family: InterstateLight;
 	font-weight: 100;
 	color: #2995cc;
@@ -118,7 +118,7 @@ footer a:after {
 		padding-right: 40px;
 	}
 	footer {
-		padding-right: 55px;
+		padding-right: 60px;
 	}
 }
 
