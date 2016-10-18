@@ -48,7 +48,7 @@
 
 .phone section.content .container .vid {
 	position: relative;
-	height: 40%;
+	height: 60%;
 	width: 100%;
 	overflow: hidden;
 }
@@ -122,8 +122,14 @@
 {
 	width:100%;
 	width:100vw;
-	height: 42%;
-	height: 42vh;
+	height: 28%;
+	height: 28vh;
+}
+
+.iframe-video
+{
+	height: 48vh;
+    width: 100vw;
 }
 
 @media only screen and (min-width : 1024px) {

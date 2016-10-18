@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="../css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/phone_vehicle.css">
 <link rel="stylesheet" type="text/css" href="css/desktop_vehicle.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-<div id="phone" class="phone">
+<div id="phone" class="phone hidden">
 	<header>
 		<div class="menu">
 			<div class="bar one"></div>
@@ -32,7 +33,7 @@
 		<hr>
 		<a href="../vehicles/index.html">Vehículos</a>
 		<hr>
-		<a href="../comparison/index.html">Comparativo</a>
+		<a href="../comparison/index.html">Comparador</a>
 		<hr>
 		<a href="../guide/index.html">Ayuda</a>
 	</div>
@@ -116,7 +117,7 @@
 	</footer>
 </div>
 
-<div id="desktop" class="desktop">
+<div id="desktop" class="desktop hidden">
 
 	<header>
 		<div class="menu">
@@ -134,31 +135,99 @@
 			<a href="../pabellon360/index.html">Pabellón 360</a>
 			<a href="../sessions/index.html">Sesiónes en Vivo</a>
 			<a href="../vehicles/index.html">Vehículos</a>
-			<a href="../comparison/index.html">Comparativo</a>
+			<a href="../comparison/index.html">Comparador</a>
 			<a href="../guide/index.html">Ayuda</a>
 		</div>
 	</div>
 
+
+<style type="text/css">
+  .gallery-top-desktop {
+    height: 750px;
+    width: 1200px;
+}
+
+.margen-izq
+{
+  padding-left: 168px;
+}
+
+</style>
+
 	<section class="content">
 	 <div class="container">
+
+
+
+
+ <div class="car-select">
+      <div class="icon"></div>
+      <div class="swiper-container gallery-top-desktop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(img/010000.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010005.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010010.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010015.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010020.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010025.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010030.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010035.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010040.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010045.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010050.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010055.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010060.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010065.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010070.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010075.jpg)">
+          </div>
+           <div class="swiper-slide" style="background-image:url(img/010080.jpg)">
+          </div>
+          <div class="swiper-slide" style="background-image:url(img/010083.jpg)">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container gallery-thumbs-desktop" style="display:none">
+        <div class="swiper-wrapper">
+        </div>
+      </div>
+    </div>
+
+
       <div class="view360">
         <div class="icon"></div>
-        <img src="img/img1.png">
+       
       </div>
-      <div>
+      <div class="margen-izq">
         <img src="img/img2.png">
       </div>
-      <div>
+      <div class="margen-izq">
         <img src="img/img3.png">
       </div>
-      <div>
+      <div class="margen-izq">
         <img src="img/img4.png">
       </div>
-      <div>
+      <div class="margen-izq">
         <img src="img/img5.png">
       </div>
       <form>
         <p>¿Desea que un asesor lo contacte para agendar un Test Drive?</p>
+        <iframe src="http://mazdaapps.co/salonautomovil/GeoLocation/index.html"  height="600px" width="850px"  frameborder="0"></iframe>
         <div>
           <p>Cuidad</p>
           <select>
@@ -222,5 +291,7 @@
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/menu.js"></script>
 <script src="../js/detect.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swipe-custom.js"></script>
 </body>
 </html>

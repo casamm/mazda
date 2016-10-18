@@ -97,6 +97,14 @@
 	text-transform: uppercase;
 }
 
+.iframe-chat-desktop
+{
+    width: 30%;
+    width: 30vw;
+    height: 82%;
+    height: 82vh;
+}
+
 @media only screen and (max-width : 1280px) {
 
 }
