@@ -6,15 +6,21 @@
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="../css/menu.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/dropdown.css">
-<link rel="stylesheet" type="text/css" href="css/phone.css">
-<link rel="stylesheet" type="text/css" href="css/desktop.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/compare_phone.css">
+<link rel="stylesheet" type="text/css" href="css/compare_desktop.css">
+
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
 <body>
+<<<<<<< HEAD
 <div id="phone" class="phone hidden">
+=======
+<div id="phone" class="phone">
+
+>>>>>>> origin/master
 	<header>
 		<div class="menu">
 			<div class="bar one"></div>
@@ -25,7 +31,7 @@
 		</div>
 		<div class="logo"></div>
 	</header>
-
+	
 	<div class="menu-overlay">
 		<a href="../pabellon360/index.html">Pabellón 360</a>
 		<hr>
@@ -42,25 +48,10 @@
 		<header>
 			<h1>Comparativo</h1>
 		</header>
-		<ul>
-			<div class="line"></div>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh1" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
+
+		<div class="container">
+			<div class="vehicle">
+				<div class="dropdown" >
 					<select id="veh2" onchange="change_vehicle();">
 				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
 						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
@@ -70,13 +61,13 @@
 						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
 						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
 			    </select>
-			  </div>
-				<img src="img/car2.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
+				</div>
+				<img  id="img_veh2"  src="img/Mazda6_v2.png">
+			</div>
+			<hr>
+			<div class="vehicle">
 				<div class="dropdown">
-					<select id="veh3" onchange="change_vehicle();">
+			    <select id="veh3" onchange="change_vehicle();">
 				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
 						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
 						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
@@ -85,76 +76,18 @@
 						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
 						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
 			    </select>
-			  </div>
-				<img src="img/car3.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh4" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh5" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car2.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh6" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car3.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh7" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<a href="../comparison/compare.html">Comparar</a>
-			</li>
-		</ul>
+				</div>
+				<img  id="img_veh3" src="img/Mazda6_v2.png">
+			</div>
+		</div>
+
+		<section id="sect">
+			<div class="accordion">
+			</div> <!-- #accordian -->
+		</section>
+
 	</section>
-	
+
 	<hr>
 
 	<footer>
@@ -170,7 +103,8 @@
 			<h2>00:15</h2>
 		</div>
 	</footer>
-</div>
+</div> <!-- .phone -->
+
 
 <div id="desktop" class="desktop hidden">
 
@@ -196,25 +130,10 @@
 	</div>
 
 	<section class="content">
-		<ul>
-			<div class="line"></div>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh1" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
+
+		<div class="container">
+			<div class="vehicle">
+				<div class="dropdown" >
 					<select id="veh2" onchange="change_vehicle();">
 				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
 						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
@@ -224,13 +143,13 @@
 						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
 						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
 			    </select>
-			  </div>
-				<img src="img/car2.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
+				</div>
+				<img  id="img_veh2"  src="img/Mazda6_v2.png">
+			</div>
+			<hr>
+			<div class="vehicle">
 				<div class="dropdown">
-					<select id="veh3" onchange="change_vehicle();">
+			    <select id="veh3" onchange="change_vehicle();">
 				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
 						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
 						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
@@ -239,74 +158,15 @@
 						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
 						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
 			    </select>
-			  </div>
-				<img src="img/car3.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh4" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh5" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car2.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh6" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car3.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<div class="dropdown">
-					<select id="veh7" onchange="change_vehicle();">
-				    <option value="Mazda6GTLX">M&#123;zd&#123; 6 2,5L Grand Touring LX</option>
-						<option value="MazdaCX5PrimeMT">M&#123;zd&#123; CX5,Prime MT</option>
-						<option value="MazdaCX5PrimeAT">M&#123;zd&#123; CX5,Prime AT</option>
-						<option value="MazdaCX5Touring4x2">M&#123;zd&#123; CX5,Touring 4x2</option>
-						<option value="MazdaCX5TouringAWD">M&#123;zd&#123; CX5,Touring AWD</option>
-						<option value="MazdaCX5GranTouring">M&#123;zd&#123; CX5,Grand Touring 2,5L. AWD</option>
-						<option value="MazdaCX5GrandTouringLX">M&#123;zd&#123; CX5,Grand Touring LX 2,5L. AWD</option>
-			    </select>
-			  </div>
-				<img src="img/car1.png">
-				<input type="checkbox" name="car" value=""> 
-			</li>
-			<li class="vehicle">
-				<a href="../comparison/compare.html">Comparar</a>
-			</li>
-		</ul>
+				</div>
+				<img  id="img_veh3" src="img/Mazda6_v2.png">
+			</div>
+		</div>
+
+		<section id="sect">
+			<div class="accordion">
+			</div> <!-- #accordian -->
+		</section>
 	</section>
 
 	<hr>
@@ -331,8 +191,13 @@
 
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/jquery-ui.js"></script>
-<script src="../js/menu.js"></script>
 <script src="../js/detect.js"></script>
+<script src="../js/menu.js"></script>
+<script src="js/vehicles.js"></script>
+<script src="js/comparison.js"></script>
+<script src="js/accordion.js"></script>
 <script src="js/dropdown.js"></script>
+
 </body>
+
 </html>
