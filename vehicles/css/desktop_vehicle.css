@@ -30,6 +30,14 @@
   color: #fff;
 }
 
+.desktop header .title h1 {
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-family: MazdaRegular;
+    font-weight: 100;
+    color: #fff;
+}
+
 .desktop section.content header h1 span {
   font-family: MazdaBold;
   color: #ff0000;
