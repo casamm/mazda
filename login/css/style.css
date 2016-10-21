@@ -143,6 +143,12 @@ footer h3 {
 	text-transform: uppercase;
 }
 
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer .social img {
 	width: 30px;
 }
