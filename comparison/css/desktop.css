@@ -22,6 +22,7 @@
   padding-bottom: 20px;
   margin: 0 auto;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .desktop .content ul li {

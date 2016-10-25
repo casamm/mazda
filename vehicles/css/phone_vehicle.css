@@ -44,6 +44,7 @@ body {
   padding-top: 15%;
   padding-bottom: 20%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .phone section.content .container > div {

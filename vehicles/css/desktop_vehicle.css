@@ -54,6 +54,7 @@
   padding-bottom: 6%;
   margin: 0 auto;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .desktop section.content .container > div {

@@ -24,6 +24,7 @@
 	width: 30%;
 	height: 100%;
 	overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .desktop section.content .container ul.chat li {
