@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/phone.css">
 <link rel="stylesheet" type="text/css" href="css/desktop.css">
+<script type="text/javascript" src="swfobject.js"></script>
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
@@ -37,7 +38,7 @@
 		<a href="../guide/index.html">Ayuda</a>
 	</div>
 
-	<section class="content">
+	<section class="content" id="container_phone" style="z-index:2">
 		<header>
 			<h1>Pabellón 360</h1>
 		</header>
@@ -98,7 +99,7 @@
 		</div>
 	</div>
 
-	<section class="content">
+	<section class="content" id="container_desktop" style="z-index:2";>
 		<div class="left"></div>
 		<div class="right"></div>
 		<nav>
@@ -137,6 +138,32 @@
 		</div>
 	</footer>
 </div>
+<script type="text/javascript" src="pano2vr_player.js"></script>
+<script type="text/javascript">
+
+// is a mobilde device or not
+
+testExp = new RegExp('Android|webOS|iPhone|iPad|' +
+    		       'BlackBerry|Windows Phone|'  +
+    		       'Opera Mini|IEMobile|Mobile' , 
+    		      'i');
+  
+  if (testExp.test(navigator.userAgent))
+       pano=new pano2vrPlayer("container_phone");  // create the panorama player with the container
+  else
+       pano=new pano2vrPlayer("container_desktop");  // create the panorama player with the container
+
+		window.addEventListener("load", function() {
+			pano.readConfigUrlAsync("pano.xml");
+		});
+		</script>
+		
+		
+		
+
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
 
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/jquery-ui.js"></script>

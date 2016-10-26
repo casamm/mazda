@@ -8,6 +8,11 @@
 	display: flex;
 	justify-content: center;
 	background: rgba(0,0,0,.8);
+	z-index: 1800;
+	background: -moz-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: -o-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.8));
 }
 
 .phone header .menu {
@@ -212,6 +217,10 @@
 	justify-content: center;
 	transition: background-color 0.6s ease;
 	z-index: 800;
+	background: -moz-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: -o-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8));
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.8));
 }
 
 .desktop header.background {
@@ -344,6 +353,7 @@
 	justify-content: center;
 	align-items: center;
 	background: rgba(64,42,48,.8);
+	z-index: 3;
 }
 
 .desktop footer hr {

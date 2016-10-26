@@ -144,9 +144,15 @@
 
 	<section class="content">
 	 <div class="container">
-      <div class="view360">
+      <div class="view360" id="360_desktop">
         <div class="icon"></div>
-        <img src="img/img1.png">
+        <!-- <img src="img/img1.png"> -->
+
+        <iframe id="iframe_desktop" src="360exteriors/360_cx-9.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
+        
+
+    <!-- <******************* 360 end *************** -> -->
+
       </div>
       <div>
         <img src="img/vehicles/MazdaCX-9/1.jpg">
@@ -228,5 +234,17 @@
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/menu.js"></script>
 <script src="../js/detect.js"></script>
+
+
+<script >
+$(document).ready(function() {
+  var iframe = document.getElementById("iframe_desktop");
+  iframe.width = $("#360_desktop").width();
+  iframe.height = iframe.width * 0.56;
+ 
+});
+
+</script>
+
 </body>
 </html>
