@@ -27,18 +27,21 @@
 	</header>
 
 	<div class="menu-overlay">
-		<a href="../pabellon360/index.html">Pabellón 360</a>
+		<a href="#" onclick="ChangeContent(0);">Pabellón 360</a>
 		<hr>
-		<a href="../sessions/index.html">Sesiónes en Vivo</a>
+		<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
 		<hr>
-		<a href="../vehicles/index.html">Vehículos</a>
+		<a href="#" onclick="ChangeContent(2);">Vehículos</a>
 		<hr>
-		<a href="../comparison/index.html">Comparativo</a>
+		<a href="#" onclick="ChangeContent(3);">Comparativo</a>
 		<hr>
-		<a href="../guide/index.html">Ayuda</a>
+		<a href="#" onclick="ChangeContent(4);">Ayuda</a>
 	</div>
 
-	<section class="content" id="container_phone" style="z-index:2">
+
+	<iframe src="http://mazdaapps.co/salonautomovil/vehicles/index.html" class="overlay-content" frameBorder="0"></iframe>
+
+<!-- 	<section class="content" id="container_phone" style="z-index:2">
 		<header>
 			<h1>Pabellón 360</h1>
 		</header>
@@ -59,7 +62,8 @@
 			</ul>
 			<div class="right"></div>
 		</nav>
-	</section>
+	</section> -->
+
 	<hr>
 	<footer>
 		<div class="next">
@@ -91,13 +95,17 @@
 
 	<div class="menu-overlay">
 		<div class="wrap">
-			<a href="../pabellon360/index.html">Pabellón 360</a>
-			<a href="../sessions/index.html">Sesiónes en Vivo</a>
-			<a href="../vehicles/index.html">Vehículos</a>
-			<a href="../comparison/index.html">Comparativo</a>
-			<a href="../guide/index.html">Ayuda</a>
+			<a href="#" onclick="ChangeContent(0);">Pabellón 360</a>
+			<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
+			<a href="#" onclick="ChangeContent(2);">Vehículos</a>
+			<a href="#" onclick="ChangeContent(3);">Comparativo</a>
+			<a href="#" onclick="ChangeContent(4);">Ayuda</a>
 		</div>
 	</div>
+
+
+	<!-- iframe with the content of the menu-->
+    <iframe  id="iframe-content"  src=""  frameBorder="0" class="overlay-content"></iframe>
 
 	<section class="content" id="container_desktop" style="z-index:2";>
 		<div class="left"></div>
@@ -118,6 +126,7 @@
 			</ul>
 		</nav>
 	</section>
+
 
 	<hr>
 
@@ -156,15 +165,10 @@ testExp = new RegExp('Android|webOS|iPhone|iPad|' +
 		window.addEventListener("load", function() {
 			pano.readConfigUrlAsync("pano.xml");
 		});
+
 		</script>
 		
-		
-		
-
-		<noscript>
-			<p><b>Please enable Javascript!</b></p>
-		</noscript>
-
+<script src="js/app.js"></script>
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/menu.js"></script>

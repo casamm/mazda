@@ -68,7 +68,7 @@
       <label borderalpha="1" border="1" height="20" textalpha="1" wordwrap="1" background="1" width="180" enabled="0" bordercolor="0x000000" backgroundalpha="1" textcolor="0x000000" borderradius="1" backgroundcolor="0xffffff"/>
       <polystyle mode="0" borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" handcursor="1" backgroundcolor="0x0000ff"/>
       <hotspot description="" url="{node4}" id="Point01" skinid="ht_node" tilt="-3.06" pan="80.13" title="" target="50.4131/-5.70526/70"/>
-      <polyhotspot description="" url="../vehicles/cx-5.html" id="Poly01" title="" target="_self">
+      <polyhotspot description="" url="javascript:ChangeContent(2);" id="Poly01" title="" target="_self">
         <vertex tilt="6.62" pan="17.26"/>
         <vertex tilt="6.18" pan="6.29"/>
         <vertex tilt="1.39" pan="-5.27"/>

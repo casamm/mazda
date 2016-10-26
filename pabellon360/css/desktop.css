@@ -63,3 +63,12 @@
 .desktop section.content nav ul li:last-child {
 	margin-right: 0; 
 }
+
+.overlay-content
+{
+	height:100%;
+	width:100%;
+	position: absolute;
+	z-index: 4;
+}
+
