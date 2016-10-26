@@ -8,3 +8,5 @@
 *.js
 
 comparison/compare.html
+
+*.php

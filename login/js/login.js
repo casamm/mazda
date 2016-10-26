@@ -16,67 +16,125 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-          //document.getElementById('name').innerText = "Signed in: " +  googleUser.getBasicProfile().getName();
+
+            var form = document.createElement("form");
+            var element1 = document.createElement("input"); 
+            var element2 = document.createElement("input");  
+
+            form.method = "POST";
+            form.action = "../Chat/login.php";   
+
+            element1.value=googleUser.getBasicProfile().getName();
+            element1.name="uname";
+            form.appendChild(element1);  
+
+            element2.value="1";
+            element2.name="guest";
+            form.appendChild(element2);
+
+            document.body.appendChild(form);
+
+            form.submit();
+
         }, function(error) {
           alert(JSON.stringify(error, undefined, 2));
         });
   }
 
-   function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
-    }
-  }
+  
 
+
+
+//FACEBOOK ************
+
+window.fbAsyncInit = function() {
+         FB.init({
+           appId      : '191798194579784', // App ID
+           status     : true, // check login status
+           cookie     : true, // enable cookies to allow the server to access the session
+           xfbml      : true  // parse XFBML
+         });
  
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
-
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '191798194579784',
-    cookie     : true,  // enable cookies to allow the server to access 
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.5' // use graph api version 2.5
-  });
-
-
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-
-  };
-
-  // Load the SDK asynchronously
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=191798194579784";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+        /* Revisar es status del usuario al entrar a la pagina */
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') { // Esta conectado
+            var uid = response.authResponse.userID;
+            var accessToken = response.authResponse.accessToken;
+                login();
+          } else if (response.status === 'not_authorized') { // La aplicacion no esta atoriada
+                logout();
+          } else { // No esta conectado
+                logout();
+          }
+         });
+ 
+         /* Eventos para capturar el login del usuario */
+         FB.Event.subscribe('auth.login', function(response) { // cuando autoriza conexion
+             login();
+         });
+ 
+       /* Funcion que se ejecuta cuando ya se autoriza la conexion */
+       function login(){
+           FB.api('/me', function(response) {
+                // document.getElementById('login').style.display = "block";
+                // document.getElementById('name').style.display = "block";
+                // document.getElementById('login').innerHTML = response.name + " estás conectado!";
+                // document.getElementById('fb-login').style.display = "none";
+                // fqlQuery();
 
 
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Gracias por registrarse, con Facebook ' + response.name + '!';
-    });
-  }
+                 var form = document.createElement("form");
+                  var element1 = document.createElement("input"); 
+                  var element2 = document.createElement("input");  
+
+                  form.method = "POST";
+                  form.action = "../Chat/login.php";   
+
+                  element1.value=response.name;
+                  element1.name="uname";
+                  form.appendChild(element1);  
+
+                  element2.value="1";
+                  element2.name="guest";
+                  form.appendChild(element2);
+
+                  document.body.appendChild(form);
+
+                  form.submit();
+           });
+       }
+       /* Funcion que se ejecuta cuando aun no se hace la conexion con facebook */
+       function logout(){
+            document.getElementById('login').style.display = "none";
+            document.getElementById('name').style.display = "none";
+            document.getElementById('fb-login').style.display = "block";
+       }
+       /* Funcion para extraer algunos datos del susuario, como nombre y foto */
+       function fqlQuery(){
+           FB.api('/me', function(response) {
+                var query = FB.Data.query('select name, hometown_location, sex, pic_square from user where uid={0}', response.id);
+                query.wait(function(rows) {
+ 
+                  document.getElementById('name').innerHTML =
+                    'Your name: ' + rows[0].name + "<br />" +
+                    '<img src="' + rows[0].pic_square + '" alt="" />' + "<br />";
+                });
+           });
+       }
+       };
+        /* Funcion para abrir la ventanita y conectarse a facebook */
+        function facebookLogin() {
+            FB.login(function(response){
+                scope: 'email,user_birthday,status_update,publish_stream' // estos son los permisos que necesita la aplicacion
+            });
+        }
+ 
+       // Load the SDK Asynchronously
+       (function(d){
+          var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement('script'); js.id = id; js.async = true;
+          js.src = "//connect.facebook.net/en_US/all.js";
+          ref.parentNode.insertBefore(js, ref);
+        }(document));
+

@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="google-signin-client_id" content="82592990920-e1ana6tp6aaikrl7j8koh9jgp1hcuia5.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://apis.google.com/js/api:client.js"></script>
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
@@ -17,26 +20,35 @@
 <div class="title">
 	<h2>Registro</h2>
 </div>
-<section>
-	<form id="f1" action="../Chat/login.php" method="post" onsubmit="return form_submit()">
+<form id="f1" action="../Chat/login.php" method="post" onsubmit="return form_submit()">
+	<section>
 		<h3>Nombre</h3>
-		<input type="text" name="uname" autocorrect="off" autocapitalize="none" value="">
+		<input type="text" name="uname" autocorrect="off" autocapitalize="none" value="" required="true">
 		<hr>
 		<h3>Contraseña</h3>
-		<input type="password" name="upass" autocorrect="off" autocapitalize="none" value="">
+		<input type="password" name="upass" autocorrect="off" autocapitalize="none" value="" required="true">
 		<hr>
-		<input type="submit" value="Ingresar">
-	</form>
-</section>
+		<button type="submit">Ingresar</button>
+	</section>
+</form>
 <footer>
 	<hr>
 	<h3>Entra Con</h3>
 	<div class="social">
-		<img src="img/fb.png">
-		<img src="img/google.png">
+		<!-- <img src="img/fb.png" onclick="checkLoginState();"> -->
+		<img src="img/fb.png" onclick="facebookLogin();">
+		  <div id="gSignInWrapper">
+		    <div id="customBtn" class="customGPlusSignIn">
+		      <img src="img/google.png">
+		    </div>
+		  </div>
+		  <div id="name"></div>
 	</div>
 	<br>
     <p>No tienes usuario registrate <a href="../register/index.html">aquí</a>.</p>
+	<!--<div id="status"></div>-->
+	<script src="js/login.js"></script>
+	<script>startApp();</script>
 </footer>
 </body>
 
