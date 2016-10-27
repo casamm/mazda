@@ -81,7 +81,7 @@
 	align-items: center;
 	flex-direction: column;
 	background: rgba(0,0,0,.8);
-	z-index: 900;
+	z-index: 1800;
 	visibility: hidden;
 	opacity: 0;
   -moz-transition: opacity .6s, visibility .6s;
