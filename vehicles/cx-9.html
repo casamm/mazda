@@ -10,8 +10,8 @@
 <link rel="stylesheet" type="text/css" href="css/phone_vehicle.css">
 <link rel="stylesheet" type="text/css" href="css/desktop_vehicle.css">
 <link rel="stylesheet" type="text/css" href="css/styleMap.css">
-
 <script src="js/Concesionarios.js" type="text/javascript"></script>
+
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
@@ -143,8 +143,6 @@
 
 <div id="mapdesktop"></div>
 
- <!-- <iframe src="http://mazdaapps.co/salonautomovil/GeoLocation/index.html"  class="map-desktop" frameborder="0"></iframe> -->
-
         <div>
           <p>Cuidad</p>
           <input id="txtciudad-desk" type="text" name="" disabled>
@@ -213,7 +211,7 @@
 
 
 <input id ="idcon" type="hidden" value="0">
-<input id ="idciudad" type="hidden" value="0">
+<input id ="idsuc" type="hidden" value="0">
 
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/jquery-ui.js"></script>
@@ -232,19 +230,6 @@ $(document).ready(function() {
   iframe.height = iframe.width * 0.56;
  
 });
-
-function SeleccionaConcesionario(cons, ciudad, idciudad, idcon)
-{
-  $("#txtciudad-desk").val(ciudad);
-  $("#txtciudad-phon").val(ciudad);
-  
-  $("#txtconce-desk").val(cons);
-  $("#txtconce-phon").val(cons);
-
-  /* ids */
-  $("#idcon").val(idcon);
-  $("#idciudad").val(idciudad);
-}
 
 </script>
 

@@ -51,6 +51,12 @@
 	font-family: MazdaRegular;
 }
 
+header .container .vehicle .tipveh .ui-selectmenu-text,
+header .container .vehicle .tipveh h2 {
+	font-size: 13px;
+	font-family: MazdaRegular;
+}
+
 .desktop .container .vehicle .dropdown .ui-selectmenu-text:after {
 	content: '';
 	display: block;
@@ -109,7 +115,7 @@
 	top: -15px;
 	left: 0;
 	right: 0;
-	width: 33px;
+	width: 45px;
 	margin: 0 auto;
 	outline: 20px solid #000;
 	z-index: -10;
