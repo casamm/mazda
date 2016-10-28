@@ -146,3 +146,9 @@
   background: url(../img/right-arrow.png) no-repeat center center;
   background-size: 8px;
 }
+
+.map-desktop
+{
+  height: 500px;
+  width: 100%;
+}
