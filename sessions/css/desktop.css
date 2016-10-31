@@ -87,16 +87,18 @@
 	font-family: InterstateLight;
 }
 
-.desktop section.content ul li p.status {
+.desktop section.content ul li p.status a {
 	margin: 20px 0;
-	font-size: 15pt;
+	font-size: 13pt;
 	font-family: InterstateBold;
-	color: #2996cd;
+	color: #000;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
-.desktop section.content ul li p.status.live {
+.desktop section.content ul li p.status.live a {
 	color: #d81c24;
+	text-decoration: none;
 }
 
 .desktop section.content ul hr {
