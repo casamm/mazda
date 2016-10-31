@@ -86,11 +86,15 @@
             $("#" + list).append("<option value='MazdaCX9GrandTouringLX'>Grand Touring LX</option>");
             imgv.src = "img/CX9.png";
         } else if (veh == "Mazda3") {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             $("#" + list).append("<option value='Mazda3PrimeSed'>Prime-Sedán MT</option>");
 =======
             $("#" + list).append("<option value='Mazda3PrimeSedMT'>Prime-Sedán MT</option>");
 >>>>>>> origin/master
+=======
+            $("#" + list).append("<option value='Mazda3PrimeSed'>Prime-Sedán MT</option>");
+>>>>>>> Stashed changes
             $("#" + list).append("<option value='Mazda3PrimeSedDRIVE'>Prime-Sedán DRIVE</option>");
             $("#" + list).append("<option value='Mazda3TouringSedMT'>Touring-Sedán MT</option>");
             $("#" + list).append("<option value='Mazda3TouringSedDRIVE'>Touring-Sedán DRIVE</option>");
