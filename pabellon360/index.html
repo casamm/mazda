@@ -27,8 +27,6 @@
 	</header>
 
 	<div class="menu-overlay">
-		<a href="#" onclick="ChangeContent(0);">Pabellón 360</a>
-		<hr>
 		<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
 		<hr>
 		<a href="#" onclick="ChangeContent(2);">Vehículos</a>
@@ -39,7 +37,7 @@
 	</div>
 
 
-	<iframe id="iframe-content-phone"  src="http://mazdaapps.co/salonautomovil/vehicles/index.html" class="overlay-content" frameBorder="0"></iframe>
+	<iframe id="iframe-content-phone"  src="" class="overlay-content" frameBorder="0"></iframe>
 
 	<section class="content" id="container_phone" style="z-index:2">
 		<header>
@@ -83,29 +81,28 @@
 <div id="desktop" class="desktop hidden">
 
 	<header>
-		<div class="menu">
+		<div class="menu invisible">
 			<div class="bar one"></div>
 	    <div class="bar two"></div>
 		</div>
-		<div class="title">
-			<h1>Pabellón <span>360</span></h1>
-		</div>
-		<div class="logo"></div>
-	</header>
-
-	<div class="menu-overlay">
 		<div class="wrap">
-			<a href="#" onclick="ChangeContent(0);">Pabellón 360</a>
 			<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
 			<a href="#" onclick="ChangeContent(2);">Vehículos</a>
 			<a href="#" onclick="ChangeContent(3);">Comparativo</a>
 			<a href="#" onclick="ChangeContent(4);">Ayuda</a>
 		</div>
-	</div>
+		<div class="logo"></div>
+	</header>
 
 
 	<!-- iframe with the content of the menu-->
-    <iframe  id="iframe-content"  src=""  frameBorder="0" class="overlay-content"></iframe>
+	<div class="close-wrapper hidden">
+    <div class="menu" onclick="CloseOverlay()">
+      <div class="bar one animation"></div>
+      <div class="bar two animation"></div>
+    </div>
+  </div>
+  <iframe  id="iframe-content"  src=""  frameBorder="0" class="overlay-content hidden"></iframe>
 
 	<section class="content" id="container_desktop" style="z-index:2";>
 		<div class="left"></div>
@@ -142,8 +139,8 @@
 			<h2>M&#123;zd&#123; 3</h2>
 		</div>
 		<hr>
-		<div class="timer">
-			<h2>00:15</h2>
+		<div id="ContadorSession"  class="timer">
+			<h2>00:15</h2> 
 		</div>
 	</footer>
 </div>

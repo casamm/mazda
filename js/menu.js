@@ -1,6 +1,6 @@
-$(".menu").click(function() {
-  $(".bar").toggleClass("animation");
-  $(".menu-overlay").toggleClass("show");
-  $(".desktop .title").toggleClass("invisible");
-  $("header").toggleClass("background");
+$(".phone .menu").click(function() {
+  $(".phone .bar").toggleClass("animation");
+  $(".phone .menu-overlay").toggleClass("show");
+  // $(".desktop .title").toggleClass("invisible");
+  $(".phone header").toggleClass("background");
 });

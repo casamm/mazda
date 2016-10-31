@@ -315,3 +315,9 @@ section .accordion .content .wrap .details .vehicle p {
 	font-weight: 100;
 	color: #fff;
 }
+
+.sub-title
+{
+	font-size: 14px !important;
+}
+
