@@ -54,7 +54,7 @@
 }
 
 .desktop section.content .car-select .gallery-thumbs-desktop {
-  bottom: 16%;
+  bottom: 9%;
   height: 9%;
   background: url(../img/tile.png) repeat;
 }
@@ -91,7 +91,7 @@
 .desktop section.content .car-select .right-arrow {
   position: absolute;
   right: 0;
-  bottom: 7%;
+  bottom: 0;
   height: 9%;
   width: 10%;
   background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
@@ -112,7 +112,7 @@
 .desktop section.content .car-select .left-arrow {
   position: absolute;
   left: 0;
-  bottom: 7%;
+  bottom: 0;
   height: 9%;
   width: 10%;
   background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
