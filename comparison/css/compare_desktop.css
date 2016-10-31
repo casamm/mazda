@@ -9,13 +9,15 @@
 
 .desktop section.content {
 	height: 100%;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .desktop .container {
   position: absolute;
   top: 12%;
   height: 25%;
-	width: 100%;
+	width: 60%;
 	display: flex;
 	flex-direction: row;
 }
@@ -24,7 +26,7 @@
   position: absolute;
   top: 37%;
   height: 63%;
-  width: 100%;
+  width: 60%;
   overflow: scroll;
 }
 
