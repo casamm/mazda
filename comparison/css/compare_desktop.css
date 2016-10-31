@@ -114,13 +114,14 @@ header .container .vehicle .tipveh h2 {
 
 .desktop section .accordion .content .wrap img {
 	position: absolute;
-	top: -15px;
-	left: 0;
-	right: 0;
-	width: 45px;
-	margin: 0 auto;
-	outline: 20px solid #000;
-	z-index: -10;
+  top: -33px;
+  left: 0;
+  right: 0;
+  width: 65px;
+  margin: 0 auto;
+  z-index: -10;
+  border-radius: 100%;
+  border: 10px solid #000;
 }
 
 .desktop section .accordion .content .wrap h4 {
