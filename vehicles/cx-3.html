@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/phone_vehicle.css">
+<link rel="stylesheet" type="text/css" href="css/desktop_vehicle.css">
+<link rel="stylesheet" type="text/css" href="css/styleMap.css">
+<script src="js/Concesionarios.js" type="text/javascript"></script>
+
+<title>MAZDA | Salón Del Automóvil 2016</title>
+</head>
+
+<body>
+<div id="phone" class="phone hidden">
+
+	<section class="content">
+		<header>
+			<h1>M&#123;zd&#123; <span>CX-3</span></h1>
+		</header>
+    <div class="container">
+      <div class="view360">
+        <div class="icon"></div>
+        <img src="img/img1.png">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/1.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/2.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/3.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/4.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/5.jpg">
+      </div>
+      <form id="form2" onsubmit="EnviarFormPhone(); return false">
+        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
+
+<div id="mapphone"></div>
+
+        <div>
+           <p>Cuidad</p>
+           <input id="txtciudad-phone" type="text" name="ciudad" readonly>
+        </div>
+        <div>
+            <p>Concesionario</p>
+            <input id="txtconce-phone" type="text" name="" disabled>
+        </div>
+          <div>
+          <p>Nombre</p>
+          <input id="txtNombre-phone" type="text" name="nombre" required>
+        </div>
+        <div>
+          <p>Apellido</p>
+           <input id="txtApellido-phone" type="text" name="apellido" required>
+        </div> 
+        <div>
+          <p>Tipo de documento</p>
+          <select id="item1_select_1-phone" data-hint="" name="tdocumento" required style="color:white">
+            <option selected id="item1_0_option" value="">
+              Seleccionar...
+            </option>
+            <option id="item1_1_option" value="CC">
+              C&eacute;dula de Ciudadan&iacute;a
+            </option>
+            <option id="item1_2_option" value="CE">
+              C&eacute;dula de Extranjer&iacute;a
+            </option>
+            <option id="item1_3_option" value="CD">
+              C&eacute;dula Diplom&aacute;tica
+            </option>
+            <option id="item1_4_option" value="PD">
+              Pasaporte Diplom&aacute;tico
+            </option>
+            <option id="item1_5_option" value="PP">
+              Pasaporte
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <p>No de documento</p>
+          <input type="text" name="numodoc" required>
+        </div>
+        <div>
+          <p>Teléfono de contacto</p>
+          <input type="number" name="telefono" required>
+        </div>
+       <div>
+          <p>Correo electronico</p>
+          <input type="mail" name="mail" required>
+        </div> 
+        <div>
+          <button type="submit"><p>Enviar</p></button>
+        </div>
+         <div id="respuestaform-phone" style="display: none;">
+        </div>
+
+<input id ="idcon-phone" name="codcon" type="hidden" value="0">
+<input id ="idsuc-phone" name="codsuc" type="hidden" value="0">
+<input id ="idmod-phone" name="modelo" type="hidden" value="25">
+
+      </form>
+    </div>
+	</section>
+	
+	<hr>
+
+	<footer>
+		<div class="next">
+			<h2>Próxima Sesión</h2>
+		</div>
+		<hr>
+		<div class="car">
+			<h2>M&#123;zd&#123; 3</h2>
+		</div>
+		<hr>
+		<div class="timer">
+			<h2>00:15</h2>
+		</div>
+	</footer>
+</div>
+
+<div id="desktop" class="desktop hidden">
+
+	<section class="content">
+	 <div class="container">
+      <div class="view360" id="360_desktop">
+        <div class="icon"></div>
+        <!-- <img src="img/img1.png"> -->
+
+        <iframe id="iframe_desktop" src="360exteriors/360_cx-9.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
+        
+    <!-- <******************* 360 end *************** -> -->
+
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/1.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/2.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/3.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/4.jpg">
+      </div>
+      <div>
+        <img src="img/vehicles/MazdaCX-9/5.jpg">
+      </div>
+      <form id="form1" onsubmit="EnviarForm(); return false">
+        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
+
+<div id="mapdesktop"></div>
+
+       <div>
+          <p>Cuidad *</p>
+          <input id="txtciudad-desk" type="text" name="ciudad" readonly>
+        </div>
+        <div>
+          <p>Concesionario *</p>
+           <input id="txtconce-desk" type="text" name="" disabled>
+        </div>
+       <div>
+          <p>Nombre</p>
+          <input id="txtNombre-desk" type="text" name="nombre" required>
+        </div>
+        <div>
+          <p>Apellido</p>
+           <input id="txtApellido-desk" type="text" name="apellido" required>
+        </div> 
+        <div>
+          <p>Tipo de documento</p>
+          <select id="item1_select_1" data-hint="" name="tdocumento" required style="color:white">
+            <option selected id="item1_0_option" value="">
+              Seleccionar...
+            </option>
+            <option id="item1_1_option" value="CC">
+              C&eacute;dula de Ciudadan&iacute;a
+            </option>
+            <option id="item1_2_option" value="CE">
+              C&eacute;dula de Extranjer&iacute;a
+            </option>
+            <option id="item1_3_option" value="CD">
+              C&eacute;dula Diplom&aacute;tica
+            </option>
+            <option id="item1_4_option" value="PD">
+              Pasaporte Diplom&aacute;tico
+            </option>
+            <option id="item1_5_option" value="PP">
+              Pasaporte
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <p>No de documento</p>
+          <input type="text" name="numodoc" required>
+        </div>
+        <div>
+          <p>Teléfono de contacto</p>
+          <input type="number" name="telefono" required>
+        </div>
+       <div>
+          <p>Correo electronico</p>
+          <input type="mail" name="mail" required>
+        </div> 
+        <div>
+          <button type="submit"><p>Enviar</p></button>
+        </div>
+         <div id="respuestaform" style="display: none;">
+        </div>
+
+<input id ="idcon" name="codcon" type="hidden" value="0">
+<input id ="idsuc" name="codsuc" type="hidden" value="0">
+<input id ="idmod" name="modelo" type="hidden" value="25">
+
+      </form>
+    </div>
+	</section>
+
+	
+</div>
+
+
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/detect.js"></script>
+<script src="../js/utilitys.js"></script>
+
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3HJoQPexmcsuaXZx927-hWTO75mvI28&callback=initMap"
+    async defer></script>
+
+<script >
+$(document).ready(function() {
+  var iframe = document.getElementById("iframe_desktop");
+  iframe.width = $("#360_desktop").width();
+  iframe.height = iframe.width * 0.56;
+ 
+});
+
+</script>
+
+<script src="js/enviarForm.js"></script>
+
+</body>
+</html>

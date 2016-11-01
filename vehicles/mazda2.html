@@ -42,54 +42,74 @@
       <div>
         <img src="img/vehicles/Mazda2/5.jpg">
       </div>
-      <form>
-        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?</p>
+  <form id="form2" onsubmit="EnviarFormPhone(); return false">
+        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
 
-  <div id="mapphone"></div>
+<div id="mapphone"></div>
 
         <div>
            <p>Cuidad</p>
-           <input id="txtciudad-phone" type="text" name="" disabled>
+           <input id="txtciudad-phone" type="text" name="ciudad" readonly>
         </div>
         <div>
             <p>Concesionario</p>
             <input id="txtconce-phone" type="text" name="" disabled>
         </div>
-        <div>
-          <p>Tipo de documento</p>
-            <select id="item1_select_1" data-hint="" name="tdocumento" required>
-              <option selected id="item1_0_option" value="">
-                Seleccionar...
-              </option>
-              <option id="item1_1_option" value="CC">
-                C&eacute;dula de Ciudadan&iacute;a
-              </option>
-              <option id="item1_2_option" value="CE">
-                C&eacute;dula de Extranjer&iacute;a
-              </option>
-              <option id="item1_3_option" value="CD">
-                C&eacute;dula Diplom&aacute;tica
-              </option>
-              <option id="item1_4_option" value="PD">
-                Pasaporte Diplom&aacute;tico
-              </option>
-              <option id="item1_5_option" value="PP">
-                Pasaporte
-              </option>
-            </select>
+          <div>
+          <p>Nombre</p>
+          <input id="txtNombre-phone" type="text" name="nombre" required>
         </div>
         <div>
+          <p>Apellido</p>
+           <input id="txtApellido-phone" type="text" name="apellido" required>
+        </div> 
+        <div>
+          <p>Tipo de documento</p>
+          <select id="item1_select_1-phone" data-hint="" name="tdocumento" required style="color:white">
+            <option selected id="item1_0_option" value="">
+              Seleccionar...
+            </option>
+            <option id="item1_1_option" value="CC">
+              C&eacute;dula de Ciudadan&iacute;a
+            </option>
+            <option id="item1_2_option" value="CE">
+              C&eacute;dula de Extranjer&iacute;a
+            </option>
+            <option id="item1_3_option" value="CD">
+              C&eacute;dula Diplom&aacute;tica
+            </option>
+            <option id="item1_4_option" value="PD">
+              Pasaporte Diplom&aacute;tico
+            </option>
+            <option id="item1_5_option" value="PP">
+              Pasaporte
+            </option>
+          </select>
+        </div>
+
+        <div>
           <p>No de documento</p>
-          <input type="text" name="">
+          <input type="text" name="numodoc" required>
         </div>
         <div>
           <p>Teléfono de contacto</p>
-          <input type="number" name="">
+          <input type="number" name="telefono" required>
         </div>
+       <div>
+          <p>Correo electronico</p>
+          <input type="mail" name="mail" required>
+        </div> 
         <div>
-          <button><p>Enviar</p></button>
+          <button type="submit"><p>Enviar</p></button>
         </div>
+         <div id="respuestaform-phone" style="display: none;">
+        </div>
+
+<input id ="idcon-phone" name="codcon" type="hidden" value="0">
+<input id ="idsuc-phone" name="codsuc" type="hidden" value="0">
+<input id ="idmod-phone" name="modelo" type="hidden" value="8">
       </form>
+
     </div>
 	</section>
 	
@@ -220,23 +240,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3HJoQPexmcsuaXZx927-hWTO75mvI28&callback=initMap"
     async defer></script>
 
-<script>
-function EnviarForm()
-{
-
-   var post_data = $('#form1').serialize();
-        $.ajax({
-          type: "POST",
-          url: "registroTest.php",
-          data: post_data,
-           success: function(data, textStatus, jqXHR)
-           {
-             $("#respuestaform").show();
-             $("#respuestaform").html(data);
-           }
-        });
-}
-</script>
+<script src="js/enviarForm.js"></script>
 
 
 </body>
