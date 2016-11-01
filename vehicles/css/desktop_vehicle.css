@@ -88,7 +88,7 @@
 
 .desktop section.content .container form > div {
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
   flex-direction: column;
   float: left;
   width: 50%;

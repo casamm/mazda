@@ -133,22 +133,31 @@
       <div>
         <img src="img/vehicles/Mazda2/5.jpg">
       </div>
-      <form>
-        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?</p>
+       <form id="form1" onsubmit="EnviarForm(); return false">
+        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
 
  <div id="mapdesktop"></div>
 
-        <div>
-          <p>Cuidad</p>
-          <input id="txtciudad-desk" type="text" name="" disabled>
+      
+  <div>
+          <p>Cuidad *</p>
+          <input id="txtciudad-desk" type="text" name="ciudad" readonly>
         </div>
         <div>
-          <p>Concesionario</p>
+          <p>Concesionario *</p>
            <input id="txtconce-desk" type="text" name="" disabled>
         </div>
+       <div>
+          <p>Nombre</p>
+          <input id="txtNombre-desk" type="text" name="nombre" required>
+        </div>
+        <div>
+          <p>Apellido</p>
+           <input id="txtApellido-desk" type="text" name="apellido" required>
+        </div> 
         <div>
           <p>Tipo de documento</p>
-          <select id="item1_select_1" data-hint="" name="tdocumento" required>
+          <select id="item1_select_1" data-hint="" name="tdocumento" required style="color:white">
             <option selected id="item1_0_option" value="">
               Seleccionar...
             </option>
@@ -169,43 +178,37 @@
             </option>
           </select>
         </div>
+
         <div>
           <p>No de documento</p>
-          <input type="text" name="">
+          <input type="text" name="numodoc" required>
         </div>
         <div>
           <p>Teléfono de contacto</p>
-          <input type="number" name="">
+          <input type="number" name="telefono" required>
         </div>
+       <div>
+          <p>Correo electronico</p>
+          <input type="mail" name="mail" required>
+        </div> 
         <div>
-          <button><p>Enviar</p></button>
+          <button type="submit"><p>Enviar</p></button>
         </div>
+         <div id="respuestaform" style="display: none;">
+        </div>
+
+<input id ="idcon" name="codcon" type="hidden" value="0">
+<input id ="idsuc" name="codsuc" type="hidden" value="0">
+<input id ="idmod" name="modelo" type="hidden" value="8">
+
+
+
       </form>
     </div>
 	</section>
 
-	<hr>
 
-	<footer>
-		<div class="user">
-			<h2 id="user_name_desktop"></h2>
-		</div>
-		<div class="next">
-			<h2>Próxima Sesión</h2>
-		</div>
-		<hr>
-		<div class="car">
-			<h2>M&#123;zd&#123; 3</h2>
-		</div>
-		<hr>
-		<div class="timer">
-			<h2>00:15</h2>
-		</div>
-	</footer>
 </div>
-
-<input id ="idcon" type="hidden" value="0">
-<input id ="idsuc" type="hidden" value="0">
 
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/jquery-ui.js"></script>
@@ -217,10 +220,22 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3HJoQPexmcsuaXZx927-hWTO75mvI28&callback=initMap"
     async defer></script>
 
-<script >
+<script>
+function EnviarForm()
+{
 
-
-
+   var post_data = $('#form1').serialize();
+        $.ajax({
+          type: "POST",
+          url: "registroTest.php",
+          data: post_data,
+           success: function(data, textStatus, jqXHR)
+           {
+             $("#respuestaform").show();
+             $("#respuestaform").html(data);
+           }
+        });
+}
 </script>
 
 
