@@ -23,37 +23,40 @@
 			<h1>M&#123;zd&#123; <span>CX-3</span></h1>
 		</header>
     <div class="container">
-      <div class="view360">
+       <div class="view360" id="360_phone">
         <div class="icon"></div>
-        <img src="img/img1.png">
+        <iframe id="iframe_phone" src="360exteriors/360_cx-3.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
+		<!-- <img src="img/img1.png"> -->
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/1.jpg">
+        <img src="img/vehicles/MazdaCX-3/1.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/2.jpg">
+        <img src="img/vehicles/MazdaCX-3/2.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/3.jpg">
+        <img src="img/vehicles/MazdaCX-3/3.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/4.jpg">
+        <img src="img/vehicles/MazdaCX-3/4.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/5.jpg">
+        <img src="img/vehicles/MazdaCX-3/5.jpg">
       </div>
       <form id="form2" onsubmit="EnviarFormPhone(); return false">
-        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
+        <div id="map-header-phone">
+        ¿Deseas que un asesor te contacte para agendar un Test Drive? <br> <strong>Por favor seleciona en el mapa el concesionario de tu preferencia.</strong>
+		</div>
 
 <div id="mapphone"></div>
 
         <div>
-           <p>Cuidad</p>
-           <input id="txtciudad-phone" type="text" name="ciudad" readonly>
+           <p id="lblCiudad-phone" style="display:none">Ciudad</p>
+           <input id="txtciudad-phone" type="text" name="ciudad" readonly style="display:none">
         </div>
         <div>
-            <p>Concesionario</p>
-            <input id="txtconce-phone" type="text" name="" disabled>
+            <p id="lblConcesionario-phone" style="display:none">Concesionario</p>
+            <input id="txtconce-phone" type="text" name="" disabled style="display:none">
         </div>
           <div>
           <p>Nombre</p>
@@ -96,7 +99,7 @@
           <input type="number" name="telefono" required>
         </div>
        <div>
-          <p>Correo electronico</p>
+          <p>Correo electr&oacute;nico</p>
           <input type="mail" name="mail" required>
         </div> 
         <div>
@@ -113,21 +116,9 @@
     </div>
 	</section>
 	
-	<hr>
 
-	<footer>
-		<div class="next">
-			<h2>Próxima Sesión</h2>
-		</div>
-		<hr>
-		<div class="car">
-			<h2>M&#123;zd&#123; 3</h2>
-		</div>
-		<hr>
-		<div class="timer">
-			<h2>00:15</h2>
-		</div>
-	</footer>
+
+	
 </div>
 
 <div id="desktop" class="desktop hidden">
@@ -138,38 +129,40 @@
         <div class="icon"></div>
         <!-- <img src="img/img1.png"> -->
 
-        <iframe id="iframe_desktop" src="360exteriors/360_cx-9.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
+        <iframe id="iframe_desktop" src="360exteriors/360_cx-3.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
         
     <!-- <******************* 360 end *************** -> -->
 
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/1.jpg">
+        <img src="img/vehicles/MazdaCX-3/1.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/2.jpg">
+        <img src="img/vehicles/MazdaCX-3/2.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/3.jpg">
+        <img src="img/vehicles/MazdaCX-3/3.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/4.jpg">
+        <img src="img/vehicles/MazdaCX-3/4.jpg">
       </div>
       <div>
-        <img src="img/vehicles/MazdaCX-9/5.jpg">
+        <img src="img/vehicles/MazdaCX-3/5.jpg">
       </div>
       <form id="form1" onsubmit="EnviarForm(); return false">
-        <p>¿Desea que un asesor lo contacte para agendar un Test Drive?, por favor seleciona en el mapa el concesionario de tu preferencia.</p>
+         <div id="map-header-desktop">
+        ¿Deseas que un asesor te contacte para agendar un Test Drive? <br> <strong>Por favor seleciona en el mapa el concesionario de tu preferencia.</strong>
+		</div>
 
 <div id="mapdesktop"></div>
 
-       <div>
-          <p>Cuidad *</p>
-          <input id="txtciudad-desk" type="text" name="ciudad" readonly>
+     <div>
+          <p id="lblCiudad" style="display:none">Ciudad </p>
+          <input id="txtciudad-desk" type="text" name="ciudad" readonly style="display:none">
         </div>
         <div>
-          <p>Concesionario *</p>
-           <input id="txtconce-desk" type="text" name="" disabled>
+          <p id="lblConcesionario" style="display:none">Concesionario </p>
+           <input id="txtconce-desk" type="text" name="" disabled style="display:none">
         </div>
        <div>
           <p>Nombre</p>
@@ -212,7 +205,7 @@
           <input type="number" name="telefono" required>
         </div>
        <div>
-          <p>Correo electronico</p>
+          <p>Correo electr&oacute;nico</p>
           <input type="mail" name="mail" required>
         </div> 
         <div>
@@ -246,9 +239,20 @@
 
 <script >
 $(document).ready(function() {
+  
+  if($("#phone").hasClass("hidden"))
+  {
+  
   var iframe = document.getElementById("iframe_desktop");
   iframe.width = $("#360_desktop").width();
   iframe.height = iframe.width * 0.56;
+ } else {
+ 
+   var iframe = document.getElementById("iframe_phone");
+  iframe.width = $("#360_phone").width();
+  iframe.height = iframe.width * 0.56;
+ }
+ 
  
 });
 

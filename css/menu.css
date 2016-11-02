@@ -1,3 +1,4 @@
+
 /* phone menu and footer */
 .phone header {
 	position: fixed;
@@ -182,6 +183,7 @@
 
 .phone footer .timer {
 	background: rgba(70,23,36,.7);
+	font-size: 13px;
 }
 
 .phone footer .timer h2 {

@@ -92,7 +92,7 @@
 .phone section.content ul li h1 {
 	margin: 5px 0;
 	font-size: 14pt;
-	font-family: InterstateLight;
+	font-family: MazdaRegular;
 	font-weight: 100;
 	text-transform: uppercase;
 	color: #fff;
@@ -115,8 +115,9 @@
 	text-transform: uppercase;
 }
 
-.phone section.content ul li p.status.live {
+.phone section.content ul li p.status.live a {
 	color: #d81c24;
+	text-decoration: none;
 }
 
 .phone section.content ul hr {

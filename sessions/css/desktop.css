@@ -85,6 +85,7 @@
 .desktop section.content ul li p.time {
 	font-size: 17pt;
 	font-family: InterstateLight;
+	margin: 10px 0;
 }
 
 .desktop section.content ul li p.status a {

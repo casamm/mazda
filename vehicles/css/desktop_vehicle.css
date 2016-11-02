@@ -5,7 +5,7 @@
 
 .desktop section.content {
 	height: 100%;
-	background: url(../img/bg-desktop.png) no-repeat center center;
+	background: #000;
 	background-size: cover;
 	background-attachment: fixed; 
 }
@@ -163,4 +163,13 @@
   width: 100%;
 }
 
+#map-header-desktop
+{
+	width: 100%;
+	background: #3B0608;
+	font-size:17pt;
+	text-align: center;
+	padding-top: 19px;
+  margin-top:25px;
+}
 
