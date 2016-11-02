@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mazda2.css">
+    <title>MAZDA</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="car-header">
+            <div class="title">
+                <h1>M&#123;zd&#123; <span class="red">2</span></h1>
+                <p>Caracteristicas Generales</p>
+            </div>
+            <div class="logo"></div>
+        </header>
+        <div class="car-section">
+            <img src="img/cars/Mazda_2.jpg">
+        </div>
+        <ul class="info-select">
+            <li class="one">
+                <div class="text hidden">
+                    <h3>Seguridad</h3>
+                    <p>6 bolsas de aire (conductor, copiloto, 2 laterales delanteros y 2 de cortina), sistema de frenos ABS, EBD y BA. Control dinámico de estabilidad (DSC) y Sistema control de tracción (TCS). 5 apoyacabezas (piloto, copiloto y 3 en la parte trasera).</p>
+                </div>
+                <div class="line horz2 hidden"></div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="two">
+                <div class="text hidden">
+                    <h3>Radio Y Audio</h3>
+                    <p>CD-MP3/ USB con función iPod®/Aux./ Control de audio desde el volante. 6 parlantes.</p>
+                </div>
+                <div class="line horz2 hidden"></div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+                <div class="line vert2 hidden"></div>
+            </li>
+            <li class="three">
+                <div class="text hidden">
+                    <h3>Mazda Connect</h3>
+                    <p>Pantalla táctil - TFT de 7” y botón multicomando. Bluetooth®/USB con función ipod®/Aux. Navegador GPS.</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+                <div class="line vert2 hidden"></div>
+                <div class="line horz2 hidden"></div>
+            </li>
+            <li class="four">
+                <div class="text hidden">
+                    <h3>Direccíon</h3>
+                    <p>Asistida eléctricamente (EPS), regulación según velocidad vehículo y rpm de motor.</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="five">
+                <div class="text hidden">
+                    <h3>Motor</h3>
+                    <p>SKYACTIV-G 1,5L/16 válvulas/S-VT/ Inyección directa</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="six">
+                <div class="text hidden">
+                    <h3>Potencia</h3>
+                    <p>106HP / 6.000 rpm</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="seven">
+                <div class="text hidden">
+                    <h3>Transmisión</h3>
+                    <p>SKYACTIV-MT 6 vel. Mecánica o SKYACTIV-DRIVE 6 vel. Automática Activematic.</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="eight">
+                <div class="text hidden">
+                    <h3>Torque</h3>
+                    <p>14,17 kg-m/4.000 rpm</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+            <li class="nine">
+                <div class="text hidden">
+                    <h3>Rin</h3>
+                    <p>16” x 5,5 J Aluminio. Llanta 185/65R15.</p>
+                </div>
+                <div class="line vert hidden"></div>
+                <div class="line horz hidden"></div>
+            </li>
+        </ul>
+        <footer>
+            <p>Tecnología Skyactiv</p>
+        </footer>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <h2>M&#123;zd&#123; <span class="red">CX-5</span></h2>
+                    </div>
+                    <img src="img/MazdaCX5_v2.png">
+                    <div class="dropdown">
+                        <h2 class="tipveh-firs">Prime MT</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <select id="veh2" onchange="change_vehicle();">
+                            <option value="Mazda2">M&#123;zd&#123; 2 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda3">M&#123;zd&#123; 3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda6">M&#123;zd&#123; 6 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX3">M&#123;zd&#123; CX-3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX5">M&#123;zd&#123; CX-5 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX9">M&#123;zd&#123; CX-9 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaBT-50">M&#123;zd&#123; BT-50 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        </select>
+                    </div>
+                    <img id="img_veh2" src="img/Mazda-6.png">
+                    <div id="divTipveh2" class="dropdown tipveh">
+                        <select id="tipveh2"></select>
+                    </div>
+                </div>
+                <hr>
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <select id="veh3" onchange="change_vehicle();">
+                            <option value="Mazda2">M&#123;zd&#123; 2 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda3">M&#123;zd&#123; 3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda6">M&#123;zd&#123; 6 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX3">M&#123;zd&#123; CX-3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX5">M&#123;zd&#123; CX-5 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX9">M&#123;zd&#123; CX-9 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaBT-50">M&#123;zd&#123; BT-50 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        </select>
+                    </div>
+                    <img id="img_veh3" src="img/Mazda-6.png">
+                    <div id="divTipveh3" class="dropdown tipveh">
+                        <select id="tipveh3" onchange="change_vehicle();"></select>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="sect">
+            <div id="accordion" class="accordion">
+            </div>
+            <!-- #accordian -->
+        </section>
+    </div>
+    <!-- .wrapper -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/vehicles.js" type="text/javascript"></script>
+    <script src="js/comparison.js" type="text/javascript"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/car.js"></script>
+</body>
+
+</html>

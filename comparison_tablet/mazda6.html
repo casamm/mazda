@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>MAZDA</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="car-header">
+            <div class="title">
+                <h1>M&#123;zd&#123; <span class="red">6</span></h1>
+                <p>Caracteristicas Generales</p>
+            </div>
+            <div class="logo"></div>
+        </header>
+        <div class="car-section">
+            <img src="img/cars/Mazda_6.jpg">
+        </div>
+        <footer>
+            <p>Tecnología Skyactiv</p>
+        </footer>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <h2>M&#123;zd&#123; <span class="red">CX-5</span></h2>
+                    </div>
+                    <img src="img/MazdaCX5_v2.png">
+                    <div class="dropdown">
+                        <h2 class="tipveh-firs">Prime MT</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <select id="veh2" onchange="change_vehicle();">
+                            <option value="Mazda2">M&#123;zd&#123; 2 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda3">M&#123;zd&#123; 3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda6">M&#123;zd&#123; 6 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX3">M&#123;zd&#123; CX-3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX5">M&#123;zd&#123; CX-5 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX9">M&#123;zd&#123; CX-9 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaBT-50">M&#123;zd&#123; BT-50 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        </select>
+                    </div>
+                    <img id="img_veh2" src="img/Mazda-6.png">
+                    <div id="divTipveh2" class="dropdown tipveh">
+                        <select id="tipveh2"></select>
+                    </div>
+                </div>
+                <hr>
+                <div class="vehicle">
+                    <div class="dropdown">
+                        <select id="veh3" onchange="change_vehicle();">
+                            <option value="Mazda2">M&#123;zd&#123; 2 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda3">M&#123;zd&#123; 3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Mazda6">M&#123;zd&#123; 6 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX3">M&#123;zd&#123; CX-3 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX5">M&#123;zd&#123; CX-5 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaCX9">M&#123;zd&#123; CX-9 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="MazdaBT-50">M&#123;zd&#123; BT-50 &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        </select>
+                    </div>
+                    <img id="img_veh3" src="img/Mazda-6.png">
+                    <div id="divTipveh3" class="dropdown tipveh">
+                        <select id="tipveh3" onchange="change_vehicle();"></select>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="sect">
+            <div id="accordion" class="accordion">
+            </div>
+            <!-- #accordian -->
+        </section>
+    </div>
+    <!-- .wrapper -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/vehicles.js" type="text/javascript"></script>
+    <script src="js/comparison.js" type="text/javascript"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>
