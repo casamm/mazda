@@ -1,6 +1,6 @@
 
 $("li.active").click(function() {
-	location.href = "../sessions/chat.html";
+	//location.href = "../sessions/chat.html";
 });
 $("li.next").click(function() {
   $(".alert").toggleClass("show");
