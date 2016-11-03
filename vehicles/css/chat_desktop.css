@@ -1,0 +1,111 @@
+.desktop {
+	height: 100%;
+	width: 100%;
+}
+
+.desktop section.content {
+	height: 100%;
+	background: url(../img/bg-chat-desktop.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed; 
+}
+
+.desktop section.content .container {
+	position: absolute;
+	top: 12%;
+	height: 82%;
+	width: 100%;
+	padding: 0 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+.desktop section.content .container ul.chat {
+	width: 30%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.desktop section.content .container ul.chat li {
+	padding: 20px 0 20px 20px;
+	border-top: 1px solid #fff;
+}
+
+.desktop section.content .container .username {
+	font-size: 6pt;
+	font-family: InterstateBold;
+	text-transform: uppercase;
+}
+
+.desktop section.content .container ul.chat li .text {
+	margin: 5px 0;
+	padding-left: 5px;
+	font-size: 11pt;
+	font-family: InterstateLight;
+}
+
+.desktop section.content .container .wrap {
+	width: 70%;
+	height: 100%;
+}
+
+.desktop section.content .container .wrap .vid {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.desktop section.content .container .wrap .vid img {
+	position: absolute;
+	top: 0;
+	max-width: 115%;
+}
+
+.desktop section.content .container .write {
+	height: 20%;
+	width: 100%;
+	padding: 10px 20px 20px;
+	background: #4d4d4d;
+}
+
+.desktop section.content .container .write .username {
+	padding-bottom: 10px;
+}
+
+.desktop section.content .container .write textarea {
+	height: 75%;
+	width: 80%;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	background: #333333;
+	color: #fff;
+	font-size: 10pt;
+	font-family: InterstateLight;
+}
+
+.desktop section.content .container .write button {
+	height: 75%;
+	width: 18%;
+	vertical-align: top;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background: #333;
+	color: #fff;
+	font-family: InterstateBold;
+	font-size: 8pt;
+	text-transform: uppercase;
+}
+
+.iframe-chat-desktop
+{
+    width: 30%;
+    width: 30vw;
+    height: 82%;
+    height: 82vh;
+}
+
+@media only screen and (max-width : 1280px) {
+
+}

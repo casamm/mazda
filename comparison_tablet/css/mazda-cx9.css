@@ -1,0 +1,257 @@
+.wrapper:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper ul.info-select {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 900;
+}
+
+.wrapper ul.info-select li {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: url(../img/plus_on.png) no-repeat;
+    background-size: 100%;
+    list-style: none;
+}
+
+.wrapper ul.info-select li.active {
+	background: url(../img/plus_off.png) no-repeat;
+	background-size: 100%;
+}
+
+.wrapper ul.info-select li.close {
+	background: url(../img/close.png) no-repeat;
+	background-size: 100%;
+}
+
+.wrapper ul.info-select li.one {
+    top: 238px;
+    left: 310px;
+}
+
+.wrapper ul.info-select li.two {
+    top: 162px;
+    left: 389px;
+}
+
+.wrapper ul.info-select li.three {
+    top: 151px;
+    left: 454px;
+}
+
+.wrapper ul.info-select li.four {
+    top: 164px;
+    left: 520px;
+}
+
+.wrapper ul.info-select li.five {
+    top: 297px;
+    left: 741px;
+}
+
+.wrapper ul.info-select li.six {
+    top: 282px;
+    left: 532px;
+}
+
+.wrapper ul.info-select li.seven {
+    top: 426px;
+    left: 239px;
+}
+
+.wrapper ul.info-select li.eight {
+    top: 214px;
+    left: 216px;
+}
+
+.wrapper ul.info-select li .text {
+    position: absolute;
+}
+
+.wrapper ul.info-select li .text h3 {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.wrapper ul.info-select li .text p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper ul.info-select li.one .text {
+    width: 335px;
+    top: -125px;
+    left: -432px;
+}
+
+.wrapper ul.info-select li.one .text h3,
+.wrapper ul.info-select li.one .text p,
+.wrapper ul.info-select li.two .text h3,
+.wrapper ul.info-select li.two .text p,
+.wrapper ul.info-select li.seven .text h3,
+.wrapper ul.info-select li.seven .text p,
+.wrapper ul.info-select li.eight .text h3,
+.wrapper ul.info-select li.eight .text p {
+    text-align: right;
+}
+
+.wrapper ul.info-select li.two .text {
+    width: 210px;
+    top: -123px;
+    left: -218px;
+}
+
+.wrapper ul.info-select li.three .text {
+    width: 460px;
+    top: -157px;
+    left: 33px;
+}
+
+.wrapper ul.info-select li.four .text {
+    width: 245px;
+    top: -59px;
+    left: 263px;
+}
+
+.wrapper ul.info-select li.five .text {
+    width: 240px;
+    top: 74px;
+    left: 38px;
+}
+
+.wrapper ul.info-select li.six .text {
+    width: 140px;
+    top: 186px;
+    left: 83px;
+}
+
+.wrapper ul.info-select li.seven .text {
+    width: 260px;
+    top: 42px;
+    left: -366px;
+}
+
+.wrapper ul.info-select li.eight .text {
+    width: 125px;
+    top: 122px;
+    left: -323px;
+}
+
+.wrapper ul.info-select li .line.horz {
+		position: absolute;
+		border-top: 1px dashed #fff;
+}
+
+.wrapper ul.info-select li .line.vert {
+	position: absolute;
+	border-left:1px dashed #fff;
+}
+
+.wrapper ul.info-select li.one .line.horz {
+    width: 114px;
+    top: -117px;
+    left: -93px;
+}
+
+.wrapper ul.info-select li.one .line.vert {
+    height: 113px;
+    top: -117px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.two .line.horz {
+    width: 19px;
+    top: -115px;
+    left: 2px;
+}
+
+.wrapper ul.info-select li.two .line.vert {
+    height: 113px;
+    top: -115px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.three .line.horz {
+    width: 10px;
+    top: -146px;
+    left: 17px;
+}
+
+.wrapper ul.info-select li.three .line.vert {
+    height: 144px;
+    top: -146px;
+    left: 17px;
+}
+
+.wrapper ul.info-select li.four .line.horz {
+    width: 231px;
+    top: -49px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.four .line.vert {
+    height: 46px;
+    top: -50px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.five .line.horz {
+    width: 16px;
+    top: 83px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.five .line.vert {
+    height: 42px;
+    top: 42px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.six .line.horz {
+    width: 52px;
+    top: 198px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.six .line.vert {
+    height: 156px;
+    top: 43px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.seven .line.horz {
+    width: 123px;
+    left: -103px;
+    top: 53px;
+}
+
+.wrapper ul.info-select li.seven .line.vert {
+    height: 11px;
+    top: 43px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.eight .line.horz {
+    width: 210px;
+    top: 132px;
+    left: -189px;
+}
+
+.wrapper ul.info-select li.eight .line.vert {
+    height: 89px;
+    left: 20px;
+    top: 45px;
+}

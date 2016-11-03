@@ -330,3 +330,11 @@ section .accordion .content .wrap .details .vehicle p {
 .sub-title {
 	font-size: 14px !important;
 }
+
+.wrapper ul.info-select {
+	font-family: InterstateLight;
+}
+
+.wrapper ul.info-select h3 {
+	font-weight: bold !important;
+}

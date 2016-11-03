@@ -1,0 +1,289 @@
+.wrapper:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper ul.info-select {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 900;
+}
+
+.wrapper ul.info-select li {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: url(../img/plus_on.png) no-repeat;
+    background-size: 100%;
+    list-style: none;
+}
+
+.wrapper ul.info-select li.active {
+	background: url(../img/plus_off.png) no-repeat;
+	background-size: 100%;
+}
+
+.wrapper ul.info-select li.close {
+	background: url(../img/close.png) no-repeat;
+	background-size: 100%;
+}
+
+.wrapper ul.info-select li.one {
+    top: 293px;
+    left: 130px;
+}
+
+.wrapper ul.info-select li.two {
+    top: 250px;
+    left: 212px;
+}
+
+.wrapper ul.info-select li.three {
+    top: 185px;
+    left: 534px;
+}
+
+.wrapper ul.info-select li.four {
+    top: 253px;
+    left: 610px;
+}
+
+.wrapper ul.info-select li.five {
+    top: 302px;
+    left: 729px;
+}
+
+.wrapper ul.info-select li.six {
+    top: 361px;
+    left: 613px;
+}
+
+.wrapper ul.info-select li.seven {
+    top: 382px;
+    left: 453px;
+}
+
+.wrapper ul.info-select li.eight {
+    top: 426px;
+    left: 331px;
+}
+
+.wrapper ul.info-select li.nine {
+    top: 426px;
+    left: 172px;
+}
+
+.wrapper ul.info-select li .text {
+    position: absolute;
+}
+
+.wrapper ul.info-select li .text h3 {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.wrapper ul.info-select li .text p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper ul.info-select li.one .text {
+    width: 235px;
+    top: -17px;
+    left: -255px;
+}
+
+.wrapper ul.info-select li.one .text h3,
+.wrapper ul.info-select li.one .text p,
+.wrapper ul.info-select li.two .text h3,
+.wrapper ul.info-select li.two .text p,
+.wrapper ul.info-select li.three .text h3,
+.wrapper ul.info-select li.three .text p,
+.wrapper ul.info-select li.eight .text h3,
+.wrapper ul.info-select li.eight .text p,
+.wrapper ul.info-select li.nine .text h3,
+.wrapper ul.info-select li.nine .text p {
+    text-align: right;
+}
+
+.wrapper ul.info-select li.two .text {
+    width: 150px;
+    top: -91px;
+    left: -198px;
+}
+
+.wrapper ul.info-select li.three .text {
+    width: 300px;
+    top: -100px;
+    left: -357px;
+}
+
+.wrapper ul.info-select li.four .text {
+    width: 345px;
+    top: -182px;
+    left: 35px;
+}
+
+.wrapper ul.info-select li.five .text {
+    width: 240px;
+    top: -104px;
+    left: 92px;
+}
+
+.wrapper ul.info-select li.six .text {
+    width: 176px;
+    top: -70px;
+    left: 334px;
+}
+
+.wrapper ul.info-select li.seven .text {
+    width: 261px;
+    top: 215px;
+    left: 133px;
+}
+
+.wrapper ul.info-select li.eight .text {
+    width: 175px;
+    top: 115px;
+    left: -167px;
+}
+
+.wrapper ul.info-select li.nine .text {
+    width: 190px;
+    top: 64px;
+    left: -210px;
+}
+
+.wrapper ul.info-select li .line.horz,
+.wrapper ul.info-select li .line.horz2 {
+		position: absolute;
+		border-top: 1px dashed #fff;
+}
+
+.wrapper ul.info-select li .line.vert {
+	position: absolute;
+	border-left:1px dashed #fff;
+}
+
+.wrapper ul.info-select li.one .line.horz {
+    width: 34px;
+    top: -8px;
+    left: -13px;
+}
+
+.wrapper ul.info-select li.one .line.vert {
+    height: 7px;
+    top: -8px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.two .line.horz {
+    width: 60px;
+    top: -82px;
+    left: -42px;
+}
+
+.wrapper ul.info-select li.two .line.vert {
+    height: 78px;
+    top: -82px;
+    left: 18px;
+}
+
+.wrapper ul.info-select li.three .line.horz {
+    width: 68px;
+    top: -93px;
+    left: -48px;
+}
+
+.wrapper ul.info-select li.three .line.vert {
+    height: 93px;
+    top: -93px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.four .line.horz {
+    width: 13px;
+    top: -173px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.four .line.vert {
+	height: 170px;
+    top: -173px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.five .line.horz {
+    width: 66px;
+    top: -96px;
+    left: 20px;
+}
+
+.wrapper ul.info-select li.five .line.vert {
+    height: 93px;
+    top: -96px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.six .line.horz {
+    width: 248px;
+    top: 20px;
+    left: 46px;
+}
+
+.wrapper ul.info-select li.six .line.horz2 {
+    width: 28px;
+    top: -60px;
+    left: 294px;
+}
+
+.wrapper ul.info-select li.six .line.vert {
+    height: 80px;
+    top: -59px;
+    left: 294px;
+}
+
+.wrapper ul.info-select li.seven .line.horz {
+    width: 100px;
+    left: 20px;
+    top: 221px;
+}
+
+.wrapper ul.info-select li.seven .line.vert {
+    height: 178px;
+    top: 44px;
+    left: 19px;
+}
+
+.wrapper ul.info-select li.eight .line.horz {
+    width: 9px;
+    top: 124px;
+    left: 12px;
+}
+
+.wrapper ul.info-select li.eight .line.vert {
+    height: 85px;
+    left: 20px;
+    top: 40px;
+}
+
+.wrapper ul.info-select li.nine .line.horz {
+    width: 20px;
+    left: -21px;
+    top: 19px;
+}
+
+.wrapper ul.info-select li.nine .line.vert {
+    height: 35px;
+    top: 20px;
+    left: -21px;
+}
