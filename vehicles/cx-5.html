@@ -57,48 +57,48 @@
                         <input id="txtconce-phone" type="text" name="" disabled style="display:none">
                     </div>
                     <div class="form-container">
-                      <div>
-                          <input id="txtNombre-phone" type="text" name="nombre" placeholder="Nombre" required>
-                      </div>
-                      <div>
-                          <input id="txtApellido-phone" type="text" name="apellido" placeholder="Apellido" required>
-                      </div>
-                      <div>
-                          <select id="item1_select_1-phone" data-hint="" name="tdocumento" required style="color:white">
-                              <option selected id="item1_0_option" value="">
-                                  Tipo de documento
-                              </option>
-                              <option id="item1_1_option" value="CC">
-                                  C&eacute;dula de Ciudadan&iacute;a
-                              </option>
-                              <option id="item1_2_option" value="CE">
-                                  C&eacute;dula de Extranjer&iacute;a
-                              </option>
-                              <option id="item1_3_option" value="CD">
-                                  C&eacute;dula Diplom&aacute;tica
-                              </option>
-                              <option id="item1_4_option" value="PD">
-                                  Pasaporte Diplom&aacute;tico
-                              </option>
-                              <option id="item1_5_option" value="PP">
-                                  Pasaporte
-                              </option>
-                          </select>
-                      </div>
-                      <div>
-                          <input type="text" name="numodoc" placeholder="No de documento" required>
-                      </div>
-                      <div>
-                          <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
-                      </div>
-                      <div>
-                          <input type="mail" name="mail" placeholder="Correo electr&oacute;nico" required>
-                      </div>
-                      <div>
-                          <button type="submit">
-                              <p>Enviar</p>
-                          </button>
-                      </div>
+                        <div>
+                            <input id="txtNombre-phone" type="text" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div>
+                            <input id="txtApellido-phone" type="text" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div>
+                            <select id="item1_select_1-phone" data-hint="" name="tdocumento" required style="color:white">
+                                <option selected id="item1_0_option" value="">
+                                    Tipo de documento
+                                </option>
+                                <option id="item1_1_option" value="CC">
+                                    C&eacute;dula de Ciudadan&iacute;a
+                                </option>
+                                <option id="item1_2_option" value="CE">
+                                    C&eacute;dula de Extranjer&iacute;a
+                                </option>
+                                <option id="item1_3_option" value="CD">
+                                    C&eacute;dula Diplom&aacute;tica
+                                </option>
+                                <option id="item1_4_option" value="PD">
+                                    Pasaporte Diplom&aacute;tico
+                                </option>
+                                <option id="item1_5_option" value="PP">
+                                    Pasaporte
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" name="numodoc" placeholder="No de documento" required>
+                        </div>
+                        <div>
+                            <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
+                        </div>
+                        <div>
+                            <input type="mail" name="mail" placeholder="Correo electr&oacute;nico" required>
+                        </div>
+                        <div>
+                            <button type="submit">
+                                <p>Enviar</p>
+                            </button>
+                        </div>
                     </div>
                     <div id="respuestaform-phone" style="display: none;">
                     </div>
@@ -140,7 +140,7 @@
                 <form id="form1" onsubmit="EnviarForm(); return false">
                     <div id="map-header-desktop">
                         ¿Deseas que un asesor te contacte para agendar un Test Drive?
-                        <br> <strong>Por favor selecciona en el mapa el concesionario de tu preferencia.</strong>
+                        <br>Por favor selecciona en el mapa el concesionario de tu preferencia.
                     </div>
                     <div id="mapdesktop"></div>
                     <div>
@@ -152,18 +152,15 @@
                         <input id="txtconce-desk" type="text" name="" disabled style="display:none">
                     </div>
                     <div>
-                        <p>Nombre</p>
-                        <input id="txtNombre-desk" type="text" name="nombre" required>
+                        <input id="txtNombre-desk" type="text" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div>
-                        <p>Apellido</p>
-                        <input id="txtApellido-desk" type="text" name="apellido" required>
+                        <input id="txtApellido-desk" type="text" name="apellido" placeholder="Apellido" required>
                     </div>
                     <div>
-                        <p>Tipo de documento</p>
                         <select id="item1_select_1" data-hint="" name="tdocumento" required style="color:white">
                             <option selected id="item1_0_option" value="">
-                                Seleccionar...
+                                Tipo de documento
                             </option>
                             <option id="item1_1_option" value="CC">
                                 C&eacute;dula de Ciudadan&iacute;a
@@ -183,16 +180,13 @@
                         </select>
                     </div>
                     <div>
-                        <p>No de documento</p>
-                        <input type="text" name="numodoc" required>
+                        <input type="text" name="numodoc" placeholder="No de documento" required>
                     </div>
                     <div>
-                        <p>Teléfono de contacto</p>
-                        <input type="number" name="telefono" required>
+                        <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
                     </div>
                     <div>
-                        <p>Correo electr&oacute;nico</p>
-                        <input type="mail" name="mail" required>
+                        <input type="mail" name="mail" placeholder="Correo electr&oacute;nico" required>
                     </div>
                     <div>
                         <button type="submit">
@@ -205,6 +199,10 @@
                     <input id="idsuc" name="codsuc" type="hidden" value="0">
                     <input id="idmod" name="modelo" type="hidden" value="4">
                 </form>
+                <div class="legal-note">
+                  <h4>Nota Legal</h4>
+                  <p>Todos los contenidos del Web, salvo que se indique lo contrario, son titularidad exclusiva de la empresa o de terceros que han autorizado su inclusión en el Web y, con carácter enunciativo, que no limitativo, el diseño gráfico, código fuente, logos, textos, ilustraciones, fotografías, y demás elementos que aparecen en el Web.</p>
+                </div>
             </div>
         </section>
     </div>
