@@ -89,13 +89,13 @@ body {
 
 .phone section.content .car-select .gallery-thumbs .swiper-slide-active {
   opacity: 1;
-  border-left: 1px solid #2995cc;
-  border-right: 1px solid #2995cc;
-  border-top: 5px solid #2995cc;
+  border-left: 1px solid #86092c;
+  border-right: 1px solid #86092c;
+  border-top: 5px solid #86092c;
 }
 
 .phone section.content .car-select .gallery-thumbs .swiper-slide-active p {
-  color: #2995cc;
+  color: #86092c;
 }
 
 .phone section.content .car-select .right-arrow {
