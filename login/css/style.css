@@ -99,7 +99,7 @@ header h1 {
 
 form {
     height: 45.5%;
-    border-bottom: 1px solid #fff;
+    /*border-bottom: 1px solid #fff;*/
 }
 
 section {
@@ -179,6 +179,7 @@ section button {
     font-size: 10pt;
     text-transform: uppercase;
     border: 1px solid #fff;
+    background: transparent;
 }
 
 footer {
@@ -196,7 +197,7 @@ footer h3 {
     font-family: InterstateBold;
     font-weight: 100;
     text-transform: uppercase;
-    color: red;
+    color: white;
 }
 
 footer .social > div {
