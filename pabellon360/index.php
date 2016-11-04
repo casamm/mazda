@@ -27,11 +27,7 @@
 	</header>
 
 	<div class="menu-overlay">
-<<<<<<< Updated upstream
-		<a href="#" onclick="ChangeContent(event,0);">Pabellon 360</a>
-=======
-		<a href="#" onclick="ChangeContent(0);">Pabellón 360</a>
->>>>>>> Stashed changes
+		<a href="#" onclick="ChangeContent(event,0);">Pabellón 360</a>
 		<hr>
 		<a href="#" onclick="ChangeContent(event,1);">Sesiónes en Vivo</a>
 		<hr>
@@ -39,13 +35,9 @@
 		<hr>
 		<a href="#" onclick="ChangeContent(event,3);">Comparativo</a>
 		<hr>
-<<<<<<< Updated upstream
 		<a href="#" onclick="ChangeContent(event,4);">Ayuda</a>
-=======
-		<a href="#" onclick="ChangeContent(4);">Ayuda</a>
 		<hr>
 		<a href="../Chat/LogOut.php">Cerrar Sesión</a>
->>>>>>> Stashed changes
 	</div>
 
 
@@ -103,23 +95,13 @@
 				<a class="page-title" href="#" onclick="ChangeContent(event,2);">Vehículos</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,3);">Comparativo</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,4);">Ayuda</a>
+				<a class="page-title" href="../Chat/LogOut.php">Cerrar Sesión</a>
 			</div>
 			<div class="name">
 				<p id="user_name_desktop"></p>
 			</div>
 			<div class="logo"></div>
 		</div>
-<<<<<<< Updated upstream
-=======
-		<div class="wrap">
-			<a href="#" onclick="ChangeContent(1);">Sesiones en Vivo</a>
-			<a href="#" onclick="ChangeContent(2);">Vehículos</a>
-			<a href="#" onclick="ChangeContent(3);">Comparativo</a>
-			<a href="#" onclick="ChangeContent(4);">Ayuda</a>
-			<a href="../Chat/LogOut.php">Cerrar Sesión</a>
-		</div>
-		<div class="logo"></div>
->>>>>>> Stashed changes
 	</header>
 
 

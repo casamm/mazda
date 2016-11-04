@@ -180,11 +180,6 @@ $fecha2->add($intervalo);
 	return ($gCalUrl);
 	}
 ?>
-	<header>
-		<div class="title">
-			<h1>Sesiónes en Vivo</h1>
-		</div>
-	</header>
 
 	<section class="content">
 		<div class="top-arrow">
