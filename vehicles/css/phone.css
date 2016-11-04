@@ -15,13 +15,13 @@ body {
 
 .phone section.content header {
 	position: absolute;
-	top: 12%;
-	width: 100%;
-	height: 10%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(73,6,25,.8);
+  top: 12%;
+  width: 100%;
+  height: 8.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(123, 10, 46, .7);
   z-index: 10;
 }
 
@@ -44,23 +44,13 @@ body {
   position: absolute;
   right: 30px;
   top: 15%;
-  font-family: InterstateLight;
-  font-size: 13pt;
-  color: #fff;
-  text-decoration: none;
+  font-family: InterstateBold;
+  font-weight: normal;
+  font-size: 10pt;
+  color: #d71c24;
+  text-decoration: underline;
   text-transform: uppercase;
   z-index: 10;
-}
-
-.phone section.content .car-select a:after {
-  content: '';
-  position: absolute;
-  right: -20px;
-  top: 0;
-  height: 20px;
-  width: 20px;
-  background: url(../img/right-arrow.png) no-repeat center center;
-  background-size: 8px;
 }
 
 .phone section.content .car-select .swiper-slide {
@@ -99,13 +89,13 @@ body {
 
 .phone section.content .car-select .gallery-thumbs .swiper-slide-active {
   opacity: 1;
-  border-left: 1px solid #86092c;
-  border-right: 1px solid #86092c;
-  border-top: 5px solid #86092c;
+  border-left: 1px solid #2995cc;
+  border-right: 1px solid #2995cc;
+  border-top: 5px solid #2995cc;
 }
 
 .phone section.content .car-select .gallery-thumbs .swiper-slide-active p {
-  color: #86092c;
+  color: #2995cc;
 }
 
 .phone section.content .car-select .right-arrow {

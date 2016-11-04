@@ -33,9 +33,9 @@ html,body {
 
 body {
 	position: relative;
-	background: url(../img/bg-phone.png) no-repeat;
+/*	background: url(../img/bg-phone.png) no-repeat;
 	background-size: 100%;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 	color: #fff;
 }
 
@@ -48,118 +48,4 @@ hr {
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-}
-
-header {
-	width: 100%;
-	height: 10%;
-	padding: 10px;
-	/*background-color: red;
-	background: url(../img/logo.png) no-repeat;
-	background-position: 95% 50%;
-	background-size: 50px;*/
-}
-
-header h2 {
-	font-size: 13pt;
-	font-family: InterstateLight;
-	text-transform: uppercase;
-	font-weight: 100;
-}
-
-header h1 {
-	font-size: 18pt;
-	font-family: InterstateBold;
-}
-
-.title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 8.5%;
-	background: #2b0607;
-}
-
-.title h2 {
-	color: #fff;
-	font-size: 14.3pt;
-	font-family: HandelLight;
-	text-transform: uppercase;
-	font-weight: 100;
-}
-
-.title h3 {
-	font-family: InterstateLight;
-	text-transform: uppercase;
-	font-weight: 100;
-	font-size: 9.3pt;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	height: 6%;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 30px;
-}
-
-footer a {
-	position: relative;
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: InterstateLight;
-	font-weight: 100;
-	text-transform: uppercase;
-}
-
-footer a:after {
-	content: '';
-	position: absolute;
-	right: -18px;
-	height: 23px;
-	width: 18px;
-	background: url(../img/right-arrow.png) no-repeat center right;
-	background-size: 10px;
-}
-
-@media only screen and (min-width : 375px) {
-	header h2 {
-		font-size: 14pt;
-	}
-	header h1 {
-		font-size: 22pt;
-	}  
-}
-
-@media only screen and (min-width : 414px) {
-  header h2 {
-		font-size: 16pt;
-	}
-	header h1 {
-		font-size: 24pt;
-	}
-	.title h3 {
-		font-size: 11.3pt;
-	}
-}
-
-@media only screen and (min-width : 768px) {
-	header {
-		padding: 20px;
-	}
-}
-
-@media only screen and (min-width : 1024px) {
-	body {
-		background: rgba(0,0,0,.8);
-	}
-	header {
-		height: 12%;
-	}
 }
