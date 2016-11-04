@@ -15,9 +15,9 @@ function EnviarForm()
              {
                $("#respuestaform").show();
                $("#respuestaform").html(data);
-                setTimeout(function(){ 
-                         $("#respuestaform").html('');
-                        }, 2000); 
+                // setTimeout(function(){ 
+                //          $("#respuestaform").html('');
+                //         }, 2000); 
              }
           });
   }
@@ -33,8 +33,12 @@ function EnviarFormPhone()
           data: post_data,
            success: function(data, textStatus, jqXHR)
            {
+
              $("#respuestaform-phone").show();
              $("#respuestaform-phone").html(data);
+                // setTimeout(function(){ 
+                //          $("#respuestaform-phone").html('');
+                //         }, 2000); 
            }
         });
 }

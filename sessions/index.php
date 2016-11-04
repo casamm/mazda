@@ -54,6 +54,7 @@
 			$password = "F)3g 3eu=9*8Srb";
 			$dbname = "mazdaapp_salonautomovil";
 
+
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
 			// Check connection
@@ -64,33 +65,82 @@
 			$sql = "SELECT * FROM Sesion WHERE Fecha >= CURDATE()";  //todo: poner where para fecha mayor a hoy.
 
 			$result = $conn->query($sql);
-
-
-
+		
 			if ($result->num_rows > 0) {
 			    // output data of each row
 			    while($row = $result->fetch_assoc()) {
 			       // echo "Nombre: " . $row["Nombre"]. " - Descripcion: " . $row["Descripcion"]. " - Hora: " . $row["Hora"]. " - Fecha: " . $row["Fecha"]. "<br>";
 
-				$desc =	str_replace("Mazda","M&#123;zd&#123;",$row["Descripcion"]);
+			    $desc =	str_replace("Mazda","M&#123;zd&#123;",$row["Descripcion"]);
 			    $desc =	str_replace("mazda","M&#123;zd&#123;",$desc);
 
-		        echo "<li class='active'>
-						<h1 class='title'><span>". $desc."</span></h1>
-						<p class='time'>" . $row["Hora"]. "</p>
-						<p class='status live'><a href='../sessions/chat.html'>En Vivo Ahora</a></p>
-					</li>
-					<hr>";
+			    $fecha1 = new DateTime($row["Fecha"]);
+				$fecha2 = new DateTime('now');  //servidor tiene hora adelantada (5 horas).
 
+$intervalo = new DateInterval('PT5H'); //restar 5 horas a hora servidor
+$intervalo->invert = 1;
+$fecha2->add($intervalo);
+
+				$fecha = $fecha1->diff($fecha2);
+				//echo date_format($fecha1,"Y/m/d H:i:s") . " : " . date_format($fecha2,"Y/m/d H:i:s");
+				//printf('%d años, %d meses, %d días, %d horas, %d minutos', $fecha->y, $fecha->m, $fecha->d, $fecha->h, $fecha->i);
+
+					if($fecha->y == 0 && $fecha->d==0 && $fecha->h==0)
+					{
+						if($fecha->i<=15)
+						{
+						   echo "<li class='active'>
+								<h1 class='title'><span>" . $desc . "</span></h1>
+								<p class='time'>" . $row["Hora"]. "</p>
+								<p class='status live'><a href='../sessions/chat.html'>En Vivo Ahora</a></p>
+							</li>
+							<hr>";
+						}
+						else
+						{
+							echo "<li class='active'>
+								<h1 class='title'><span>" . $desc . "</span></h1>
+								<p class='time'>" . $row["Hora"]. "</p>
+								<p class='status live'>Proximamente</p>
+							 </li>
+							<hr>";
+						}
+					}
+					else
+					{
+
+						// array asociativo con los parametros mecesarios.
+						$evento = array(
+						'titulo' => 'Mazda Salón Automóvil',
+						'descripcion' => 'Presentación en vivo ' . str_replace("M&#123;zd&#123;","Mazda",$desc) ,
+						'localizacion' => 'Corferias, Online',
+						'fecha_inicio' =>  date_format($fecha1,"Y-m-d") , // Fecha de inicio de evento en formato AAAA-MM-DD
+						'hora_inicio'=> date_format($fecha1,"H:i"), // Hora Inicio del evento
+						'fecha_fin'=> date_format($fecha1,"Y-m-d"), // Fecha de fin de evento en formato AAAA-MM-DD
+						'hora_fin'=> date_format($fecha1,"H:i"), // Hora final del evento
+						'nombre'=>'MazdaSalonAutomovil', // Nombre del sitio
+						'url'=>'http://mazdaapps.co/salonautomovil' // Url de la página
+						);
+
+						echo "<li class='active'>
+							<h1 class='title'><span>" . $desc . "</span></h1>
+							<p class='time'>" . $row["Hora"]. "</p>
+							<p class='status live'>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agendate</a>
+							</p>
+						</li>
+						<hr>";
+
+					}
 
 			    }
+
 			} else {
 			    //echo "0 results";
 			}
-
 			$conn->close();
 
-		?>
+?>
 
 		</ul>
 		<div class="bottom-arrow">
@@ -118,10 +168,6 @@
 
 <div id="desktop" class="desktop hidden">
 <?php
-	/********************************************************************
-	* Función getGCalendar (Eduardo Revilla Vaquero)                    *
-	* Genera url para la creación de un evento en google calendar.      *
-	*********************************************************************/
 	function getGCalendarUrl($event){  
 	$titulo = urlencode($event['titulo']); 
 	$descripcion = urlencode($event['descripcion']); 
@@ -249,7 +295,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank'><img src='http://www.google.com/calendar/images/ext/gc_button6_es.gif' border='0'></a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agendate</a>
 							</p>
 						</li>
 						<hr>";
@@ -261,10 +307,7 @@ $fecha2->add($intervalo);
 			} else {
 			    //echo "0 results";
 			}
-
-
 			$conn->close();
-
 
 ?>
 

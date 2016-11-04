@@ -84,10 +84,10 @@
             $("#" + list).append("<option value='Mazda6GTLX'>2,5L Grand Touring LX</option>");
             imgv.src = "img/Mazda-6.png";
         } else if (veh == "MazdaCX3") {
-            $("#" + list).append("<option value='MazdaCX3TouringMT'>Mazda CX3 Touring-SKYACTIV-MT 6 vel</option>");
-            $("#" + list).append("<option value='MazdaCX3TouringDRIVE'>Mazda CX3 Touring-SKYACTIV-DRIVE 6 vel</option>");
-            $("#" + list).append("<option value='MazdaCX3GrandTouringDRIVE'>Mazda CX3 Grand Touring-SKYACTIV-DRIVE 6 vel</option>");
-            $("#" + list).append("<option value='MazdaCX3GrandTouringLX'>Mazda CX3 Grand Touring LX-SKYACTIV-DRIVE 6 vel</option>");
+            $("#" + list).append("<option value='MazdaCX3TouringMT'>Touring-SKYACTIV-MT 6 vel</option>");
+            $("#" + list).append("<option value='MazdaCX3TouringDRIVE'>Touring-SKYACTIV-DRIVE 6 vel</option>");
+            $("#" + list).append("<option value='MazdaCX3GrandTouringDRIVE'>Grand Touring-SKYACTIV-DRIVE 6 vel</option>");
+            $("#" + list).append("<option value='MazdaCX3GrandTouringLX'>Grand Touring LX-SKYACTIV-DRIVE 6 vel</option>");
             imgv.src = "img/CX3.png";
         } else if (veh == "MazdaCX5") {
             $("#" + list).append("<option value='MazdaCX5PrimeMT'>Prime  MT</option>");
