@@ -27,15 +27,15 @@
 	</header>
 
 	<div class="menu-overlay">
-		<a href="#" onclick="ChangeContent(0);">Pabellon 360</a>
+		<a href="#" onclick="ChangeContent(event,0);">Pabellon 360</a>
 		<hr>
-		<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
+		<a href="#" onclick="ChangeContent(event,1);">Sesiónes en Vivo</a>
 		<hr>
-		<a href="#" onclick="ChangeContent(2);">Vehículos</a>
+		<a href="#" onclick="ChangeContent(event,2);">Vehículos</a>
 		<hr>
-		<a href="#" onclick="ChangeContent(3);">Comparativo</a>
+		<a href="#" onclick="ChangeContent(event,3);">Comparativo</a>
 		<hr>
-		<a href="#" onclick="ChangeContent(4);">Ayuda</a>
+		<a href="#" onclick="ChangeContent(event,4);">Ayuda</a>
 	</div>
 
 
@@ -83,29 +83,26 @@
 <div id="desktop" class="desktop hidden">
 
 	<header>
-		<div class="menu invisible">
-			<div class="bar one"></div>
-	    <div class="bar two"></div>
+		<div class="wrapper">
+			<div class="menu invisible" onclick="CloseOverlay()">
+				<div class="bar one"></div>
+		    <div class="bar two"></div>
+			</div>
+			<div class="wrap">
+				<a class="page-title" href="#" onclick="ChangeContent(event,1);">Sesiónes en Vivo</a>
+				<a class="page-title" href="#" onclick="ChangeContent(event,2);">Vehículos</a>
+				<a class="page-title" href="#" onclick="ChangeContent(event,3);">Comparativo</a>
+				<a class="page-title" href="#" onclick="ChangeContent(event,4);">Ayuda</a>
+			</div>
+			<div class="name">
+				<p id="user_name_desktop"></p>
+			</div>
+			<div class="logo"></div>
 		</div>
-		<div class="wrap">
-			<a href="#" onclick="ChangeContent(1);">Sesiónes en Vivo</a>
-			<a href="#" onclick="ChangeContent(2);">Vehículos</a>
-			<a href="#" onclick="ChangeContent(3);">Comparativo</a>
-			<a href="#" onclick="ChangeContent(4);">Ayuda</a>
-		</div>
-		<div class="logo"></div>
 	</header>
 
 
 	<!-- iframe with the content of the menu-->
-
-	<div id="divmenu" class="close-wrapper hidden">
-	    <div class="menu" onclick="CloseOverlay()">
-
-	      <div class="bar one animation"></div>
-	      <div class="bar two animation"></div>
-	    </div>
-	  </div>
   <iframe  id="iframe-content"  src=""  frameBorder="0" class="overlay-content hidden"></iframe>
 
 	<section class="content" id="container_desktop" style="z-index:2";>
@@ -132,9 +129,6 @@
 	<hr>
 
 	<footer>
-		<div class="user">
-			<h2 id="user_name_desktop"></h2>
-		</div>
 		<div class="next">
 			<h2>Próxima Sesión</h2>
 		</div>

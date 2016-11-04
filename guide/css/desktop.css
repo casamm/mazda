@@ -1,81 +1,67 @@
+.desktop {
+    background: rgba(0, 0, 0, .8);
+    height: 100%;
+}
+
 .desktop section.content {
-	height: 69.5%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .desktop section.content .step {
-	height: 60%;
-	width: 33.3333333333%;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 49%;
+    text-align: center;
 }
 
 .desktop section.content .step h1 {
-	margin: 20px 0;
-	color: #fff;
-	font-size: 20pt;
-	font-family: HandelLight;
-	font-weight: 100;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 20pt;
+    font-family: InterstateBold;
 }
 
 .desktop section.content .step img {
-	max-width: 100%;
-	padding: 0 10px;
+    max-width: 50%;
+    padding: 0 10px;
 }
 
 .desktop section.content .step p {
-	padding: 20px;
-	color: #fff;
-	font-size: 11pt;
-	font-family: InterstateLight;
-	font-weight: 100;
+    padding: 20px;
+    color: #fff;
+    font-size: 11pt;
+    font-family: InterstateLight;
+    font-weight: 100;
 }
 
-.desktop section.content hr {
-	height: 50%;
-	width: 1px;
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
-	margin: 0 10px;
+.desktop section.content hr.vert {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    margin: 0 !important;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
 }
 
-.desktop footer {
-	position: absolute;
-	bottom: 0;
-	height: 6%;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 30px;
-}
-
-.desktop footer a {
-	position: relative;
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: InterstateLight;
-	font-weight: 100;
-	text-transform: uppercase;
-}
-
-.desktop footer a:after {
-	content: '';
-	position: absolute;
-	right: -18px;
-	height: 23px;
-	width: 18px;
-	background: url(../img/right-arrow.png) no-repeat center right;
-	background-size: 10px;
-}
-
-@media only screen and (min-width : 1200px) {
-	.desktop section.content .step img {
-		max-width: auto;
-	}
+.desktop section.content hr.horz {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    margin: 0 !important;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
 }
