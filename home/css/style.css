@@ -19,6 +19,10 @@ html,body {
 	height: 100%;
 }
 
+.phone, .desktop {
+	height: 100%;
+}
+
 .hidden {
 	display: none;
 }
@@ -29,6 +33,10 @@ body {
 	background-size: 100%;
 	background-attachment: fixed;
 	color: #fff;
+}
+
+.desktop .wrapper {
+	height: 100%;
 }
 
 header {

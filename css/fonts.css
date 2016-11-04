@@ -27,3 +27,8 @@
   src: url(../fonts/HandelGotDLig.ttf);
   font-weight: 100 !important;
 }
+
+.desktop .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
