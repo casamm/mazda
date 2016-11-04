@@ -3,6 +3,14 @@
 	width: 100%;
 }
 
+.desktop header .wrap h2 {
+	position: absolute;
+	right: 0;
+	padding-right: 20px;
+	font-size: 25px;
+	font-family: MazdaRegular;
+}
+
 .desktop section.content {
 	position: relative;
 	width: 100%;

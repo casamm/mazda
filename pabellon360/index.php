@@ -96,6 +96,7 @@
 				<a class="page-title" href="#" onclick="ChangeContent(event,3);">Comparativo</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,4);">Ayuda</a>
 				<a class="page-title" href="../Chat/LogOut.php">Cerrar Sesión</a>
+				<h2 class="car-title invisible">Test</h2>
 			</div>
 			<div class="name">
 				<p id="user_name_desktop"></p>
