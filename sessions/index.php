@@ -42,9 +42,6 @@
 		<header>
 			<h1>Sesiones en Vivo</h1>
 		</header>
-		<div class="top-arrow">
-			<span></span>
-		</div>
 		<ul>
 
 		<?php
@@ -101,7 +98,7 @@ $fecha2->add($intervalo);
 							echo "<li class='active'>
 								<h1 class='title'><span>" . $desc . "</span></h1>
 								<p class='time'>" . $row["Hora"]. "</p>
-								<p class='status live'>Proximamente</p>
+								<p class='status live'>A Continuación</p>
 							 </li>
 							<hr>";
 						}
@@ -126,7 +123,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agéndate</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Reserva tu Sesión</a>
 							</p>
 						</li>
 						<hr>";
@@ -143,27 +140,7 @@ $fecha2->add($intervalo);
 ?>
 
 		</ul>
-		<div class="bottom-arrow">
-			<span></span>
-		</div>
-
 	</section>
-	
-	<hr>
-
-	<footer>
-		<div class="next">
-			<h2>Próxima Sesión</h2>
-		</div>
-		<hr>
-		<div class="car">
-			<h2>M&#123;zd&#123; 3</h2>
-		</div>
-		<hr>
-		<div class="timer">
-			<h2>00:15</h2>
-		</div>
-	</footer>
 </div>
 
 <div id="desktop" class="desktop hidden">
@@ -182,9 +159,6 @@ $fecha2->add($intervalo);
 ?>
 
 	<section class="content">
-		<div class="top-arrow">
-			<span></span>
-		</div>
 		<ul>
 			<!-- <li>
 				<h1 class="title">Sesión <span>M&#123;zd&#123; 2</span></h1>
@@ -265,7 +239,7 @@ $fecha2->add($intervalo);
 							echo "<li class='active'>
 								<h1 class='title'><span>" . $desc . "</span></h1>
 								<p class='time'>" . $row["Hora"]. "</p>
-								<p class='status live'>Proximamente</p>
+								<p class='status live'>A Continuación</p>
 							 </li>
 							<hr>";
 						}
@@ -290,7 +264,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agéndate</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Reserva tu Sesión</a>
 							</p>
 						</li>
 						<hr>";
@@ -307,12 +281,7 @@ $fecha2->add($intervalo);
 ?>
 
 		</ul>
-		
-		<div class="bottom-arrow">
-			<span></span>
-		</div>
 	</section>
-	<hr>
 </div>
 
 <div class="alert">

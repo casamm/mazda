@@ -299,7 +299,7 @@
 .desktop header .logo {
     width: 10%;
     background: url(../img/logo.png) no-repeat center center;
-    background-size: 60px;
+    background-size: 45px;
 }
 
 .desktop .overlay-content {

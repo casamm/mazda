@@ -67,7 +67,7 @@ function countdown(id){
         }
         else
         {
-           document.getElementById(id).innerHTML='Proximamente';
+           document.getElementById(id).innerHTML='A continuación';
         }
 
         //document.getElementById(id).innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'

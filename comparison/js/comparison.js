@@ -184,7 +184,7 @@
             //html = html + "<div class='wrap'>"; //div Sub-Group
             htmlSubGrupo="<div class='wrap'>"; //div Sub-Group
 
-            console.log(array_features[0].SubGroup);
+            //console.log(array_features[0].SubGroup);
             var namesubgroup = array_features[0].SubGroup;
             array_features.forEach(function(item) {
 
