@@ -1,185 +1,194 @@
 hr {
-	width: 1px;
-	height: 100%;
-	border: none;
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
+    width: 1px;
+    height: 70%;
+    margin: auto;
+    border: none;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
+}
+
+hr.horizontal {
+    position: absolute;
+    top: 46%;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 35%, rgba(255, 255, 255, .8) 65%, rgba(255, 255, 255, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
 }
 
 .accordion hr {
-	height: 80px;
+    height: 80px;
 }
 
 .accordion hr:first-of-type {
-	display: none;
+    display: none;
 }
 
 .phone section.content {
-	height: 100%;
+    height: 100%;
 }
 
 .phone section.content header {
-	position: absolute;
-	top: 12%;
-	width: 100%;
-	height: 10%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(73,6,25,.8);
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    height: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(123, 10, 46, .7);
 }
 
 .phone section.content header h1 {
-	text-transform: uppercase;
-	font-size: 18.3pt;
-	font-family: HandelLight;
-	font-weight: 100;
-	color: #fff;
+    text-transform: uppercase;
+    font-size: 18.3pt;
+    font-family: HandelLight;
+    font-weight: 100;
+    color: #fff;
 }
 
 .phone .container {
-  position: absolute;
-  top: 22%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+    position: absolute;
+    top: 20.5%;
+    height: 25.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .phone section.content section {
-  position: absolute;
-  top: 42%;
-  height: 50%;
-  width: 100%;
-  overflow: scroll;
+    position: absolute;
+    top: 46%;
+    height: 46%;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .phone .container .vehicle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
 }
 
 .phone .container .vehicle .dropdown {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .phone .container .vehicle .dropdown .ui-selectmenu-text,
 .phone .container .vehicle .dropdown h2 {
-	font-size: 8pt;
-	font-family: MazdaRegular;
+    font-size: 10pt;
+    font-family: MazdaRegular;
 }
 
-.phone .container .vehicle .dropdown .ui-selectmenu-text:after {
-	content: '';
-	display: block;
-	float: right;
-	height: 14px;
-	width: 30px;
-	background: url(../img/down-arrow.png) no-repeat center bottom;
-	background-size: 10px;
+.phone .container .vehicle .dropdown.tipveh .ui-selectmenu-text {
+    font-size: 6pt;
 }
 
 .phone .container .vehicle img {
-	max-width: 50%;
+    max-width: 70%;
 }
 
 .phone section .accordion {
-	width: 100%;
-	padding: 20px;
+    width: 100%;
+    padding: 3px 20px;
 }
 
 .phone section .accordion h3.title {
-	padding: 26px 0;
-	font-size: 11pt;
-	text-transform: uppercase;
-	color: #fff;
-	font-family: InterstateLight;
-	font-weight: 100;
-	text-align: center;
-	border-bottom: 1px solid rgba(255,255,255,.6);
-	background: url(../img/down-arrow.png) no-repeat;
-	background-position: 98% 50%;
-	background-size: 12px;
+    padding: 26px 0;
+    font-size: 11pt;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: InterstateLight;
+    font-weight: 100;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    background: url(../img/down-arrow.png) no-repeat;
+    background-position: 98% 50%;
+    background-size: 12px;
 }
 
 .phone section .accordion h3.title.ui-accordion-header-active {
-	border-bottom: 1px solid #ff0000;
-	background: url(../img/up-arrow-red.png) no-repeat;
-	background-position: 98% 50%;
-	background-size: 12px;
-	color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+    background: url(../img/up-arrow-red.png) no-repeat;
+    background-position: 98% 50%;
+    background-size: 12px;
+    color: #ff0000;
 }
 
 .phone section .accordion .content {
-	border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000;
 }
 
 .phone section .accordion .content .wrap {
-	position: relative;
-	margin: 40px 0;
-	padding: 20px;
-	border: 1px solid rgba(255,255,255,.4);
-	z-index: -10;
+    position: relative;
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    z-index: -10;
 }
 
 .phone section .accordion .content .wrap img {
-	position: absolute;
-	top: -15px;
-	left: 0;
-	right: 0;
-	width: 33px;
-	margin: 0 auto;
-	outline: 20px solid #000;
-	z-index: -10;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    width: 33px;
+    margin: 0 auto;
+    outline: 20px solid #000;
+    z-index: -10;
 }
 
 .phone section .accordion .content .wrap h4 {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: 10pt;
-	font-family: InterstateLight;
-	font-weight: 100;
-	z-index: 10;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 10pt;
+    font-family: InterstateLight;
+    font-weight: 100;
+    z-index: 10;
 }
 
 .phone section .accordion .content .wrap .details {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .phone section .accordion .content .wrap .details .vehicle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 33.3333333333%;
-	padding: 10px 60px;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .phone section .accordion .content .wrap .details .vehicle:first-child {
-	display: none;
+    display: none;
 }
 
 .phone section .accordion .content .wrap .details .vehicle h3 {
-	font-size: 12.5pt;
-	font-family: InterstateBold;
-	color: #2995cc;
+    font-size: 12.5pt;
+    font-family: InterstateBold;
+    color: #2995cc;
 }
 
 .phone section .accordion .content .wrap .details .vehicle p {
-	font-size: 12.5pt;
-	font-family: InterstateLight;
-	font-weight: 100;
-	color: #fff;
+    font-size: 9.5pt;
+    font-family: InterstateLight;
+    font-weight: 100;
+    color: #fff;
 }

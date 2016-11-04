@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="google-signin-client_id" content="82592990920-e1ana6tp6aaikrl7j8koh9jgp1hcuia5.apps.googleusercontent.com">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<link rel="stylesheet" type="text/css" href="../css/fonts.css">
-<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="https://apis.google.com/js/api:client.js"></script>
-<title>MAZDA | Salón Del Automóvil 2016</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="google-signin-client_id" content="82592990920-e1ana6tp6aaikrl7j8koh9jgp1hcuia5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
 
 <body>
-<header>
-	<h2>Salón del Automóvil</h2>
-	<h1>2016</h1>
-</header>
-<div class="title">
-	<h2>Registro</h2>
-</div>
-<form id="f1" action="../Chat/login.php" method="post" onsubmit="return form_submit()">
-	<section>
-		<h3>Nombre</h3>
-		<input type="text" name="uname" autocorrect="off" autocapitalize="none" value="" required="true">
-		<hr>
-		<h3>Contraseña</h3>
-		<input type="password" name="upass" autocorrect="off" autocapitalize="none" value="" required="true">
-		<hr>
-		<button type="submit">Ingresar</button>
-	</section>
-</form>
-<footer>
-	<hr>
-	<h3>Entra Con</h3>
-	<div class="social">
-		<!-- <img src="img/fb.png" onclick="checkLoginState();"> -->
-		<div>
-		<img src="img/fb.png" onclick="facebookLogin();">
-		</div>  
-		  
-		  <div id="gSignInWrapper">
-		    <div id="customBtn" class="customGPlusSignIn">
-		      <img src="img/google.png">
-		    </div>
-		  </div>
-	</div>
-	<br>
-    <p>No tienes usuario regístrate <a href="../register/index.html">aquí</a>.</p>
-	<!--<div id="status"></div>-->
-	<script src="js/login.js"></script>
-	<script>startApp();</script>
-</footer>
+    <header>
+        <h2>Salón del Automóvil</h2>
+        <h1>2016</h1>
+    </header>
+    <div class="title">
+        <h2>Registro</h2>
+    </div>
+    <form id="f1" action="../Chat/login.php" method="post" onsubmit="return form_submit()">
+        <section>
+            <input type="text" name="uname" autocorrect="off" autocapitalize="none" value="" required="true" placeholder="Nombre">
+            <hr>
+            <input type="password" name="upass" autocorrect="off" autocapitalize="none" value="" required="true" placeholder="Contraseña">
+            <hr>
+            <button type="submit">Ingresar</button>
+        </section>
+    </form>
+    <footer>
+        <h3>Entra Con</h3>
+        <div class="social">
+            <!-- <img src="img/fb.png" onclick="checkLoginState();"> -->
+            <div>
+                <img src="img/fb.png" onclick="facebookLogin();">
+            </div>
+            <div id="gSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn">
+                    <img src="img/google.png">
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="../register/index.html">
+            <p>No tienes usuario regístrate aquí.</p>
+        </a>
+        <!--<div id="status"></div>-->
+        <script src="js/login.js"></script>
+        <script>
+        startApp();
+        </script>
+    </footer>
 </body>
 
 </html>

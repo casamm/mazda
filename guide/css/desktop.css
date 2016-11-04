@@ -1,4 +1,4 @@
-section.desktop {
+.desktop section.content {
 	height: 69.5%;
 	width: 100%;
 	display: flex;
@@ -6,13 +6,13 @@ section.desktop {
 	justify-content: center;
 }
 
-section.desktop .step {
+.desktop section.content .step {
 	height: 60%;
 	width: 33.3333333333%;
 	text-align: center;
 }
 
-section.desktop .step h1 {
+.desktop section.content .step h1 {
 	margin: 20px 0;
 	color: #fff;
 	font-size: 20pt;
@@ -20,12 +20,12 @@ section.desktop .step h1 {
 	font-weight: 100;
 }
 
-section.desktop .step img {
+.desktop section.content .step img {
 	max-width: 100%;
 	padding: 0 10px;
 }
 
-section.desktop .step p {
+.desktop section.content .step p {
 	padding: 20px;
 	color: #fff;
 	font-size: 11pt;
@@ -33,7 +33,7 @@ section.desktop .step p {
 	font-weight: 100;
 }
 
-section.desktop hr {
+.desktop section.content hr {
 	height: 50%;
 	width: 1px;
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%);
@@ -43,8 +43,39 @@ section.desktop hr {
 	margin: 0 10px;
 }
 
+.desktop footer {
+	position: absolute;
+	bottom: 0;
+	height: 6%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.desktop footer a {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: InterstateLight;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.desktop footer a:after {
+	content: '';
+	position: absolute;
+	right: -18px;
+	height: 23px;
+	width: 18px;
+	background: url(../img/right-arrow.png) no-repeat center right;
+	background-size: 10px;
+}
+
 @media only screen and (min-width : 1200px) {
-	section.desktop .step img {
+	.desktop section.content .step img {
 		max-width: auto;
 	}
 }

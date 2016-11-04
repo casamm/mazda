@@ -1,42 +1,70 @@
-section.phone {
-	height: 75.5%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
+.phone section.content {
+    height: 100%;
 }
 
-section.phone .step {
-	text-align: center;
+.phone section.content header {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    height: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(123, 10, 46, .7);
 }
 
-section.phone .step h1 {
-	margin: 20px 0;
-	color: #fff;
-	font-size: 20pt;
-	font-family: HandelLight;
-	font-weight: 100;
+.phone section.content header h1 {
+    text-transform: uppercase;
+    font-size: 18.3pt;
+    font-family: HandelLight;
+    font-weight: 100;
+    color: #fff;
 }
 
-section.phone .step img {
-	width: 46px;
+.phone section.content .scroll-content {
+    position: absolute;
+    top: 20.5%;
+    height: 71.5%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
-section.phone .step p {
-	padding: 20px;
-	color: #fff;
-	font-size: 11pt;
-	font-family: InterstateLight;
-	font-weight: 100;
+.phone section.content .scroll-content .step {
+    text-align: center;
 }
 
-@media only screen and (min-width : 768px) {
-	section.phone {
-		height: 81.5%;
-		width: 60%;
-		margin: 0 auto;
-	} 
+.phone section.content .scroll-content .step h1 {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 20pt;
+    font-family: HandelLight;
+    font-weight: 100;
 }
-@media only screen and (min-width : 1024px) {
-	section.phone {
-		height: 79.5%;
-	}
+
+.phone section.content .scroll-content .step img {
+    width: 46px;
+}
+
+.phone section.content .scroll-content .step p {
+    padding: 20px;
+    color: #fff;
+    font-size: 11pt;
+    font-family: InterstateLight;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) {
+    .phone section.content .scroll-content {
+        height: 81.5%;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .phone section.content .scroll-content {
+        height: 79.5%;
+    }
 }
