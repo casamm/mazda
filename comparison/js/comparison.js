@@ -31,19 +31,19 @@
         Write_Acordeon("Dimensiones y pesos", "Longitud total (mm)|Ancho total (mm)|Altura total (mm)|Distancia entre ejes (mm)|Trocha delantera (mm)|Trocha trasera (mm)|Voladizo delantero (mm)|Voladizo trasero (mm)|Capacidad del baúl (L)|Peso vacío (kg)|Peso bruto vehicular (kg)|Capacidad de carga (kg)|Capacidad de arrastre con frenos (kg)|Capacidad de arrastre sin frenos (kg)");
         Write_Acordeon("Cabina", "Cabina|Barras de impacto lateral");
         Write_Acordeon("Seguridad pasiva", "Apoyacabezas|Cinturones de seguridad|Columna de dirección|Pedal de freno|Airbags |Apoyacabezas traseros");
-        Write_Acordeon("Seguridad proactiva i-ACTIVSENSE", "Sistema inteligente de iluminación frontal (ADB)|Asistencia de permanencia en carril (LKA)|Asistencia inteligente de frenado en ciudad delantero (SCBS)|Asistencia inteligente de frenado en ciudad trasero (SCBS)|Sistema avanzado de monitoreo de punto ciego (BSM)|Señal de frenado de emergencia (ESS)|Asistencia de arranque en pendiente (HLA)|Alerta de atención del conductor (DAA)");
-        Write_Acordeon("Seguridad activa", "Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema control de tracción (TCS)|Luces delanteras|Luces traseras LED|Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)|Señal de frenado de emergencia (ESS)|Asistencia de arranque en pendiente (HLA)");
+        Write_Acordeon("Seguridad proactiva i-ACTIVSENSE", "Sistema Inteligente de Iluminación Frontal (ADB)|Asistencia de Permanencia en Carril (LKA)|Asistencia Inteligente de Frenado en Ciudad Delantero (SCBS)|Asistencia Inteligente de Frenado en Ciudad Trasero (SCBS)|Sistema Avanzado de Monitoreo de Punto Ciego (BSM), con alerta de tráfico cruzado atrás|Sistema de Monitoreo de Punto Ciego (BSM)|Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Alerta de Atención del Conductor (DAA)");
+        Write_Acordeon("Seguridad activa", "Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema Control de Tracción (TCS)|Luces delanteras|Luces traseras LED|Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)");
         Write_Acordeon("SKYACTIV-BODY : Platon", "Platón");
         Write_Acordeon("Equipamiento exterior", "Techo corredizo \"Sunroof\"|Spoiler quinta puerta|Exploradoras|Estribos laterales|Parachoques|Protector platón");
         Write_Acordeon("SKYACTIV-BODY : Diseño cabina", "Medidores panel de instrumentos");
-        Write_Acordeon("Equipamiento interior", "Asientos delanteros Tipo|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con 2 portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero/vinil-cuero|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento porta gafas");
-        Write_Acordeon("MAZDA CONNECT", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando|Pantalla activa de conducción (a color)");
-        Write_Acordeon("Otros", "Espejo interior día/noche |Espejos retrovisores exteriores|Direccional incorporada|Abatibles eléctricamente de forma  automática|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobremarcha Kick Down Switch|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños|Ganchos anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
+        Write_Acordeon("Equipamiento interior", "Asientos delanteros Tipo|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con 2 portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero/vinil-cuero/tela|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cortina parasol lateral|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento porta gafas");
+        Write_Acordeon("MAZDA CONNECT", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando |Pantalla activa de conducción (a color)");
+        Write_Acordeon("Otros", "Espejo interior día/noche |Espejos retrovisores exteriores|Direccional incorporada|Abatibles eléctricamente de forma  automática|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobre marcha (Kit Down Switch)|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños|Ganchos anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
         Write_Acordeon("Seguridad antirrobo", "Bloqueo central eléctrico|Apertura inteligente de puertas|Alarma antirrobo|Sistema inmovilizador antirrobo|Bloqueo dirección|Bloqueo seguros puerta");
         Write_Acordeon("Precio", "Precio");
 
         $("#accordion").accordion({
-            collapsible: true,
+            collapsible: false,
             active: 7,
             heightStyle: "content"
         });
@@ -58,6 +58,13 @@
             changeCarbyId($("#veh3-desktop").val(), "divTipveh3-desktop", "tipveh3-desktop", "3-desktop");
             veh2 = $("#tipveh2-desktop").val();
             veh3 = $("#tipveh3-desktop").val();
+
+            $(".msj-legal").hide();
+            if(veh1=="MazdaCX3" || $("#veh2-desktop").val()=="MazdaCX3" || $("#veh3-desktop").val() =="MazdaCX3")
+            {
+                $(".msj-legal").show();
+            }
+
         }
         else
         {
@@ -65,6 +72,12 @@
             changeCarbyId($("#veh3").val(), "divTipveh3", "tipveh3", "3");
             veh2 = $("#tipveh2").val();
             veh3 = $("#tipveh3").val();
+
+            $(".msj-legal").hide();
+            if(veh1=="MazdaCX3" || $("#veh2").val()=="MazdaCX3" || $("#veh3").val() =="MazdaCX3")
+            {
+                $(".msj-legal").show();
+            }
         }
         LoadHtml();
 
@@ -159,7 +172,6 @@
         //# 1 
         html = "<h3 class='title'>" + arrayGroup[0].Group + "</h3>"; //acordeon title. 
         html = html + "<div class='content'>"; // div Group, acordeon content. 
-
         htmlGroup = "<h3 class='title'>" + arrayGroup[0].Group + "</h3>"; //acordeon title. 
         htmlGroup = htmlGroup + "<div class='content'>"; // div Group, acordeon content. 
 
@@ -172,6 +184,7 @@
             //html = html + "<div class='wrap'>"; //div Sub-Group
             htmlSubGrupo="<div class='wrap'>"; //div Sub-Group
 
+            console.log(array_features[0].SubGroup);
             var namesubgroup = array_features[0].SubGroup;
             array_features.forEach(function(item) {
 

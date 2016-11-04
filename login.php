@@ -5,6 +5,7 @@ require_once 'incl/main.inc';
 dbconnect(); $settings=get_settings(0); $options=get_options(); $lang=get_language(); 
 
 setcookie('blab8_xuidc','',time()+3600*24*365,'/');
+setcookie('nombre_usuario',$_POST['uname'],time()+3600*24*365,'/');
 $ip=$_SERVER['REMOTE_ADDR'];
 
 
@@ -31,7 +32,7 @@ $user=neutral_fetch_array($result);
 $id=$user['usr_id']; $ky=hsh($id.$settings['cookie_salt']); $cookie=$id.'z'.$ky;
 setcookie('blab8_xuidc',$cookie,time()+3600*24*365,'/');
 setcookie('nombre_usuario',$uname,time()+3600*24*365,'/');
-redirect('../pabellon360/index.html');die();}}
+redirect('../pabellon360/index.php');die();}}
 
 /* --- */
 
@@ -48,7 +49,7 @@ $user=neutral_fetch_array($result);
 $id=$user['usr_id']; $ky=hsh($id.$settings['cookie_salt']); $cookie=$id.'z'.$ky;
 setcookie('blab8_xuidc',$cookie,time()+3600*24*365,'/');
 setcookie('nombre_usuario',$uname,time()+3600*24*365,'/');
-redirect('../pabellon360/index.html');die();}
+redirect('../pabellon360/index.php');die();}
 
 /* --- */
 
@@ -71,7 +72,7 @@ $user=neutral_fetch_array($result);
 $id=$user['usr_id'];$ky=hsh($id.$settings['cookie_salt']);$cookie=$id.'z'.$ky;
 setcookie('blab8_xuidc',$cookie,time()+3600*24*365,'/');
 setcookie('nombre_usuario',$uname,time()+3600*24*365,'/');
-redirect('../pabellon360/index.html');die();}}
+redirect('../pabellon360/index.php');die();}}
 
 /* --- */
 

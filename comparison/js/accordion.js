@@ -1,14 +1,14 @@
 $( function() {
   $( "#accordion_phone" ).accordion({
-    collapsible: true,
-    active: false,
+    collapsible: false,
+    active: 7,
     heightStyle: "content"
   });
 });
 $( function() {
   $( "#accordion_desktop" ).accordion({
-    collapsible: true,
-    active: false,
+    collapsible: false,
+    active: 7,
     heightStyle: "content"
   });
 });

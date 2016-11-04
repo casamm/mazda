@@ -177,13 +177,15 @@
 }
 
 .phone footer .car h2 {
-    font-size: 11pt;
+    font-size: 10pt;
     font-family: MazdaRegular;
     font-weight: 100;
 }
 
 .phone footer .timer {
     background: rgba(70, 23, 36, .7);
+    font-size: 8pt;
+    text-transform: uppercase;
 }
 
 .phone footer .timer h2 {

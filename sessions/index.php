@@ -126,7 +126,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agendate</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agéndate</a>
 							</p>
 						</li>
 						<hr>";
@@ -295,7 +295,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agendate</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agéndate</a>
 							</p>
 						</li>
 						<hr>";

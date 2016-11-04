@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+ <div id="log"></div>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="js/pruebaConsecionarios.js"></script>
+
+    <script>
+    $(document).ready(function() {
+
+           objConces = JSON.parse(ArriConce);   
+           objConces.Conce.forEach(function(item){ 
+           
+                $.ajax({
+                  type: "POST",
+                  url: "registroBDMazda.php",
+                  data: {
+                      nombre:item.nombre, apellido:item.apellido, mail:item.mail,telefono:item.telefono,modelo:item.modelo, tdocumento:"CC",numodoc:item.numdoc,codcon:item.codcon,codsuc:item.codsuc,ciudad:item.ciudad
+                  },
+                   success: function(data, textStatus, jqXHR)
+                   {
+                     $("#log").append(data + ' '  +  item.telefono + '<br>');
+                   }
+                });
+
+
+
+                //$("#log").append(item.nombre + ' ' + item.codcon + ' ' + item.codsuc + ' ' + item.ciudad + ' ' + item.apellido + ' ' + item.mail + ' '+ '<br>');
+
+           }); 
+
+
+    });
+    </script>
+</body>
+
+</html>
