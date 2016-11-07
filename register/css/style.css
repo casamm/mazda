@@ -222,7 +222,7 @@ footer .social img:first-child {
 
 .terms input {
     position: relative;
-    width: 45px;
+    width: 30px;
     height: 20px;
     margin: 0 10px;
     background: transparent;
@@ -279,6 +279,10 @@ footer .social img:first-child {
     }
     footer .social img {
         width: 43px;
+    }
+    .terms input {
+        width: 45px;
+        height: 20px;
     }
     .terms p {
         font-size: 10pt;

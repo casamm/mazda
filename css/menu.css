@@ -81,7 +81,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .95);
     z-index: 1800;
     visibility: hidden;
     opacity: 0;
@@ -195,8 +195,11 @@
     font-weight: 100;
     color: #d71c24;
 }
-
-
+@media only screen and (min-width: 375px) {
+    .phone .menu-overlay a {
+        margin: 15px 0;
+    }
+}
 /* desktop menu and footer */
 
 .desktop .invisible {

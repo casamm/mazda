@@ -1,132 +1,134 @@
 .content .vehicle .dropdown {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .content .vehicle .dropdown .ui-selectmenu-text,
 .content .vehicle .dropdown h2 {
-	font-size: 6pt;
-	font-family: MazdaRegular;
+    font-size: 6pt;
+    font-family: MazdaRegular;
 }
 
 .content .vehicle .dropdown .ui-selectmenu-text:after {
-	content: '';
-	display: block;
-	float: right;
-	height: 16px;
-	width: 30px;
-	background: url(../img/down-arrow.png) no-repeat center bottom;
-	background-size: 10px;
+    content: '';
+    display: block;
+    float: right;
+    height: 16px;
+    width: 30px;
+    background: url(../img/down-arrow.png) no-repeat center bottom;
+    background-size: 9px;
 }
 
 .content .vehicle .dropdown2 {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .content .vehicle .dropdown2 .ui-selectmenu-text,
 .content .vehicle .dropdown2 h2 {
-	font-size: 8pt;
-	font-family: InterstateLight;
-	text-transform: uppercase;
+    font-size: 7pt;
+    font-family: InterstateLight;
+    text-transform: uppercase;
 }
 
 .content .vehicle .dropdown2 .ui-selectmenu-text:after {
-	content: '';
-	display: block;
-	float: right;
-	height: 16px;
-	width: 30px;
-	background: url(../img/down-arrow.png) no-repeat center bottom;
-	background-size: 10px;
+    content: '';
+    display: block;
+    float: right;
+    height: 16px;
+    width: 30px;
+    background: url(../img/down-arrow.png) no-repeat center bottom;
+    background-size: 10px;
 }
 
 .ui-selectmenu-menu {
-	position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  padding: 0;
-  margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0;
+    margin: 0;
 }
 
 .ui-selectmenu-open {
-  display: block;
+    display: block;
 }
 
 .ui-front {
-  z-index: 100;
+    z-index: 100;
 }
 
 ul.ui-menu {
-	padding: 5px;
-	text-align: center;
-	list-style: none;
-	background: rgba(0,0,0,.8);
-	border: 1px solid rgba(255,255,255,.6);
-	max-width: 150px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    background: rgba(0, 0, 0, .8);
+    border: 1px solid rgba(255, 255, 255, .6);
+    max-width: 150px;
 }
 
-
-#tipveh2-desktop-menu
-{
-	font-family: InterstateLight;
-	text-transform: uppercase;
+#tipveh2-desktop-menu {
+    font-family: InterstateLight;
+    text-transform: uppercase;
 }
 
-#veh2-desktop-menu
-{
-	font-family: MazdaRegular;
+#veh2-desktop-menu {
+    font-family: MazdaRegular;
 }
 
-#tipveh3-desktop-menu
-{
-	font-family: InterstateLight;
-	text-transform: uppercase;
+#tipveh3-desktop-menu {
+    font-family: InterstateLight;
+    text-transform: uppercase;
 }
 
-#veh3-desktop-menu
-{
-	font-family: MazdaRegular;
+#veh3-desktop-menu {
+    font-family: MazdaRegular;
 }
 
-#tipveh2-menu
-{
-	font-family: InterstateLight;
-	text-transform: uppercase;
+#tipveh2-menu {
+    font-family: InterstateLight;
+    text-transform: uppercase;
 }
 
-#veh2-menu
-{
-	font-family: MazdaRegular;
+#veh2-menu {
+    font-family: MazdaRegular;
 }
 
-#tipveh3-menu
-{
-	font-family: InterstateLight;
-	text-transform: uppercase;
+#tipveh3-menu {
+    font-family: InterstateLight;
+    text-transform: uppercase;
 }
 
-#veh3-menu
-{
-	font-family: MazdaRegular;
+#veh3-menu {
+    font-family: MazdaRegular;
 }
-
 
 ul.ui-menu li {
-	padding: 6px 0;
-	font-size: 6pt;
-	/*font-family: MazdaRegular;*/
+    padding: 6px 0;
+    font-size: 6pt;
+    /*font-family: MazdaRegular;*/
 }
 
-
-
-
+@media only screen and (min-width: 375px) {
+    .content .vehicle .dropdown2 .ui-selectmenu-text,
+    .content .vehicle .dropdown2 h2 {
+        font-size: 8pt;
+    }
+    .content .vehicle .dropdown .ui-selectmenu-text:after {
+        content: '';
+        display: block;
+        float: right;
+        height: 16px;
+        width: 30px;
+        background: url(../img/down-arrow.png) no-repeat center bottom;
+        background-size: 10px;
+    }
+}

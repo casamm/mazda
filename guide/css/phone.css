@@ -56,15 +56,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .phone section.content .scroll-content {
-        height: 81.5%;
-        width: 60%;
-        margin: 0 auto;
-    }
+
 }
 
 @media only screen and (min-width: 1024px) {
-    .phone section.content .scroll-content {
-        height: 79.5%;
-    }
+
 }

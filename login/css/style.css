@@ -102,7 +102,7 @@ header h1 {
 }
 
 form {
-    height: 45.5%;
+    height: 50.5%;
     /*border-bottom: 1px solid #fff;*/
 }
 
@@ -269,6 +269,9 @@ footer a p {
 }
 
 @media only screen and (min-width: 375px) {
+    form {
+        height: 45.5%;
+    }
     header h2 {
         font-size: 14pt;
     }
