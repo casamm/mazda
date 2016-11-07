@@ -29,7 +29,7 @@ html,body {
 
 body {
 	position: relative;
-	background: url(../img/bg-phone.png) no-repeat;
+	background: url(../img/bg-phone.jpg) no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 	color: #fff;
@@ -106,7 +106,7 @@ footer a:after {
 	right: -18px;
 	height: 23px;
 	width: 18px;
-	background: url(../img/right-arrow.png) no-repeat center right;
+	background: url(../img/right-arrow.jpg) no-repeat center right;
 	background-size: 10px;
 }
 
@@ -132,7 +132,7 @@ footer a:after {
 
 @media only screen and (min-width : 1024px) {
 	body{
-		background: url(../img/bg-desktop.png) no-repeat;
+		background: url(../img/bg-desktop.jpg) no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 	}

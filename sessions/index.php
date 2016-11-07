@@ -59,7 +59,7 @@
 			    die("Connection failed: " . $conn->connect_error);
 			} 
 
-			$sql = "SELECT * FROM Sesion WHERE Fecha >= CURDATE()";  //todo: poner where para fecha mayor a hoy.
+			$sql = "SELECT * FROM Sesion WHERE Fecha >= DATE_ADD(now(), INTERVAL 110 MINUTE)";  //SQL esta 2 horas atras
 
 			$result = $conn->query($sql);
 		
@@ -98,7 +98,7 @@ $fecha2->add($intervalo);
 							echo "<li class='active'>
 								<h1 class='title'><span>" . $desc . "</span></h1>
 								<p class='time'>" . $row["Hora"]. "</p>
-								<p class='status live'>A Continuación</p>
+								<p class='status live'><a href='#' style='color: white;'>A Continuación</a></p>
 							 </li>
 							<hr>";
 						}
@@ -123,7 +123,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Reserva tu Sesión</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agenda tu Sesión</a>
 							</p>
 						</li>
 						<hr>";
@@ -160,31 +160,6 @@ $fecha2->add($intervalo);
 
 	<section class="content">
 		<ul>
-			<!-- <li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 2</span></h1>
-				<p class="time">09:00am - 09:15am</p>
-				<p class="status live"><a href="../sessions/chat.html">En Vivo Ahora</a></p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 3</span> Hatchback</h1>
-				<p class="time">09:15am - 09:30am</p>
-				<p class="status">Proximamente</p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 3</span> Sedán</h1>
-				<p class="time">09:30am - 09:45am</p>
-				<p class="status">Proximamente</p>
-			</li>
-			<hr>
-			<li>
-				<h1 class="title">Sesión <span>M&#123;zd&#123; 6</span></h1>
-				<p class="time">10:00am - 10:15am</p>
-				<p class="status">Próximamente</p>
-			</li> -->
-
-
 			<?php
 
 			$servername = "localhost";
@@ -200,7 +175,11 @@ $fecha2->add($intervalo);
 			    die("Connection failed: " . $conn->connect_error);
 			} 
 
-			$sql = "SELECT * FROM Sesion WHERE Fecha >= CURDATE()";  //todo: poner where para fecha mayor a hoy.
+			$sql = "SELECT * FROM Sesion WHERE Fecha >= DATE_ADD(now(), INTERVAL 110 MINUTE)";  //SQL esta 2 horas atras
+
+
+			//SELECT * FROM Sesion WHERE Fecha >= DATE_ADD(now(), INTERVAL 1 HOUR) fecha2;
+			//MINUTE
 
 			$result = $conn->query($sql);
 		
@@ -219,13 +198,17 @@ $intervalo = new DateInterval('PT5H'); //restar 5 horas a hora servidor
 $intervalo->invert = 1;
 $fecha2->add($intervalo);
 
+				//echo $row["fecha2"];
+
 				$fecha = $fecha1->diff($fecha2);
 				//echo date_format($fecha1,"Y/m/d H:i:s") . " : " . date_format($fecha2,"Y/m/d H:i:s");
 				//printf('%d años, %d meses, %d días, %d horas, %d minutos', $fecha->y, $fecha->m, $fecha->d, $fecha->h, $fecha->i);
 
 					if($fecha->y == 0 && $fecha->d==0 && $fecha->h==0)
 					{
-						if($fecha->i<=15)
+//echo $fecha->i;
+
+						if($fecha->i<10)
 						{
 						   echo "<li class='active'>
 								<h1 class='title'><span>" . $desc . "</span></h1>
@@ -239,7 +222,7 @@ $fecha2->add($intervalo);
 							echo "<li class='active'>
 								<h1 class='title'><span>" . $desc . "</span></h1>
 								<p class='time'>" . $row["Hora"]. "</p>
-								<p class='status live'>A Continuación</p>
+								<p class='status live'><a href='#' style='color: white;'>A Continuación</a></p>
 							 </li>
 							<hr>";
 						}
@@ -264,7 +247,7 @@ $fecha2->add($intervalo);
 							<h1 class='title'><span>" . $desc . "</span></h1>
 							<p class='time'>" . $row["Hora"]. "</p>
 							<p class='status live'>
-							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Reserva tu Sesión</a>
+							<a href='". getGCalendarUrl($evento) ."' target='_blank' style='color: #2995cc;'>Agenda tu Sesión</a>
 							</p>
 						</li>
 						<hr>";

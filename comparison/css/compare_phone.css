@@ -113,7 +113,7 @@ hr.horizontal {
 .phone section .accordion h3.title {
     padding: 26px 0;
     font-size: 11pt;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #fff;
     font-family: InterstateLight;
     font-weight: 100;

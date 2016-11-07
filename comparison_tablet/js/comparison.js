@@ -13,27 +13,26 @@
 
     function LoadHtml() {
         $("#sect").html("<div id='accordion' class='accordion'></div>");
-        Write_Acordeon("SKYACTIV-G : Motor", "Tipo|Turbocargador|Cilindraje (c.c.)|Número de cilindros|Relación de compresión|Potencia máxima (hp/r.p.m.)|Torque máximo (kg-m/r.p.m.)|Tipo de combustible|Intercooler|Sistema de combustible|Capacidad tanque de combustible (gal)");
-        Write_Acordeon("SKYACTIV-DRIVE : Transmisión", "Tipo|Tracción");
-        Write_Acordeon("Relaciones de caja", "1ª|2ª|3ª|4ª|5ª|6ª|Reversa|Relación final de eje|Convertidor de torque|Selección modo de conducción|Relación de transferencia|Protector metálico");
-        Write_Acordeon("SKYACTIV-CHASSIS : Suspensión", "Delantera|Capacidad del eje Delantero (kg)|Trasera|Capacidad del eje  Trasero(kg)|Diferencial de deslizamiento limitado (LSD)");
-        Write_Acordeon("Ruedas", "Rin|Llantas|Llanta de repuesto|Copa");
-        Write_Acordeon("Dirección", "Tipo|Radio de giro entre andenes (m)|Volante con cuero|Control de cambios en el volante");
-        Write_Acordeon("Sistema de Frenos", "Tipo|Delanteros|Traseros|Parqueo ");
-        Write_Acordeon("Dimensiones y pesos", "Longitud total (mm)|Ancho total (mm)|Altura total (mm)|Distancia entre ejes (mm)|Trocha delantera (mm)|Trocha trasera (mm)|Voladizo delantero (mm)|Voladizo trasero (mm)|Capacidad del baúl (L)|Peso vacío (kg)|Peso bruto vehicular (kg)|Capacidad de carga (kg)|Capacidad de arrastre con frenos (kg)|Capacidad de arrastre sin frenos (kg)");
-        Write_Acordeon("Cabina", "Cabina|Barras de impacto lateral");
-        Write_Acordeon("Seguridad pasiva", "Apoyacabezas|Cinturones de seguridad|Columna de dirección|Pedal de freno|Airbags |Apoyacabezas traseros");
-        Write_Acordeon("Seguridad proactiva i-ACTIVSENSE", "Sistema Inteligente de Iluminación Frontal (ADB)|Asistencia de Permanencia en Carril (LKA)|Asistencia Inteligente de Frenado en Ciudad Delantero (SCBS)|Asistencia Inteligente de Frenado en Ciudad Trasero (SCBS)|Sistema Avanzado de Monitoreo de Punto Ciego (BSM), con alerta de tráfico cruzado atrás|Sistema de Monitoreo de Punto Ciego (BSM)|Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Alerta de Atención del Conductor (DAA)");
-        Write_Acordeon("Seguridad activa", "Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema Control de Tracción (TCS)|Luces delanteras|Luces traseras LED|Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)");
-        Write_Acordeon("SKYACTIV-BODY : Platon", "Platón");
-        Write_Acordeon("Equipamiento exterior", "Techo corredizo \"Sunroof\"|Spoiler quinta puerta|Exploradoras|Estribos laterales|Parachoques|Protector platón");
-        Write_Acordeon("SKYACTIV-BODY : Diseño cabina", "Medidores panel de instrumentos");
-        Write_Acordeon("Equipamiento interior", "Asientos delanteros Tipo|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con 2 portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero/vinil-cuero/tela|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cortina parasol lateral|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento porta gafas");
-        Write_Acordeon("MAZDA CONNECT", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando |Pantalla activa de conducción (a color)");
-        Write_Acordeon("Otros", "Espejo interior día/noche |Espejos retrovisores exteriores|Direccional incorporada|Abatibles eléctricamente de forma  automática|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobre marcha (Kit Down Switch)|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños|Ganchos anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
-        Write_Acordeon("Seguridad antirrobo", "Bloqueo central eléctrico|Apertura inteligente de puertas|Alarma antirrobo|Sistema inmovilizador antirrobo|Bloqueo dirección|Bloqueo seguros puerta");
-        Write_Acordeon("Precio", "Precio");
-
+        Write_Acordeon("MOTOR", "Tipo|Turbo|Cilindraje (c.c.)|Número de cilindros|Relación de compresión|Potencia máxima (hp/r.p.m.)|Torque máximo (kg-m/r.p.m.)|Tipo de combustible|Intercooler|Sistema de combustible|Capacidad tanque de combustible (L)");
+        Write_Acordeon("TRANSMISIÓN", "Tipo|Tracción");
+        Write_Acordeon("RELACIONES DE CAJA", "1ª|2ª|3ª|4ª|5ª|6ª|Reversa|Relación final de eje|Convertidor de torque|Selección modo de conducción|Relación de transferencia|Protector metálico");
+        Write_Acordeon("SKYACTIV-CHASSIS : SUSPENSIÓN", "Delantera|Capacidad del eje Delantero (kg)|Trasera|Capacidad del eje  Trasero(kg)|Diferencial de deslizamiento limitado (LSD)");
+        Write_Acordeon("RUEDAS", "Rin|Llantas|Llanta de repuesto|Copa");
+        Write_Acordeon("DIRECCIÓN", "Tipo|Radio de giro entre andenes (m)|Volante con cuero|Control de cambios en el volante|Control G-Vectoring (GVC)");
+        Write_Acordeon("SISTEMA DE FRENOS", "Tipo|Delanteros|Traseros|Freno de Parqueo ");
+        Write_Acordeon("DIMENSIONES Y PESOS", "Longitud total (mm)|Ancho total (mm)|Altura total (mm)|Distancia entre ejes (mm)|Trocha delantera (mm)|Trocha trasera (mm)|Voladizo delantero (mm)|Voladizo trasero (mm)|Capacidad del baúl (L)|Peso vacío (kg)|Peso bruto vehicular (kg)|Capacidad de carga (kg)|Capacidad de arrastre con frenos (kg)|Capacidad de arrastre sin frenos (kg)");
+        Write_Acordeon("DISEÑO DE CABINA", "Cabina|Barras de impacto lateral");
+        Write_Acordeon("SEGURIDAD PASIVA", "Apoyacabezas|Cinturones de seguridad|Columna de dirección|Pedal de freno|Airbags |Apoyacabezas traseros");
+        Write_Acordeon("SEGURIDAD PROACTIVA i-ACTIVSENSE", "Sistema Inteligente de Iluminación Frontal (ADB)|Asistencia de Permanencia en Carril (LKA)|Asistencia Inteligente de Frenado en Ciudad Delantero (SCBS)|Asistencia Inteligente de Frenado en Ciudad Trasero (SCBS)|Sistema Avanzado de Monitoreo de Punto Ciego (BSM)|Sistema de Monitoreo de Punto Ciego (BSM)|Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Alerta de Atención del Conductor (DAA)");
+        Write_Acordeon("SEGURIDAD ACTIVA", "Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema Control de Tracción (TCS)|Luces delanteras|Luces traseras LED|Luces Delanteras Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)");
+        Write_Acordeon("SKYACTIV-BODY : PLATON", "Platón");
+        Write_Acordeon("EQUIPAMIENTO EXTERIOR", "Techo corredizo \"Sunroof\"|Spoiler Trasero|Exploradoras|Estribos laterales|Parachoques|Protector platón");
+        Write_Acordeon("SKYACTIV-BODY : DISEÑO CABINA", "Medidores panel de instrumentos");
+        Write_Acordeon("EQUIPAMIENTO INTERIOR", "Asientos delanteros Tipo|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cortina parasol lateral|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento porta gafas");
+        Write_Acordeon("SISTEMA DE INFOENTRETENIMIENTO", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando |Pantalla activa de conducción");
+        Write_Acordeon("OTROS", "Espejo interior retrovisor día/noche |Espejos retrovisores exteriores|Direccional incorporada|Espejos exteriores abatibles eléctricamente|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobre marcha (Kit Down Switch)|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños ISOFIX|Ganchos anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
+        Write_Acordeon("SEGURIDAD ANTIRROBO", "Bloqueo central eléctrico|Apertura inteligente de puertas|Alarma antirrobo|Sistema inmovilizador antirrobo|Bloqueo dirección|Bloqueo seguros puerta");
+        Write_Acordeon("PRECIO", "Precio");
 
         $("#accordion").accordion({
             collapsible: false,

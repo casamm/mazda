@@ -26,7 +26,7 @@ body {
 
 body {
     position: relative;
-    background: url(../img/bg-phone.png) no-repeat;
+    background: url(../img/bg-phone.jpg) no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     color: #fff;
@@ -60,7 +60,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/logo.jpg) no-repeat;
     background-position: 95% 50%;
     background-size: 50px;
 }
@@ -334,7 +334,7 @@ footer .social img:first-child {
 
 @media only screen and (min-width: 1024px) {
     body {
-        background: url(../img/bg-desktop.png) no-repeat;
+        background: url(../img/bg-desktop.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }

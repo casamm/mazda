@@ -9,7 +9,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 'auto',
     slidesPerView: 3,
     touchRatio: 0.2,
-    initialSlide: 1,
+    initialSlide: 0,
     slideToClickedSlide: true
 });
 
@@ -24,7 +24,7 @@ var galleryThumbsDesktop = new Swiper('.gallery-thumbs-desktop', {
     slidesPerView: 'auto',
     slidesPerView: 6,
     touchRatio: 0.2,
-    initialSlide: 3,
+    initialSlide: 0,
     slideToClickedSlide: true
 });
 

@@ -54,10 +54,15 @@
 	font-family: MazdaRegular;
 }
 
+.desktop .container .vehicle .dropdown .tipveh .ui-selectmenu-text h2 {
+	font-size: 8pt;
+	font-family: InterstateLight;
+}
+
 header .container .vehicle .tipveh .ui-selectmenu-text,
 header .container .vehicle .tipveh h2 {
 	font-size: 13px;
-	font-family: MazdaRegular;
+	font-family: InterstateLight;
 }
 
 .desktop .container .vehicle .dropdown .ui-selectmenu-text:after {
@@ -82,7 +87,7 @@ header .container .vehicle .tipveh h2 {
 .desktop section .accordion h3.title {
 	padding: 26px 0;
 	font-size: 11pt;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #fff;
 	font-family: InterstateLight;
 	font-weight: 100;
@@ -121,7 +126,6 @@ header .container .vehicle .tipveh h2 {
   width: 65px;
   margin: 0 auto;
   z-index: -10;
-  border-radius: 100%;
   border: 10px solid #000;
 }
 

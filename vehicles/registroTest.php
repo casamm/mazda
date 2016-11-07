@@ -97,7 +97,7 @@ $_POST['estado'] = $prospectosServiceServiceRegistrar->getLastError();
 
 if ($_POST['estado']=="OK")
 {
-	print "Gracias, muy pronto un ejecutivo de Mazda estará comunicandose contigo.";
+	print "Gracias, muy pronto un ejecutivo de Mazda estará comunicándose contigo.";
 }
 else
 {

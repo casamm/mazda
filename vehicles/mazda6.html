@@ -22,6 +22,9 @@
                 <h1>M&#123;zd&#123; <span>6</span></h1>
             </header>
             <div class="container">
+			<div id="map-header-phone">
+                        Desplázate hacia los lados para ver el vehículo desde todos los ángulos.
+                    </div>
                 <div class="view360" id="360_phone">
                     <div class="icon"></div>
                     <iframe id="iframe_phone" src="360exteriors/360_mazda6.html" width="692" height="502" scrolling="no" frameBorder="0"></iframe>
@@ -49,11 +52,11 @@
                     </div>
                     <div id="mapphone"></div>
                     <div>
-                        <p id="lblCiudad-phone" style="display:none">Ciudad</p>
+                        <!-- <p id="lblCiudad-phone" style="display:none">Ciudad</p> -->
                         <input id="txtciudad-phone" type="text" name="ciudad" readonly style="display:none">
                     </div>
                     <div>
-                        <p id="lblConcesionario-phone" style="display:none">Concesionario</p>
+                        <!-- <p id="lblConcesionario-phone" style="display:none">Concesionario</p> -->
                         <input id="txtconce-phone" type="text" name="" disabled style="display:none">
                     </div>
                     <div class="form-container">
@@ -86,7 +89,7 @@
                             </select>
                         </div>
                         <div>
-                            <input type="text" name="numodoc" placeholder="No de documento" required>
+                            <input type="text" name="numodoc" placeholder="Número de documento" required>
                         </div>
                         <div>
                             <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
@@ -106,16 +109,16 @@
                     <input id="idsuc-phone" name="codsuc" type="hidden" value="0">
                     <input id="idmod-phone" name="modelo" type="hidden" value="1">
                 </form>
-                <div class="legal-note">
-                  <h4>Nota Legal</h4>
-                  <p>Todos los contenidos del Web, salvo que se indique lo contrario, son titularidad exclusiva de la empresa o de terceros que han autorizado su inclusión en el Web y, con carácter enunciativo, que no limitativo, el diseño gráfico, código fuente, logos, textos, ilustraciones, fotografías, y demás elementos que aparecen en el Web.</p>
-                </div>
+                
             </div>
         </section>
     </div>
     <div id="desktop" class="desktop hidden">
         <section class="content">
             <div class="container">
+			<div id="map-header-desktop">
+                        Desplázate hacia los lados para ver el vehículo desde todos los ángulos.
+                    </div>
                 <div class="view360" id="360_desktop">
                     <div class="icon"></div>
                     <!-- <img src="img/img1.png"> -->
@@ -138,17 +141,17 @@
                     <img src="img/vehicles/Mazda6/5.jpg">
                 </div>
                 <form id="form1" onsubmit="EnviarForm(); return false">
-                    <div id="map-header-desktop">
-                        ¿Deseas que un asesor te contacte para agendar un Test Drive?
-                        <br>Por favor selecciona en el mapa el concesionario de tu preferencia.
+                   <div id="map-header-desktop">
+                      ¿Deseas que un asesor te contacte para programar un Test Drive?
+                        <br>Selecciona en el mapa el concesionario de tu preferencia.
                     </div>
                     <div id="mapdesktop"></div>
                     <div>
-                        <p id="lblCiudad" style="display:none">Ciudad </p>
+                        <!-- <p id="lblCiudad" style="display:none">Ciudad </p> -->
                         <input id="txtciudad-desk" type="text" name="ciudad" readonly style="display:none">
                     </div>
                     <div>
-                        <p id="lblConcesionario" style="display:none">Concesionario </p>
+                        <!-- <p id="lblConcesionario" style="display:none">Concesionario </p> -->
                         <input id="txtconce-desk" type="text" name="" disabled style="display:none">
                     </div>
                     <div>
@@ -180,7 +183,7 @@
                         </select>
                     </div>
                     <div>
-                        <input type="text" name="numodoc" placeholder="No de documento" required>
+                        <input type="text" name="numodoc" placeholder="Número de documento" required>
                     </div>
                     <div>
                         <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
@@ -199,10 +202,7 @@
                     <input id="idsuc" name="codsuc" type="hidden" value="0">
                     <input id="idmod" name="modelo" type="hidden" value="1">
                 </form>
-                <div class="legal-note">
-                  <h4>Nota Legal</h4>
-                  <p>Todos los contenidos del Web, salvo que se indique lo contrario, son titularidad exclusiva de la empresa o de terceros que han autorizado su inclusión en el Web y, con carácter enunciativo, que no limitativo, el diseño gráfico, código fuente, logos, textos, ilustraciones, fotografías, y demás elementos que aparecen en el Web.</p>
-                </div>
+                
             </div>
         </section>
     </div>

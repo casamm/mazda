@@ -11,6 +11,12 @@ function ReadCookie(nombre)
 }
 
 
+function changeTitle(name)
+{
+  $("#cartitle").removeClass("invisible");
+  $("#cartitle").html(name);
+}
+
 $("#user_name_phone").html(ReadCookie("nombre_usuario").split("+").join(" "));
 $("#user_name_desktop").html(ReadCookie("nombre_usuario").split("+").join(" "));
 
@@ -60,25 +66,32 @@ function countdown(id){
         minutos=Math.floor(diferencia/60)
         diferencia=diferencia-(60*minutos)
         segundos=Math.floor(diferencia)
+        //console.log("punto1");
 
         if( dias<=0 &&  horas<=0 &&  minutos<15)
         {
-           document.getElementById(id).innerHTML='Quedan ' + minutos + ' Minutos, ' + segundos + ' Segundos';
+           document.getElementById(id).innerHTML= minutos + ':' + segundos;
+          // console.log("punto2");
         }
         else
         {
            document.getElementById(id).innerHTML='A continuación';
+          // console.log("punto3");
         }
 
         //document.getElementById(id).innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'
 
         if (dias>0 || horas>0 || minutos>0 || segundos>0){
             setTimeout("countdown(\"" + id + "\")",1000)
+           // console.log("punto4");
         }
     }
     else{
-        document.getElementById('ContadorSession').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
-        document.getElementById('ContadorSession-phone').innerHTML=' ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
+        // document.getElementById('ContadorSession').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
+        // document.getElementById('ContadorSession-phone').innerHTML=' ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
+        document.getElementById('ContadorSession').innerHTML="<a href='../sessions/chat.html'>En Vivo Ahora</a>";
+        document.getElementById('ContadorSession-phone').innerHTML="<a href='../sessions/chat.html'>En Vivo Ahora</a>";
+        //console.log("punto5");
     }
 
     //descripcion

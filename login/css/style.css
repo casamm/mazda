@@ -26,7 +26,7 @@ body {
 
 body {
     position: relative;
-    background: url(../img/bg-phone.png) no-repeat;
+    background: url(../img/bg-phone.jpg) no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     color: #fff;
@@ -346,7 +346,7 @@ footer a p {
 
 @media only screen and (min-width: 1024px) {
     body {
-        background: url(../img/bg-desktop.png) no-repeat;
+        background: url(../img/bg-desktop.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }

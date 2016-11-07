@@ -29,7 +29,7 @@
 	<div class="menu-overlay">
 		<a href="#" onclick="ChangeContent(event,0);">Pabellón 360</a>
 		<hr>
-		<a href="#" onclick="ChangeContent(event,1);">Sesiónes en Vivo</a>
+		<a href="#" onclick="ChangeContent(event,1);">Sesiones en Vivo</a>
 		<hr>
 		<a href="#" onclick="ChangeContent(event,2);">Vehículos</a>
 		<hr>
@@ -91,12 +91,12 @@
 		    <div class="bar two"></div>
 			</div>
 			<div class="wrap">
-				<a class="page-title" href="#" onclick="ChangeContent(event,1);">Sesiónes en Vivo</a>
+				<a class="page-title" href="#" onclick="ChangeContent(event,1);">Sesiones en Vivo</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,2);">Vehículos</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,3);">Comparativo</a>
 				<a class="page-title" href="#" onclick="ChangeContent(event,4);">Ayuda</a>
 				<a class="page-title" href="../Chat/LogOut.php">Cerrar Sesión</a>
-				<h2 class="car-title invisible">Test</h2>
+				<h2 id="cartitle" class="car-title invisible">Test</h2>
 			</div>
 			<div class="name">
 				<p id="user_name_desktop"></p>
@@ -161,7 +161,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT Fecha, Descripcion FROM Sesion WHERE Fecha >= NOW() Order by Fecha asc Limit 1";
+$sql = "SELECT Fecha, Descripcion FROM Sesion WHERE Fecha >= DATE_ADD(now(), INTERVAL 110 MINUTE) Order by Fecha asc Limit 1"; //SQL esta 2 horas atras
 
 $result = $conn->query($sql);
 

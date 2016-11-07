@@ -1,7 +1,8 @@
 function CloseOverlay() {
     $("#iframe-content").hide();
+    $("#cartitle").addClass("invisible");
     
-    document.getElementById('iframe-content').src = "../vehicles/index.html";
+    document.getElementById('iframe-content').src = "";
 
     $("#iframe-content").addClass("hidden");
     $(".desktop .menu").addClass("invisible").animate({ opacity: 0 });

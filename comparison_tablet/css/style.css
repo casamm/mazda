@@ -169,14 +169,23 @@ header .container .vehicle .dropdown h2 {
 	font-family: MazdaRegular;
 }
 
+header .container .vehicle .dropdown2 .ui-selectmenu-text,
+header .container .vehicle .dropdown2 h2 {
+	font-size: 15px;
+	font-family: InterstateLight;
+}
+
 header .container .vehicle .tipveh .ui-selectmenu-text,
 header .container .vehicle .tipveh h2 {
 	font-size: 13px;
-	font-family: MazdaRegular;
+	font-family: InterstateLight;
+	text-transform: uppercase;
 }
 
 .tipveh-firs {
 	font-size: 13px !important;
+	font-family: InterstateLight !important;
+	text-transform: uppercase;
 }
 
 .red {
@@ -184,6 +193,16 @@ header .container .vehicle .tipveh h2 {
 }
 
 header .container .vehicle .dropdown .ui-selectmenu-text:after {
+	content: '';
+	display: block;
+	float: right;
+	height: 14px;
+	width: 30px;
+	background: url(../img/down-arrow.png) no-repeat center bottom;
+	background-size: 10px;
+}
+
+header .container .vehicle .dropdown2 .ui-selectmenu-text:after {
 	content: '';
 	display: block;
 	float: right;
@@ -218,10 +237,54 @@ ul.ui-menu {
 	border: 1px solid rgba(255,255,255,.6);
 }
 
+#tipveh2-desktop-menu
+{
+	font-family: InterstateLight;
+	text-transform: uppercase;
+}
+
+#veh2-desktop-menu
+{
+	font-family: MazdaRegular;
+}
+
+#tipveh3-desktop-menu
+{
+	font-family: InterstateLight;
+	text-transform: uppercase;
+}
+
+#veh3-desktop-menu
+{
+	font-family: MazdaRegular;
+}
+
+#tipveh2-menu
+{
+	font-family: InterstateLight;
+	text-transform: uppercase;
+}
+
+#veh2-menu
+{
+	font-family: MazdaRegular;
+}
+
+#tipveh3-menu
+{
+	font-family: InterstateLight;
+	text-transform: uppercase;
+}
+
+#veh3-menu
+{
+	font-family: MazdaRegular;
+}
+
 ul.ui-menu li {
 	padding: 6px 0;
 	font-size: 8pt;
-	font-family: MazdaRegular;
+	/*font-family: MazdaRegular;*/
 }
 
 header .container .vehicle img {

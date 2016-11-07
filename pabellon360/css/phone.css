@@ -80,7 +80,7 @@
 
 @media only screen and (min-width : 1024px) {
 	.phone section.content {
-		background: url(../img/bg-desktop.png) no-repeat center center;
+		/*background: url(../img/bg-desktop.png) no-repeat center center;*/
 		background-size: 150%;
 	}
 }
