@@ -102,8 +102,8 @@
 
 .phone .menu-overlay a {
     display: block;
-    margin: 5px 0;
-    font-size: 13pt;
+    margin: 0;
+    font-size: 11pt;
     font-family: InterstateLight;
     color: #fff;
     text-transform: uppercase;
@@ -195,9 +195,17 @@
     font-weight: 100;
     color: #d71c24;
 }
+
 @media only screen and (min-width: 375px) {
     .phone .menu-overlay a {
-        margin: 15px 0;
+        margin: 5px 0;
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .phone .menu-overlay a {
+        margin: 10px 0;
     }
 }
 /* desktop menu and footer */
