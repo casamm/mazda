@@ -157,6 +157,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+	background: #000;
 }
 
 .desktop section.content .container form > div button {

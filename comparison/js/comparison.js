@@ -1,6 +1,6 @@
     var veh1 = "MazdaCX5PrimeMT";
-    var veh2 = "Mazda6GTLX";
-    var veh3 = "Mazda6GTLX";
+    var veh2 = "Mazda2";
+    var veh3 = "Mazda2";
 
 
     $(document).ready(function() {
@@ -45,13 +45,13 @@
         $("#accordion").accordion({
             collapsible: false,
             active: 7,
-            heightStyle: "content",
-            activate: function( event, ui ) {
-            if(!$.isEmptyObject(ui.newHeader.offset())) {
-                $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top }, 'slow');
-            }
-            }
+            heightStyle: "content"
         });
+
+
+        $('#accordion').bind('accordionactivate', function(event, ui) {
+            $( ui.newHeader )[0].scrollIntoView({block: "end", behavior: "smooth"}); 
+         });
 
     }
 

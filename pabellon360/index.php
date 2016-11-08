@@ -1,3 +1,12 @@
+<?php
+	 ob_start();
+
+	if(!isset($_COOKIE['nombre_usuario'])){           
+   		 header("Location: ../home/index.html");
+   	 die();
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +21,6 @@
 <script type="text/javascript" src="swfobject.js"></script>
 <title>MAZDA | Salón Del Automóvil 2016</title>
 </head>
-
 <body>
 <div id="phone" class="phone hidden">
 	<header>
@@ -23,7 +31,7 @@
 		<div class="user">
 			<h1 id="user_name_phone"></h1>
 		</div>
-		<div class="logo"></div>
+		<div class="logo"  onclick="window.open('http://www.mazda.com.co/');"></div>
 	</header>
 
 	<div class="menu-overlay">
@@ -101,7 +109,7 @@
 			<div class="name">
 				<p id="user_name_desktop"></p>
 			</div>
-			<div class="logo"></div>
+			<div class="logo" onclick="window.open('http://www.mazda.com.co/');"></div>
 		</div>
 	</header>
 

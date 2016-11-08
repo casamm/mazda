@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>MAZDA</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h2>Salón del Automóvil</h2>
+            <h1>2016</h1>
+        </div>
+    </header>
+    <section>
+       <div class="icon">
+           <img src="img/info.png">
+           <h3></h3>
+       </div>
+       <p><?php print $info;?></p>
+      <?php if(isset($link)){?>
+      <span id="rdr" class="link" style="display:none" onclick="go('<?php print $link;?>');return false"><?php print $lang['continue'];?></span> &nbsp;
+      <script type="text/javascript">
+      function r(){document.getElementById('rdr').style.display='block';} setTimeout('r()',1000);
+      </script>
+      <?php }?>
+    </section>
+</body>

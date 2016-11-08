@@ -39,6 +39,10 @@
             heightStyle: "content"
         });
 
+        $('#accordion').bind('accordionactivate', function(event, ui) {
+            $( ui.newHeader )[0].scrollIntoView({block: "end", behavior: "smooth"}); 
+         });
+
     }
 
     function change_tipe() {

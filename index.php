@@ -20,6 +20,7 @@ $uname=$_POST['usname'];
 $query='DELETE FROM '.$dbss['prfx']."_users WHERE usr_name='$uname' AND usr_mail=''";
 neutral_query($query); 
 
+setcookie('nombre_usuario','',time()+3600*24*365,'/');
 
 die();}
 

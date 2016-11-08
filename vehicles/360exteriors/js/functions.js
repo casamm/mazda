@@ -62,8 +62,8 @@ $(function() {
         }
         return this._$progress.css({
           position: "absolute",
-          top: (this._$target.height() - 35) / 2,
-          left: (this._$target.width() - 35) / 2,
+          top: (this._$target.height() / 2)  -  106,
+          left: (this._$target.width() - 120) / 2,
           display: "block"
         });
       }
