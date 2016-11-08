@@ -402,3 +402,12 @@ footer .social img:first-child {
         position: inherit;
     }
 }
+
+
+body.android {
+    height: auto;
+}
+
+body.android .title {
+    height: 45px;
+}

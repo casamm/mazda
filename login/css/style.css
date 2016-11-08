@@ -399,3 +399,11 @@ footer a p {
         margin-bottom: 20px;
     }
 }
+
+body.android {
+    height: auto;
+}
+
+body.android .title {
+    height: 45px;
+}
