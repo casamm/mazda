@@ -47,6 +47,11 @@ function SeleccionaConcesionario(cons, ciudad, idconc, idsuc)
 
 }
 
+function n(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+
+
 function countdown(id){
 
    var fechareciente=$("#FechaMasReciente").val();
@@ -70,7 +75,7 @@ function countdown(id){
 
         if( dias<=0 &&  horas<=0 &&  minutos<15)
         {
-           document.getElementById(id).innerHTML= minutos + ':' + segundos;
+           document.getElementById(id).innerHTML= n(minutos) + ':' + n(segundos);
           // console.log("punto2");
         }
         else
@@ -82,9 +87,10 @@ function countdown(id){
         //document.getElementById(id).innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'
 
         if (dias>0 || horas>0 || minutos>0 || segundos>0){
-            setTimeout("countdown(\"" + id + "\")",1000)
            // console.log("punto4");
         }
+		
+		setTimeout("countdown(\"" + id + "\")",1000)
     }
     else{
         // document.getElementById('ContadorSession').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
