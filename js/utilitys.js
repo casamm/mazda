@@ -17,8 +17,8 @@ function changeTitle(name)
   $("#cartitle").html(name);
 }
 
-$("#user_name_phone").html(ReadCookie("nombre_usuario").split("+").join(" "));
-$("#user_name_desktop").html(ReadCookie("nombre_usuario").split("+").join(" "));
+$("#user_name_phone").html(decodeURIComponent(ReadCookie("nombre_usuario")).split("+").join(" "));
+$("#user_name_desktop").html(decodeURIComponent(ReadCookie("nombre_usuario")).split("+").join(" "));
 
 
 function SeleccionaConcesionario(cons, ciudad, idconc, idsuc)

@@ -45,7 +45,12 @@
         $("#accordion").accordion({
             collapsible: false,
             active: 7,
-            heightStyle: "content"
+            heightStyle: "content",
+            activate: function( event, ui ) {
+            if(!$.isEmptyObject(ui.newHeader.offset())) {
+                $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top }, 'slow');
+            }
+            }
         });
 
     }
@@ -184,7 +189,7 @@
             //html = html + "<div class='wrap'>"; //div Sub-Group
             htmlSubGrupo="<div class='wrap'>"; //div Sub-Group
 
-            console.log(array_features[0].SubGroup);
+            //console.log(array_features[0].SubGroup);
             var namesubgroup = array_features[0].SubGroup;
             array_features.forEach(function(item) {
 

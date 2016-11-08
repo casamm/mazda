@@ -49,7 +49,8 @@ $query='UPDATE '.$dbss['prfx'].'_iplog SET timestamp='.$timestamp.' WHERE usr_id
 neutral_query($query);}
 }
 ?>
-<form id="lout" method="post" action="index.php"><p><input type="hidden" name="uid" value="<?php print $user['id'];?>" /><input type="hidden" name="ups" value="<?php print $lhash;?>" /></p></form>
+<form id="lout" method="post" action="index.php"><p><input type="hidden" name="uid" value="<?php print $user['id'];?>" /><input type="hidden" name="ups" value="<?php print $lhash;?>" />
+<input type="hidden" name="usname" value="<?php print $user['name'];?>" /></p></form>
 <script type="text/javascript">
 	document.forms.lout.submit();
 </script>

@@ -14,7 +14,14 @@ dbconnect(); $settings=get_settings(0); $options=get_options();
 if(isset($_POST['uid']) && isset($_POST['ups']) && hsh($_POST['uid'].'hash_check')==$_POST['ups']){
 $uid=(int)$_POST['uid']; 
 $query='DELETE FROM '.$dbss['prfx']."_online WHERE usr_id=$uid";
-neutral_query($query); redirect('../home/index.html'); die();}
+neutral_query($query); redirect('../home/index.html'); 
+
+$uname=$_POST['usname']; 
+$query='DELETE FROM '.$dbss['prfx']."_users WHERE usr_name='$uname' AND usr_mail=''";
+neutral_query($query); 
+
+
+die();}
 
 
 if(isset($_GET['url'])){$url=(int)$_GET['url'];}else{$url=0;}
