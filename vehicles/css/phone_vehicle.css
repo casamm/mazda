@@ -187,13 +187,86 @@ body {
 }
 
 .phone section.content .container .legal-note h4 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .phone section.content .container .legal-note p {
-  line-height: 23px;
-  font-size: 9pt;
+    line-height: 23px;
+    font-size: 9pt;
+}
+
+.phone .terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.phone .terms input[type="checkbox"] {
+    position: relative;
+    width: 30px !important;
+    height: 20px !important;
+    margin: 0 10px !important;
+    background: transparent;
+    color: #fff !important;
+    border: 1px solid #187ec0 !important;
+    border-radius: 0 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.phone .terms input[type="checkbox"]:checked:after {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #187ec0;
+}
+
+.phone .terms p {
+    padding: 12px;
+    font-size: 7pt;
+    font-family: InterstateLight;
+    font-weight: 100;
+    color: #187ec0;
+}
+
+.phone .terms a {
+    color: #187ec0;
+}
+
+@media only screen and (min-width: 375px) {
+    .phone .terms input[type="checkbox"] {
+        width: 45px !important;
+        height: 20px !important;
+    }
+    .phone .terms p {
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .phone .terms p {
+        font-size: 10pt;
+    }
+    .phone .terms input[type="checkbox"]:checked:after {
+        width: 11px !important;
+        height: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .phone .terms input[type="checkbox"] {
+        width: 20px !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
