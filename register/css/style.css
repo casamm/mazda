@@ -247,7 +247,7 @@ footer .social img:first-child {
 }
 
 .terms p {
-    padding: 12px 0;
+    padding: 12px;
     font-size: 7pt;
     font-family: InterstateLight;
     font-weight: 100;
@@ -394,5 +394,11 @@ footer .social img:first-child {
     hr {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-height: 540px) {
+    .terms {
+        position: inherit;
     }
 }
