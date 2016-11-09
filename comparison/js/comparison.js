@@ -1,13 +1,14 @@
     var veh1 = "MazdaCX5PrimeMT";
-    var veh2 = "Mazda2";
-    var veh3 = "Mazda2";
+    var veh2 = "Mazda2TouringMT";
+    var veh3 = "Mazda2TouringMT";
 
 
     $(document).ready(function() {
         LoadHtml();
-        $("#veh2").val("Mazda6");
-        $("#veh3").val("Mazda6");
-        change_tipe();
+        $("#veh2").val("Mazda2");
+        $("#veh3").val("Mazda2");
+        change_tipe(2);
+        change_tipe(3);
     });
 
 
@@ -18,7 +19,11 @@
         }
         else
         {
-            $("#sect-phone").html("<div id='accordion' class='accordion'></div>");
+            $("#sect-phone").html("<div id='accordion' class='accordion'></div><p class='msj-legal'>Especificaciones adicionales, remitirse a la ficha técnica del vehículo.</p>");
+            if(veh1=="MazdaCX3" || $("#veh2").val()=="MazdaCX3" || $("#veh3").val() =="MazdaCX3")
+            {
+                $(".msj-legal").text('Las características de los modelos de automóviles Mazda CX-3 utilizados en la presente exhibición pueden no ser las definitivas y presentar variaciones según el modelo y el lugar en que se adquiera. Por tanto, para obtener las características y especificaciones de los vehículos disponibles es necesario solicitar una cotización u oferta comercial formal en alguno de nuestros concesionarios autorizados.');
+            }
         }
 
         Write_Acordeon("MOTOR", "Tipo|Turbo|Cilindraje (c.c.)|Número de cilindros|Relación de compresión|Potencia máxima (hp/r.p.m.)|Torque máximo (kg-m/r.p.m.)|Tipo de combustible|Intercooler|Sistema de combustible|Capacidad tanque de combustible (L)");
@@ -35,10 +40,9 @@
         Write_Acordeon("SEGURIDAD ACTIVA", "Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema Control de Tracción (TCS)|Luces delanteras|Luces traseras LED|Luces Delanteras Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)");
         Write_Acordeon("PLATON", "Platón");
         Write_Acordeon("EQUIPAMIENTO EXTERIOR", "Techo corredizo \"Sunroof\"|Spoiler Trasero|Exploradoras|Estribos laterales|Parachoques|Protector platón");
-        // Write_Acordeon("DISEÑO CABINA", "Medidores panel de instrumentos");
-        Write_Acordeon("EQUIPAMIENTO INTERIOR", "Asientos delanteros Tipo|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cortina parasol lateral|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento porta gafas");
-        Write_Acordeon("SISTEMA DE INFOENTRETENIMIENTO", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando |Pantalla activa de conducción");
-        Write_Acordeon("OTROS", "Espejo interior retrovisor día/noche |Espejos retrovisores exteriores|Direccional incorporada|Espejos exteriores abatibles eléctricamente|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobre marcha (Kit Down Switch)|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños ISOFIX|Ganchos anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
+        Write_Acordeon("EQUIPAMIENTO INTERIOR", "Asientos delanteros|Asientos delanteros Accionamiento|Asientos delanteros Calefacción|Asientos delanteros Memorias|Asientos traseros|Descansabrazos central con portavasos|Asientos traseros Tercera fila|Descansabrazos Tercera fila|Asientos en tela|Asientos con cuero|Palanca de cambios con cuero|Palanca freno de parqueo con cuero|Parasoles|Parasol eléctrico trasero|Cortina parasol lateral|Cubierta zona de carga|Panel de instrumentos|Paneles puertas|Ceniceros|Consola piso|Compartimiento portagafas");
+        Write_Acordeon("SISTEMA DE INFO-ENTRETENIMIENTO", "Radio|Bluetooth®|Parlantes|Display|Comandos de voz|Navegador GPS|Botón multicomando |Pantalla activa de conducción");
+        Write_Acordeon("OTROS", "Espejo interior retrovisor día/noche |Espejos retrovisores exteriores|Direccional incorporada|Espejos exteriores abatibles eléctricamente|Encendido por botón|Vidrios eléctricos|Limpiaparabrisas delantero|Automático con sensor de lluvia|Control de sobre marcha (Kick Down Switch)|Limpiaparabrisas trasero|Aire acondicionado|Computador de abordo|Control de velocidad crucero|Apagado automático de luces (temporizador)|Anclajes sillas de seguridad niños ISOFIX|Ganchos de anclaje para transporte|Apertura baúl|Desempañador vidrio trasero|Herramientas");
         Write_Acordeon("SEGURIDAD ANTIRROBO", "Bloqueo central eléctrico|Apertura inteligente de puertas|Alarma antirrobo|Sistema inmovilizador antirrobo|Bloqueo dirección|Bloqueo seguros puerta");
         Write_Acordeon("PRECIO", "Precio");
 
@@ -55,33 +59,49 @@
 
     }
 
-    function change_tipe() {
+    function change_tipe(id) {
 
         if($("#phone").hasClass("hidden"))
         {
-            changeCarbyId($("#veh2-desktop").val(), "divTipveh2-desktop", "tipveh2-desktop", "2-desktop");
-            changeCarbyId($("#veh3-desktop").val(), "divTipveh3-desktop", "tipveh3-desktop", "3-desktop");
+            
+            if (id=="2")
+            {
+                 changeCarbyId($("#veh2-desktop").val(), "divTipveh2-desktop", "tipveh2-desktop", "2-desktop");
+            }
+            else
+            {
+                changeCarbyId($("#veh3-desktop").val(), "divTipveh3-desktop", "tipveh3-desktop", "3-desktop");
+            }
+
+
+
             veh2 = $("#tipveh2-desktop").val();
             veh3 = $("#tipveh3-desktop").val();
 
-            $(".msj-legal").hide();
+            $(".msj-legal").text('Especificaciones adicionales, remitirse a la ficha técnica del vehículo.');
             if(veh1=="MazdaCX3" || $("#veh2-desktop").val()=="MazdaCX3" || $("#veh3-desktop").val() =="MazdaCX3")
             {
-                $(".msj-legal").show();
+                $(".msj-legal").text('Las características de los modelos de automóviles Mazda CX-3 utilizados en la presente exhibición pueden no ser las definitivas y presentar variaciones según el modelo y el lugar en que se adquiera. Por tanto, para obtener las características y especificaciones de los vehículos disponibles es necesario solicitar una cotización u oferta comercial formal en alguno de nuestros concesionarios autorizados.');
             }
 
         }
         else
         {
-            changeCarbyId($("#veh2").val(), "divTipveh2", "tipveh2", "2");
-            changeCarbyId($("#veh3").val(), "divTipveh3", "tipveh3", "3");
+            if (id=="2")
+            {
+                 changeCarbyId($("#veh2").val(), "divTipveh2", "tipveh2", "2");
+            }
+            else
+            {
+                changeCarbyId($("#veh3").val(), "divTipveh3", "tipveh3", "3");
+            }
             veh2 = $("#tipveh2").val();
             veh3 = $("#tipveh3").val();
 
-            $(".msj-legal").hide();
+            $(".msj-legal").text('Especificaciones adicionales, remitirse a la ficha técnica del vehículo.');
             if(veh1=="MazdaCX3" || $("#veh2").val()=="MazdaCX3" || $("#veh3").val() =="MazdaCX3")
             {
-                $(".msj-legal").show();
+                $(".msj-legal").text('Las características de los modelos de automóviles Mazda CX-3 utilizados en la presente exhibición pueden no ser las definitivas y presentar variaciones según el modelo y el lugar en que se adquiera. Por tanto, para obtener las características y especificaciones de los vehículos disponibles es necesario solicitar una cotización u oferta comercial formal en alguno de nuestros concesionarios autorizados.');
             }
         }
         LoadHtml();
@@ -149,11 +169,72 @@
         {
             veh2 = $("#tipveh2-desktop").val();
             veh3 = $("#tipveh3-desktop").val();
+
+            if( $("#veh2-desktop").val()=="Mazda3")
+                {
+                    if(veh2 =="Mazda3TouringSport" || veh2 =="Mazda3GrandTouringSport" || veh2=="Mazda3GrandTouringLXSport" )    
+                    {
+                        var imgv = document.getElementById("img_veh2-desktop");
+                        imgv.src = "img/Mazda3-HB.png";
+                    }
+                    else
+                    {
+                        var imgv = document.getElementById("img_veh2-desktop");
+                        imgv.src = "img/Mazda-3.png";
+                    }
+                }
+
+                if( $("#veh3-desktop").val()=="Mazda3")
+                {
+                    if(veh3 =="Mazda3TouringSport" || veh3 =="Mazda3GrandTouringSport" || veh3=="Mazda3GrandTouringLXSport" )    
+                    {
+                        var imgv = document.getElementById("img_veh3-desktop");
+                        imgv.src = "img/Mazda3-HB.png";
+                    }
+                    else
+                    {
+                        var imgv = document.getElementById("img_veh3-desktop");
+                        imgv.src = "img/Mazda-3.png";
+                    }
+                }
+
+
         }
         else
         { 
             veh2 = $("#tipveh2").val();
             veh3 = $("#tipveh3").val();
+
+
+            if( $("#veh2").val()=="Mazda3")
+                {
+                    if(veh2 =="Mazda3TouringSport" || veh2 =="Mazda3GrandTouringSport" || veh2=="Mazda3GrandTouringLXSport" )    
+                    {
+                        var imgv = document.getElementById("img_veh2");
+                        imgv.src = "img/Mazda3-HB.png";
+                    }
+                    else
+                    {
+                        var imgv = document.getElementById("img_veh2");
+                        imgv.src = "img/Mazda-3.png";
+                    }
+                }
+
+                if( $("#veh3").val()=="Mazda3")
+                {
+                    if(veh3 =="Mazda3TouringSport" || veh3 =="Mazda3GrandTouringSport" || veh3=="Mazda3GrandTouringLXSport" )    
+                    {
+                        var imgv = document.getElementById("img_veh3");
+                        imgv.src = "img/Mazda3-HB.png";
+                    }
+                    else
+                    {
+                        var imgv = document.getElementById("img_veh3");
+                        imgv.src = "img/Mazda-3.png";
+                    }
+                }
+
+
         }
         LoadHtml();
     }

@@ -53,14 +53,14 @@ redirect('../pabellon360/index.php');die();}
 
 /* --- */
 
-$query='SELECT * FROM '.$dbss['prfx']."_users WHERE usr_name='$uname'";
-$result=neutral_query($query);
+// $query='SELECT * FROM '.$dbss['prfx']."_users WHERE usr_name='$uname'";
+// $result=neutral_query($query);
 
-if(neutral_num_rows($result)>0){
-$title=$settings['title']; $info=$lang['nmtaken']; $link='../login/index.html';
-include 'ui/templates/head.pxtm';
-include 'ui/templates/info.pxtm';
-die();}
+// if(neutral_num_rows($result)>0){
+// $title=$settings['title']; $info=$lang['nmtaken']; $link='../login/index.html';
+// include 'ui/templates/head.pxtm';
+// include 'ui/templates/info.pxtm';
+// die();}
 
 $query='INSERT INTO '.$dbss['prfx']."_users VALUES(NULL,'$uname','$gpass','',$timestamp,'0')"; 
 neutral_query($query);

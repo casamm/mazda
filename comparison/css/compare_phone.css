@@ -33,14 +33,17 @@ hr.horizontal {
     display: none;
 }
 
-.phone {
-    height: 100%;
-}
 
 .phone section.content {
     height: 100%;
-    background: rgba(0, 0, 0, .8);
+    /*background: rgba(0, 0, 0, .8);*/
 }
+
+
+.phone section.content {
+    height: 100%;
+}
+
 
 .phone section.content header {
     position: absolute;
@@ -201,6 +204,12 @@ hr.horizontal {
     font-family: InterstateLight;
     font-weight: 100;
     color: #fff;
+}
+
+.phone section .msj-legal {
+    position:relative;
+    width: 100%;
+    margin-top: 5px;
 }
 
 @media only screen and (min-width: 375px) {

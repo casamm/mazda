@@ -410,5 +410,6 @@ section .accordion .content .wrap .details .vehicle p {
     font-size: 13px;
     color: #848484;
     margin-bottom: 10px;
+    width: 100%;
 }
 
