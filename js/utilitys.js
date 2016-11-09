@@ -80,7 +80,7 @@ function countdown(id){
         }
         else
         {
-           document.getElementById(id).innerHTML='A continuación';
+           document.getElementById(id).innerHTML= fecha.toLocaleDateString("es-ES",{weekday: "short", year: "numeric", month: "short", day: "numeric", hour:'2-digit', minute:'2-digit'});
           // console.log("punto3");
         }
 
