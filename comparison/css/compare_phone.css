@@ -220,6 +220,6 @@ hr.horizontal {
 
 @media only screen and (min-width: 1024px) {
     .phone .container .vehicle img {
-        max-width: 45%;
+        max-width: 221px;
     }
 }
