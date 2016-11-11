@@ -267,6 +267,8 @@ $fecha2->add($intervalo);
 	</section>
 </div>
 
+
+
 <div class="alert">
 	<header></header>
 	<div class="content">

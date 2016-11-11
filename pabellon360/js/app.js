@@ -17,11 +17,20 @@ function ChangeContent(event, idcontent) {
     $("#iframe-content").show();
     $("#iframe-content-phone").show();
 
-    $(".page-title").each(function(i, el) {
-        if (el !== event.target) {
-            $(el).addClass('hidden');
-        }
-    })
+    if(event!=null)
+    {
+        $(".page-title").each(function(i, el) {
+            if (el !== event.target) {
+                $(el).addClass('hidden');
+            }
+        })
+    }
+    else
+    {
+        $(".page-title").each(function(i, el) {
+                $(el).addClass('hidden');
+        })
+    }
 
     switch (idcontent) {
         case 0:
@@ -44,6 +53,18 @@ function ChangeContent(event, idcontent) {
             document.getElementById('iframe-content').src = "../guide/index.html";
             document.getElementById('iframe-content-phone').src = "../guide/index.html";
             break;
+        case 5:
+            document.getElementById('iframe-content').src = "../sessions/chat.html";
+            document.getElementById('iframe-content-phone').src = "../sessions/chat.html";
+            break;
+        case 6:
+            document.getElementById('iframe-content').src = "../vehicles/cx-3.html";
+            document.getElementById('iframe-content-phone').src = "../vehicles/cx-3.html";
+            break;
+        case 7:
+            document.getElementById('iframe-content').src = "../sessions/chat2.html";
+            document.getElementById('iframe-content-phone').src = "../sessions/chat2.html";
+            break;
     }
 
     $("#iframe-content").removeClass("hidden");
@@ -54,5 +75,10 @@ function ChangeContent(event, idcontent) {
 
     $(".desktop .menu").removeClass("invisible").animate({ opacity: 1 });
 
-
 }
+
+
+
+
+
+

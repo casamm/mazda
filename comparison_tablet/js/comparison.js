@@ -14,7 +14,7 @@
 
     function LoadHtml() {
         $("#sect").html("<div id='accordion' class='accordion'></div>");
-        Write_Acordeon("MOTOR", "Tipo|Turbo|Cilindraje (c.c.)|Número de cilindros|Relación de compresión|Potencia máxima (hp/r.p.m.)|Torque máximo (kg-m/r.p.m.)|Tipo de combustible|Intercooler|Sistema de combustible|Capacidad tanque de combustible (L)");
+       Write_Acordeon("MOTOR", "Tipo|Turbo|Cilindraje (c.c.)|Número de cilindros|Relación de compresión|Potencia máxima (hp/r.p.m.)|Torque máximo (kg-m/r.p.m.)|Tipo de combustible|Intercooler|Sistema de combustible|Capacidad tanque de combustible (L)");
         Write_Acordeon("TRANSMISIÓN", "Tipo|Tracción");
         Write_Acordeon("RELACIONES DE CAJA", "1ª|2ª|3ª|4ª|5ª|6ª|Reversa|Relación final de eje|Convertidor de torque|Selección modo de conducción|Relación de transferencia|Protector metálico");
         Write_Acordeon(" SUSPENSIÓN", "Delantera|Capacidad del eje Delantero (kg)|Trasera|Capacidad del eje  Trasero(kg)|Diferencial de deslizamiento limitado (LSD)");
@@ -24,7 +24,7 @@
         Write_Acordeon("DIMENSIONES Y PESOS", "Longitud total (mm)|Ancho total (mm)|Altura total (mm)|Distancia entre ejes (mm)|Trocha delantera (mm)|Trocha trasera (mm)|Voladizo delantero (mm)|Voladizo trasero (mm)|Capacidad del baúl (L)|Peso vacío (kg)|Peso bruto vehicular (kg)|Capacidad de carga (kg)|Capacidad de arrastre con frenos (kg)|Capacidad de arrastre sin frenos (kg)");
         Write_Acordeon("DISEÑO DE CABINA", "Cabina|Barras de impacto lateral|Medidores panel de instrumentos");
         Write_Acordeon("SEGURIDAD PASIVA", "Apoyacabezas|Cinturones de seguridad|Columna de dirección|Pedal de freno|Airbags |Apoyacabezas traseros");
-        Write_Acordeon("SEGURIDAD PROACTIVA i-ACTIVSENSE", "Sistema Inteligente de Iluminación Frontal (ADB)|Asistencia de Permanencia en Carril (LKA)|Asistencia de Frenado en Ciudad Delantero (SCBS)|Asistencia  de Frenado en Ciudad Delantero (SCBS)|Asistencia de Frenado en Ciudad Trasero (SCBS)|Sistema de Monitoreo de Punto Ciego (BSM)|Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Alerta de Atención del Conductor (DAA)");
+        Write_Acordeon("SEGURIDAD PROACTIVA i-ACTIVSENSE", "Sistema Inteligente de Iluminación Frontal (ADB)|Asistencia de Permanencia en Carril (LKA)|Asistencia de Frenado en Ciudad Delantero (SCBS)|Asistencia  de Frenado en Ciudad Delantero (SCBS)|Asistencia de Frenado en Ciudad Trasero (SCBS)|Sistema de Monitoreo de Punto Ciego (BSM)|Alerta de Atención del Conductor (DAA)");
         Write_Acordeon("SEGURIDAD ACTIVA", "Señal de Frenado de Emergencia (ESS)|Asistencia de Arranque en Pendiente (HLA)|Sistema de frenos ABS + EBD + BA|Control Dinámico de Estabilidad (DSC)|Sistema Control de Tracción (TCS)|Luces delanteras|Luces traseras LED|Luces Delanteras Automáticas (sensor de luz)|Ajuste de altura automático|Sistema de Monitoreo de Presión de Llantas (TPMS)|Sensores de parqueo |Cámara de reversa|Prelación de frenado sobre aceleración (BOS)|Control adaptativo de la carga (LAC)|Control antivuelco (RCS)|Asistencia para descenso de pendientes (HDC)");
         Write_Acordeon("PLATON", "Platón");
         Write_Acordeon("EQUIPAMIENTO EXTERIOR", "Techo corredizo \"Sunroof\"|Spoiler Trasero|Exploradoras|Estribos laterales|Parachoques|Protector platón");

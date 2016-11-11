@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/chat_phone.css">
+<link rel="stylesheet" type="text/css" href="css/chat_desktop.css">
+<title>MAZDA | Salón Del Automóvil 2016</title>
+</head>
+
+<body>
+	<iframe id="chat2" src=""  class="iframe-chat-desktop" frameBorder="0" ></iframe>
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/detect.js"></script>
+<script src="../js/utilitys.js"></script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+    var usuario=decodeURIComponent(ReadCookie("nombre_usuario")).split("+").join(" ");
+
+	if (usuario!=null && usuario!="")
+	{	
+		document.getElementById('chat2').src = "../blab8plus/blab.php";
+
+		var form = document.createElement("form");
+        var element1 = document.createElement("input"); 
+        var element2 = document.createElement("input");  
+
+        form.method = "POST";
+        form.action = "../blab8plus/login.php";   
+
+        element1.value=usuario;
+        element1.name="uname";
+        form.appendChild(element1);  
+
+        element2.value="1";
+        element2.name="guest";
+        form.appendChild(element2);
+
+        $("#iframe-content").context.body.appendChild(form);
+
+        form.submit();
+	}
+});
+		
+</script>
+
+</body>
+</html>

@@ -49,7 +49,6 @@ $user=neutral_fetch_array($result);
 $id=$user['usr_id']; $ky=hsh($id.$settings['cookie_salt']); $cookie=$id.'z'.$ky;
 setcookie('blab8_xuidc',$cookie,time()+3600*24*365,'/');
 setcookie('nombre_usuario',$uname,time()+3600*24*365,'/');
-redirect('../pabellon360/index.php');die();}
 
 /* --- */
 

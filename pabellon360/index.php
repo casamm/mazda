@@ -77,9 +77,8 @@
 	<hr>
 	<footer>
 		<div class="next">
-			<h2>Próxima Sesión</h2>
+			<h2>Próxima Sesión :</h2>
 		</div>
-		<hr>
 		<div id="nombreSession-phone" class="car">
 			<h2>M&#123;zd&#123; 3</h2>
 		</div>
@@ -142,9 +141,8 @@
 
 	<footer>
 		<div class="next">
-			<h2>Próxima Sesión</h2>
+			<a href="#" onclick="ChangeContent(event,7);">Chat General</a>
 		</div>
-		<hr>
 		<div id="nombreSession" class="car">
 			<h2>M&#123;zd&#123; 3</h2>
 		</div>
@@ -210,7 +208,6 @@ testExp = new RegExp('Android|webOS|iPhone|iPad|' +
 
 <script type="text/javascript" src="pano2vr_player.js"></script>
 <script type="text/javascript">
-
 // is a mobilde device or not
 testExp = new RegExp('Android|webOS|iPhone|iPad|' +
     		       'BlackBerry|Windows Phone|'  +
@@ -234,6 +231,7 @@ testExp = new RegExp('Android|webOS|iPhone|iPad|' +
 <script src="../js/menu.js"></script>
 <script src="../js/detect.js"></script>
 <script src="../js/utilitys.js"></script> 
+
 
 </body>
 </html>

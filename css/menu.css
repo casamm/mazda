@@ -306,6 +306,7 @@
     color: #2995cc;
     font-family: InterstateBold;
     font-size: 13pt;
+    text-align: center;
 }
 
 .desktop header .logo {
@@ -384,8 +385,21 @@
     font-weight: bolder;
 }
 
+.desktop footer .next a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.desktop footer .car p {
+    font-size: 10pt;
+    font-family: InterstateLight;
+    margin-right: 10px;
+}
+
 .desktop footer .car h2 {
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: MazdaRegular;
     font-weight: 100;
 }

@@ -95,8 +95,8 @@ function countdown(id){
     else{
         // document.getElementById('ContadorSession').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
         // document.getElementById('ContadorSession-phone').innerHTML=' ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos';
-        document.getElementById('ContadorSession').innerHTML="<a href='../sessions/chat.html'>En Vivo Ahora</a>";
-        document.getElementById('ContadorSession-phone').innerHTML="<a href='../sessions/chat.html'>En Vivo Ahora</a>";
+        document.getElementById('ContadorSession').innerHTML="<a href='#' onclick='ChangeContent(event,5);'>En Vivo Ahora</a>";
+        document.getElementById('ContadorSession-phone').innerHTML="<a href='#' onclick='ChangeContent(event,5);'>En Vivo Ahora</a>";
         //console.log("punto5");
     }
 
@@ -104,7 +104,7 @@ function countdown(id){
     var nombreSession=$("#NomSesMasReciente").val();
     nombreSession= nombreSession.replace("Mazda","M&#123;zd&#123;");
     nombreSession= nombreSession.replace("mazda","M&#123;zd&#123;");
-    document.getElementById('nombreSession').innerHTML="<h2>" +  nombreSession + "</h2>";
+    document.getElementById('nombreSession').innerHTML="<p>PRÓXIMA SESIÓN:&nbsp;&nbsp;</p><h2>" +  nombreSession + "</h2>";
     document.getElementById('nombreSession-phone').innerHTML="<h2>" +  nombreSession + "</h2>";
     
 }
